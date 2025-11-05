@@ -84,7 +84,7 @@ export function Navbar({}: NavbarProps) {
       >
         <button onClick={() => setNavExpand(!navExpand)}>
           <FaBars
-            aria-label="Menu"
+            aria-label="菜单"
             className={classNames(
               styles.navIcon,
               interactiveStyles.activePrimary
@@ -103,7 +103,7 @@ export function Navbar({}: NavbarProps) {
             })}
           >
             <NavbarItem
-              label="Route"
+              label="路线"
               expand={navExpand}
               icon={<FaMap className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -112,7 +112,7 @@ export function Navbar({}: NavbarProps) {
               }}
             />
             <NavbarItem
-              label="Build"
+              label="BD 配置"
               expand={navExpand}
               icon={<FaTools className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -120,7 +120,7 @@ export function Navbar({}: NavbarProps) {
                 setNavExpand(false);
               }}
             />
-            <NavAccordion label="Sections" navExpand={navExpand}>
+            <NavAccordion label="章节目录" navExpand={navExpand}>
               {routeFiles.map((x, i) => (
                 <NavbarItem
                   key={i}
@@ -134,7 +134,7 @@ export function Navbar({}: NavbarProps) {
               ))}
             </NavAccordion>
             <NavbarItem
-              label={`Edit Route`}
+              label="路线编辑器"
               expand={navExpand}
               icon={<FaTools className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -143,7 +143,7 @@ export function Navbar({}: NavbarProps) {
               }}
             />
             <NavbarItem
-              label="Reset Progress"
+              label="重置进度"
               expand={navExpand}
               icon={<FaUndoAlt className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -155,18 +155,18 @@ export function Navbar({}: NavbarProps) {
               }}
             />
             <NavbarItem
-              label="3rd-Party Export"
+              label="导出至第三方"
               expand={navExpand}
               icon={<FaRegClipboard className={classNames("inlineIcon")} />}
               onClick={() => {
                 clipboardRoute();
-                trackEvent({ name: "3rd-Party Export" });
-                toast.success("Exported to Clipboard");
+                trackEvent({ name: "第三方导出" });
+                toast.success("已复制到剪贴板");
                 setNavExpand(false);
               }}
             />
             <NavbarItem
-              label="Project on Github"
+              label="GitHub 项目主页"
               expand={navExpand}
               icon={<FaGithub className={classNames("inlineIcon")} />}
               onClick={() => {

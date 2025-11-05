@@ -69,7 +69,7 @@ export function RouteEditor({
     <>
       <TextModal
         size="large"
-        label="Import Route"
+        label="导入路线文件"
         isOpen={importIsOpen}
         onRequestClose={() => setImportIsOpen(false)}
         onSubmit={(routeOrUrl) =>
@@ -85,9 +85,9 @@ export function RouteEditor({
               onSubmit(routeFiles);
             },
             {
-              pending: "Importing Route",
-              success: "Import Success",
-              error: "Import Failed",
+              pending: "正在导入路线",
+              success: "导入成功",
+              error: "导入失败",
             }
           )
         }
@@ -120,10 +120,10 @@ export function RouteEditor({
             onClick={() => {
               const routeSource = buildRouteSource(workingFiles);
               navigator.clipboard.writeText(routeSource);
-              toast.success("Exported to Clipboard");
+              toast.success("已复制到剪贴板");
             }}
           >
-            Export
+            导出
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -131,7 +131,7 @@ export function RouteEditor({
               setImportIsOpen(true);
             }}
           >
-            Import
+            导入
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -140,7 +140,7 @@ export function RouteEditor({
               onReset();
             }}
           >
-            Reset
+            重置
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -148,7 +148,7 @@ export function RouteEditor({
               submitWorkingFiles();
             }}
           >
-            Save
+            保存
           </button>
         </div>
       </div>

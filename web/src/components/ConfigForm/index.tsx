@@ -12,7 +12,7 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
   return (
     <div className={classNames(styles.form)}>
       <SplitRow
-        left={<div className={classNames(styles.label)}>Gems Only</div>}
+        left={<div className={classNames(styles.label)}>仅显示宝石任务</div>}
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -24,13 +24,13 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
                   gemsOnly: evt.target.checked,
                 });
               }}
-              aria-label="Gems Only"
+              aria-label="仅显示宝石任务"
             />
           </div>
         }
       />
       <SplitRow
-        left={<div className={classNames(styles.label)}>Show All Hints</div>}
+        left={<div className={classNames(styles.label)}>显示所有提示</div>}
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -42,7 +42,7 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
                   showSubsteps: evt.target.checked,
                 });
               }}
-              aria-label="Show Hints"
+              aria-label="显示提示"
             />
           </div>
         }

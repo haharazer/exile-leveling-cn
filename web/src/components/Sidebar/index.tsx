@@ -72,7 +72,7 @@ function useSections() {
         tab: (
           <>
             <TbHierarchy className={classNames("inlineIcon")} />
-            Tree
+            天赋树
           </>
         ),
         content: <SkillTreeViewer urlTrees={urlTrees} />,
@@ -84,7 +84,7 @@ function useSections() {
         tab: (
           <>
             <FaLink className={classNames("inlineIcon")} />
-            Gems
+            宝石连法
           </>
         ),
         content: <GemLinkViewer gemLinks={gemLinks} />,
@@ -96,7 +96,7 @@ function useSections() {
         tab: (
           <>
             <FiSearch className={classNames("inlineIcon")} />
-            Search
+            搜索字符串
           </>
         ),
         content: <SearchStrings values={searchStrings} />,
@@ -148,7 +148,7 @@ function Header({
             }}
           >
             <FaListUl className={classNames("inlineIcon")} />
-            All
+            全部
           </button>
         </>
       )}

@@ -99,7 +99,7 @@ function WaypointComponent() {
         className={classNames("inlineIcon")}
         alt=""
       />
-      <span className={classNames(styles.waypoint)}>Waypoint</span>
+      <span className={classNames(styles.waypoint)}>传送点</span>
     </div>
   );
 }
@@ -112,7 +112,7 @@ function TrialComponent() {
         className={classNames("inlineIcon")}
         alt=""
       />
-      <span className={classNames(styles.trial)}>Trial of Ascendancy</span>
+      <span className={classNames(styles.trial)}>升华试炼</span>
     </div>
   );
 }
@@ -120,7 +120,7 @@ function TrialComponent() {
 function LogoutComponent(area: GameData.Area) {
   return (
     <>
-      {GenericComponent("Logout")}
+      {GenericComponent("登出")}
       <span> ➞ </span>
       {AreaComponent(area.name, area.is_town_area, area.level)}
     </>
@@ -135,7 +135,7 @@ function PortalComponent(area?: GameData.Area) {
         className={classNames("inlineIcon")}
         alt=""
       />
-      <span className={classNames(styles.portal)}>Portal</span>
+      <span className={classNames(styles.portal)}>传送门</span>
       {area && (
         <>
           <span> ➞ </span>
@@ -174,7 +174,7 @@ function CraftingComponent(craftingRecipes: string[]) {
           className={classNames("inlineIcon")}
           alt=""
         />
-        {GenericComponent("Crafting: ")}
+        {GenericComponent("工艺：")}
       </div>
       {GenericComponent(craftingRecipes.join(", "))}
     </span>
@@ -209,7 +209,7 @@ function AscendComponent(
         className={classNames("inlineIcon")}
         alt=""
       />
-      <span className={classNames(styles.trial)}>Ascend</span>
+      <span className={classNames(styles.trial)}>升华试炼</span>
       <> {MinAreaLevelComponent(area.level)}</>
     </div>,
     <a
@@ -260,7 +260,7 @@ export function Fragment(
           )}
           {dstArea.act !== srcArea.act &&
             dstArea.id !== "Labyrinth_Airlock" && (
-              <> - {GenericComponent(`Act ${dstArea.act}`)}</>
+              <> - {GenericComponent(`第${dstArea.act}幕`)}</>
             )}
         </>,
         null,

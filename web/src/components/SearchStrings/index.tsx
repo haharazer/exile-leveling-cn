@@ -23,7 +23,7 @@ export function SearchStrings({ values }: SearchStringsProps) {
           )}
           onClick={() => {
             navigator.clipboard.writeText(value.text);
-            toast.success("Copied to Clipboard");
+            toast.success("已复制到剪贴板");
           }}
         >
           <div>

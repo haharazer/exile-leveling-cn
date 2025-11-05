@@ -1,57 +1,57 @@
-#section Act 6
-➞ {enter|2_6_town} #Lioneye's Watch
-➞ {enter|2_6_1} #The Twilight Strand
-Kill {kill|Everything}
+#section 第六幕
+➞ {enter|2_6_town} #狮眼守望
+➞ {enter|2_6_1} #绝望岩滩
+击杀 {kill|清除所有敌人}
 {logout}
-Hand in {quest|a6q4} #Fallen from Grace
-➞ {enter|2_6_2} #The Coast
-➞ {enter|2_6_4} #The Mud Flats
-Find and kill {kill|The Dishonoured Queen}, take {quest_text|Eye of Conquest}
-    #sub {dir|45} corner of area, normally by a house
-➞ {enter|2_6_5} #The Karui Fortress
-➞ {arena|Tukohama's Keep}, kill {kill|Tukohama, Karui God of War}
-Get {crafting}
-➞ {enter|2_6_6} #The Ridge
-    #sub Go {dir|0}
-➞ {enter|2_6_7_1} #The Lower Prison
+提交 {quest|a6q4} #优雅不再
+➞ {enter|2_6_2} #暮光海滩
+➞ {enter|2_6_4} #炙热盐沼
+找到并击杀 {kill|卡鲁长者}，取得 {quest_text|征服之眼}
+    #sub 区域的{dir|45}角落，通常在房屋旁
+➞ {enter|2_6_5} #卡鲁要塞
+➞ {arena|图克哈玛要塞}，击杀 {kill|战争之父图克哈玛}
+获取 {crafting}
+➞ {enter|2_6_6} #寂默山岭
+    #sub 向{dir|0}方向前进
+➞ {enter|2_6_7_1} #禁灵之狱下层
 #ifdef LEAGUE_START
-    Complete {trial}
+    完成 {trial}
 #endif
-Get {crafting}
-➞ {enter|2_6_7_2} #Shavronne's Tower
-➞ {arena|Prison Rooftop}, kill {kill|Shavronne the Returned} & {kill|Reassembled Brutus}
-➞ {arena|The Warden's Chambers}
-Get {crafting}
-➞ {enter|2_6_8} #Prisoner's Gate
-➞ {enter|2_6_9} #The Western Forest
-    #sub Follow the road
-Get {crafting}
-    #sub Look for the torch touching the road
-    #sub Follow the trail in the direction of the torch
-➞ {enter|2_6_10} #The Riverways
-    #sub Follow the road
-Get {waypoint_get}
-    #sub Follow the road
-➞ {enter|2_6_11} #The Wetlands
-    #sub Look for 2 pillars near {waypoint}, follow the trail
-➞ {arena|The Spawning Ground}, kill {kill|Ryslatha, the Puppet Mistress}
-    #sub Go {dir|315}
+获取 {crafting}
+➞ {enter|2_6_7_2} #薛朗之塔
+➞ {arena|监狱屋顶}，击杀 {kill|复生者薛朗} 以及 {kill|重塑之布鲁特斯}
+➞ {arena|典狱长寝室}
+获取 {crafting}
+➞ {enter|2_6_8} #监狱大门
+➞ {enter|2_6_9} #西部密林
+    #sub 沿着道路前进
+获取 {crafting}
+    #sub 寻找贴近道路的火炬
+    #sub 沿着火炬指向的路线前进
+➞ {enter|2_6_10} #河道
+    #sub 沿着道路前进
+获取 {waypoint_get}
+    #sub 沿着道路前进
+➞ {enter|2_6_11} #湿地
+    #sub 在{waypoint}附近寻找两根石柱并沿着足迹前进
+➞ {arena|孵化之地}，击杀 {kill|食腐虫后}
+    #sub 向{dir|315}方向前进
 {logout}
-Hand in {quest|a6q3} #The Father of War
-Hand in {quest|a6q2} #Essence of Umbra
-Hand in {quest|a6q6} #The Puppet Mistress
-{waypoint|2_6_10} #The Riverways
-➞ {enter|2_6_12} #The Southern Forest
-    #sub Follow the road until it ends
-    #sub Go {dir|135}
-➞ {enter|2_6_13} #The Cavern of Anger
-Take {quest_text|The Black Flag}
-➞ {enter|2_6_14} #The Beacon
-Get {crafting}
-    #sub Follow the shore
-Complete {quest_text|Pillar Push}
-Light the {quest_text|Beacon}, throw in {quest_text|The Black Flag}
-Talk to {generic|Weylam Roth}, sail to {enter|2_6_15} #The Brine King's Reef
-➞ {arena|The Bring King's Throne}, kill {kill|Tsoagoth, The Brine King}
+提交 {quest|a6q3} #战争之父
+提交 {quest|a6q2} #黑影精华
+提交 {quest|a6q6} #傀儡女王
+{waypoint|2_6_10} #河道
+➞ {enter|2_6_12} #南部森林
+    #sub 沿着道路前进直到尽头
+    #sub 向{dir|135}方向前进
+➞ {enter|2_6_13} #怨忿之窟深处
+使用 {quest_text|黑旗}
+➞ {enter|2_6_14} #孤岛灯塔
+获取 {crafting}
+    #sub 沿着岸边前进
+完成 {quest_text|推石柱}
+点燃 {quest_text|信标}，投入 {quest_text|黑旗}
+与 {generic|威勒姆·罗斯}对话，启航前往 {enter|2_6_15} #惊海之王的海礁
+➞ {arena|怒涛之王王座}，击杀 {kill|惊海之王索亚格斯}
 {logout}
-Select {generic|Pantheons}
+选择 {generic|众神殿}

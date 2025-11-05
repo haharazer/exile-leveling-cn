@@ -27,14 +27,14 @@ export function App() {
             <Route
               path="/"
               element={
-                <Page title="Exile Leveling" component={<RoutesContainer />} />
+                <Page title="流亡成长指南" component={<RoutesContainer />} />
               }
             />
             <Route
               path="/build"
               element={
                 <Page
-                  title="Exile Leveling - Build"
+                  title="流亡成长指南 - BD 配置"
                   component={<BuildContainer />}
                 />
               }
@@ -43,7 +43,7 @@ export function App() {
               path="/edit-route"
               element={
                 <Page
-                  title="Exile Leveling - Edit Route"
+                  title="流亡成长指南 - 路线编辑"
                   component={<EditRouteContainer />}
                 />
               }

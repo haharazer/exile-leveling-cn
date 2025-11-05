@@ -45,28 +45,28 @@ export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
   return (
     <>
       <TextModal
-        label="Path of Building Code"
+        label="PoB 导入代码"
         size="small"
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         onSubmit={(pobCodeOrUrl) =>
           toast.promise(
             async () => {
-              if (!pobCodeOrUrl) return Promise.reject("invalid pobCodeOrUrl");
+              if (!pobCodeOrUrl) return Promise.reject("无效的 PoB 代码或链接");
               const pobCode = await fetchStringOrUrl(
                 pobCodeOrUrl,
                 URL_REWRITERS
               );
 
               const pobData = processPob(pobCode);
-              if (!pobData) return Promise.reject("parsing failed");
+              if (!pobData) return Promise.reject("解析失败");
 
               onSubmit(pobData, pobCode);
             },
             {
-              pending: "Importing Build",
-              success: "Import Success",
-              error: "Import Failed",
+              pending: "正在导入 BD",
+              success: "导入成功",
+              error: "导入失败",
             }
           )
         }
@@ -78,7 +78,7 @@ export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
             onReset();
           }}
         >
-          Reset Build
+          重置 BD
         </button>
         <button
           className={classNames(formStyles.formButton)}
@@ -86,7 +86,7 @@ export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
             setIsOpen(true);
           }}
         >
-          Import Build
+          导入 BD
         </button>
       </div>
     </>

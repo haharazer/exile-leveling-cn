@@ -12,9 +12,9 @@ import { MdCircle } from "react-icons/md";
 function ItemRewardVerb(type: ItemRewardProps["rewardType"]) {
   switch (type) {
     case "quest":
-      return <span>Take </span>;
+      return <span>领取 </span>;
     case "vendor":
-      return <span>Buy </span>;
+      return <span>购买 </span>;
     default:
       return <></>;
   }
@@ -35,7 +35,7 @@ export function ItemReward({ item, count, cost, rewardType }: ItemRewardProps) {
       {count && count > 1 && <span> x{count}</span>}
       {rewardType === "vendor" && cost !== undefined && (
         <div className={classNames(styles.noWrap)}>
-          <span> for </span>
+          <span> 需要 </span>
           <InlineFakeBlock child={cost} />
         </div>
       )}
@@ -55,7 +55,7 @@ export function GemReward({ requiredGem, count, rewardType }: GemRewardProps) {
   if (!gem)
     return (
       <div className={classNames(styles.gemError)}>
-        This is awkward, <b>{requiredGem.id}</b> doesn't seem to exist
+        糟糕，未找到 <b>{requiredGem.id}</b> 的宝石数据
       </div>
     );
 

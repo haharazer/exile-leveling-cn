@@ -156,7 +156,7 @@ function GemTooltip({ gemLink }: GemTooltipProps) {
               {i !== 0 && <hr className={classNames(styles.questSeperator)} />}
               <span>{quest.name}</span>
               <span>{npc}</span>
-              <span>Act {quest.act}</span>
+              <span>第{quest.act}幕</span>
             </>
           );
           return text;

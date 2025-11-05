@@ -15,7 +15,7 @@ export function CopyToClipboard({ text }: CopyToClipboardProps) {
         navigator.clipboard.writeText(text);
         toast.success(
           <div>
-            Copied to Clipboard
+            已复制到剪贴板
             <br />
             {text}
           </div>

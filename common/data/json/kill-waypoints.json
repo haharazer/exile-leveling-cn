@@ -1,12 +1,32 @@
 {
-  "Brutus, Lord Incarcerator": ["1_1_8"],
-  "Merveil, the Siren": ["1_2_1"],
-  "Vaal Oversoul": ["1_3_1"],
-  "Dominus, High Templar": ["1_4_1"],
-  "Reassembled Brutus": ["2_6_8"],
-  "Tsoagoth, The Brine King": ["2_7_town"],
-  "Arakaali, Spinner of Shadows": ["2_8_1"],
-  "Solaris, Eternal Sun": ["2_9_1"],
-  "The Depraved Trinity": ["2_10_town"],
-  "High Templar Avarius": ["1_5_5"]
+  "典狱长布鲁特斯": [
+    "1_1_8"
+  ],
+  "海妖莫薇儿": [
+    "1_2_1"
+  ],
+  "瓦尔超灵": [
+    "1_3_1"
+  ],
+  "圣宗神主": [
+    "1_4_1"
+  ],
+  "重塑之布鲁特斯": [
+    "2_6_8"
+  ],
+  "惊海之王索亚格斯": [
+    "2_7_town"
+  ],
+  "暗影织网者阿拉卡力": [
+    "2_8_1"
+  ],
+  "日耀女神": [
+    "2_9_1"
+  ],
+  "不洁三巨头": [
+    "2_10_town"
+  ],
+  "神主阿瓦留斯": [
+    "1_5_5"
+  ]
 }

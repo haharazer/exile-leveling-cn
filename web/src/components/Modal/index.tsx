@@ -62,7 +62,7 @@ export function TextModal({
               onRequestClose();
             }}
           >
-            Cancel
+            取消
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -71,7 +71,7 @@ export function TextModal({
               onSubmit(valueRef.current);
             }}
           >
-            Submit
+            确认
           </button>
         </div>
       </div>

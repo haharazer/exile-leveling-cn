@@ -5,7 +5,7 @@ import { FallbackProps } from "react-error-boundary";
 export function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
   return (
     <span>
-      {"Oops, something seems to have broken. Click "}
+      {"糟糕，似乎出现了错误。点击 "}
       <span
         className={classNames(styles.reset)}
         onClick={() => {
@@ -13,9 +13,9 @@ export function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
           location.reload();
         }}
       >
-        here
+        这里
       </span>
-      {" to try and fix things."}
+      {" 以尝试修复。"}
     </span>
   );
 }

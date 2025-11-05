@@ -169,7 +169,7 @@ export async function fetchStringOrUrl(
   if (url) {
     value = await fetch(`${CORS_PROXY_URL}/${url}`).then((x) => {
       if (x.status >= 200 && x.status <= 299) return x.text();
-      return Promise.reject("download failed");
+      return Promise.reject("下载失败");
     });
   }
 

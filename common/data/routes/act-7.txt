@@ -1,79 +1,79 @@
-#section Act 7
-{waypoint|2_7_town} #The Bridge Encampment
-➞ {enter|2_7_1} #The Broken Bridge
+#section 第七幕
+{waypoint|2_7_town} #断桥营地
+➞ {enter|2_7_1} #河畔断桥
 #ifdef LEAGUE_START
-    Find and take {quest_text|Silver Locket}
-        #sub Follow the road, look for the broken {waypoint}
+    找到并拾取 {quest_text|银色吊坠}
+        #sub 沿着道路前进，找到损坏的{waypoint}
 #endif
-➞ {enter|2_7_2} #The Crossroads
-    #sub Follow the road
-Get {waypoint_get}
-➞ {enter|2_7_3} #The Fellshrine Ruins
-    #sub Go {dir|135}
-➞ {enter|2_7_4} #The Crypt
-    #sub Follow the road
+➞ {enter|2_7_2} #危机叉路
+    #sub 沿着道路前进
+获取 {waypoint_get}
+➞ {enter|2_7_3} #堕道遗迹
+    #sub 向{dir|135}方向前进
+➞ {enter|2_7_4} #寂静陵墓
+    #sub 沿着道路前进
 #ifdef LEAGUE_START
-    Complete {trial}
-    Get {crafting}
+    完成 {trial}
+    获取 {crafting}
 #endif
-Find {generic|Sarcophagus} to next floor
-Find and take {quest_text|Maligaro's Map}
+找到 {generic|大型石棺} 前往下一层
+找到并拾取 {quest_text|马雷格罗的地图}
 {logout}
-{waypoint|2_7_2} #The Crossroads
-➞ {enter|2_7_5_1} #The Chamber of Sins Level 1
-    #sub Go {dir|315}
-Get {crafting}
-Get {waypoint_get}
-Activate {quest_text|Map Device} with {quest_text|Maligaro's Map}
-➞ {enter|2_7_5_map} #Maligaro's Sanctum
-➞ {arena|Maligaro's Workshop}, kill {kill|Maligaro, the Artist}, take {quest_text|Black Venom}
-    #sub Follow edges of the zone and cross bridges in the corners
-    #sub Typically bridges spawn in the opposite diagonal corners
+{waypoint|2_7_2} #危机叉路
+➞ {enter|2_7_5_1} #罪孽之殿 1 层
+    #sub 向{dir|315}方向前进
+获取 {crafting}
+获取 {waypoint_get}
+激活 {quest_text|黄金制图仪} 并使用 {quest_text|马雷格罗的地图}
+➞ {enter|2_7_5_map} #马雷格罗的藏身处
+➞ {arena|马雷加罗工坊}，击杀 {kill|奇才马雷格罗}，取得 {quest_text|灾厄毒液}
+    #sub 沿着地图边缘前进并穿过角落的桥
+    #sub 桥梁通常生成在对角的角落
 {logout}
-Hand in {quest|a7q2} #Essence of the Artist
+提交 {quest|a7q2} #马雷格罗
 #ifdef LEAGUE_START
-    Hand in {quest|a7q5} #The Silver Locket
+    提交 {quest|a7q5} #银色吊坠
 #endif
-{waypoint|2_7_5_1} #The Chamber of Sins Level 1
-Hand in {quest|a7q3}, take {quest_text|Obsidian Key} #Web of Secrets
-➞ {enter|2_7_5_2} #The Chamber of Sins Level 2
-    #sub Go in same direction as {waypoint}
+{waypoint|2_7_5_1} #罪孽之殿 1 层
+提交 {quest|a7q3}，取得 {quest_text|黑曜石钥匙} #灾异之兆
+➞ {enter|2_7_5_2} #罪孽之殿 2 层
+    #sub 沿着{waypoint}的方向前进
 #ifdef LEAGUE_START
-    Complete {trial}
-    Get {crafting}
+    完成 {trial}
+    获取 {crafting}
 #endif
-Open {generic|Secret Passage} ➞ {enter|2_7_6} #The Den
-➞ {enter|2_7_7} #The Ashen Fields
-➞ {arena|The Forest Encampment}, kill {kill|Greust, Lord of the Forest}
-    #sub Go {dir|225}
-➞ {enter|2_7_8} #The Northern Forest
-{waypoint|2_7_town} #The Bridge Encampment
-Hand in {quest|a7q1} #The Master of a Million Faces
-{waypoint|2_6_8} #Prisoner's Gate
-➞ {arena|Valley of the Fire Drinker}, kill {kill|Abberath, the Cloven One}
-    #sub Go down the ledge next to the road
+打开 {generic|秘密通道} ➞ {enter|2_7_6} #兽穴
+➞ {enter|2_7_7} #灰原
+➞ {arena|森林营地}，击杀 {kill|受拉克斯操纵的古斯特}
+    #sub 向{dir|225}方向前进
+➞ {enter|2_7_8} #北部密林
+{waypoint|2_7_town} #断桥营地
+提交 {quest|a7q1} #盗贼头目
+{waypoint|2_6_8} #监狱大门
+➞ {arena|饮火者山谷}，击杀 {kill|艾贝拉斯}
+    #sub 沿着道路旁的斜坡向下走
 {portal|use}
-Hand in {quest|a6q7} #The Cloven One
-{waypoint|2_7_8} #The Northern Forest
-➞ {enter|2_7_10} #The Causeway
-Get {crafting}
-Find and take {quest_text|Kishara's Star}
-➞ {enter|2_7_11} #The Vaal City
-Find {waypoint_get}
-{waypoint|2_7_8} #The Northern Forest
-➞ {enter|2_7_9} #The Dread Thicket
-Find and take 7x{quest_text|Firefly}
-Get {crafting}
-➞ {arena|Den of Despair}, kill {kill|Gruthkul, Mother of Despair}
+提交 {quest|a6q7} #撕裂之神
+{waypoint|2_7_8} #北部密林
+➞ {enter|2_7_10} #堤道
+获取 {crafting}
+找到并拾取 {quest_text|琪莎拉之星}
+➞ {enter|2_7_11} #瓦尔古城
+找到 {waypoint_get}
+{waypoint|2_7_8} #北部密林
+➞ {enter|2_7_9} #惊魂树洞
+收集7个{quest_text|萤火虫}
+获取 {crafting}
+➞ {arena|绝望巢穴}，击杀 {kill|格鲁丝克}
 {portal|use}
-Hand in {quest|a7q9} #Queen of Despair
-Hand in {quest|a7q6} #Kishara's Star
-{waypoint|Labyrinth_Airlock} #Aspirants' Plaza
+提交 {quest|a7q9} #格鲁丝克
+提交 {quest|a7q6} #琪莎拉之星
+{waypoint|Labyrinth_Airlock} #试炼者广场
 {ascend|cruel}
-Get {crafting|2_Labyrinth_boss_3}
-{waypoint|2_7_11} #The Vaal City
-Hand in {quest|a7q7} #Lighting the Way
-➞ {enter|2_7_12_1} #The Temple of Decay Level 1
-➞ {enter|2_7_12_2} #The Temple of Decay Level 2
-Get {crafting}
-➞ {arena|Arakaali's Web}, kill {kill|Arakaali, Spinner of Shadows}
+获取 {crafting|2_Labyrinth_boss_3}
+{waypoint|2_7_11} #瓦尔古城
+提交 {quest|a7q7} #照亮道路
+➞ {enter|2_7_12_1} #坠欲之殿 1 层
+➞ {enter|2_7_12_2} #坠欲之殿 2 层
+获取 {crafting}
+➞ {arena|阿拉卡力之网}，击杀 {kill|暗影织网者阿拉卡力}

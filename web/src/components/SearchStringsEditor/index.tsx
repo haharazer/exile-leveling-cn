@@ -16,9 +16,9 @@ export function SearchStringsEditor() {
   return (
     <div className={classNames(formStyles.formRow)}>
       <label>
-        Search Strings {"("}
+        搜索语法 {"("}
         <a href="https://poe.re/" target="_blank">
-          Path of Exile Regex
+          PoE 正则工具
         </a>
         {/* TODO Should add some hints for alias format */}
         {")"}
