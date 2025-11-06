@@ -25,5 +25,3 @@ dist-ssr
 
 .env
 /common/data/tree/*.json
-package-lock.json
-package-lock.json
