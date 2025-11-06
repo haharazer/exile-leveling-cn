@@ -54,8 +54,8 @@
 获取 {waypoint_get}
     #sub 沿着道路前进
 ➞ {enter|1_2_10} #织网者巢穴
-    #sub 在道路上与{waypoint}相对的一侧搜索
-➞ {arena|织网之巢}，击杀 {kill|巨蛛之母}，取得 {quest_text|马雷格罗的尖刺}
+    #sub 往{waypoint}路边对面区域探索
+➞ {arena织网之巢}，击杀 {kill|巨蛛之母}，取得 {quest_text|马雷格罗的尖刺}
     #sub 优先前往{dir|270}方向，若被阻挡则改走{dir|45}
     #sub 推荐等级：16
 {logout}
@@ -69,7 +69,7 @@
     {logout}
     {waypoint|1_2_7} #河道
     ➞ {enter|1_2_12} #湿地
-        #sub 在{waypoint}附近寻找两根石柱并沿着足迹前进
+        #sub 在{waypoint}附近寻找两根石柱并沿着足迹（碎石路）前进
     找到并击杀 {kill|裂颅巨杵欧克}，取得 {quest_text|欧克的古灵之记}
     {waypoint|1_2_9} #西部密林
         #sub 在营地入口的反方向搜索

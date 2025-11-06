@@ -25,7 +25,7 @@
 获取 {waypoint_get}
 #ifdef LEAGUE_START
     ➞ {enter|1_3_6} #黑石陵墓
-        #sub 在附近寻找
+        #sub 在传送点附近寻找
     完成 {trial}
     获取 {crafting}
 #endif
