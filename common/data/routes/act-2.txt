@@ -55,7 +55,7 @@
     #sub 沿着道路前进
 ➞ {enter|1_2_10} #织网者巢穴
     #sub 往{waypoint}路边对面区域探索
-➞ {arena织网之巢}，击杀 {kill|巨蛛之母}，取得 {quest_text|马雷格罗的尖刺}
+➞ {arena|织网之巢}，击杀 {kill|巨蛛之母}，取得 {quest_text|马雷格罗的尖刺}
     #sub 优先前往{dir|270}方向，若被阻挡则改走{dir|45}
     #sub 推荐等级：16
 {logout}
