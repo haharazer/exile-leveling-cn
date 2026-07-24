@@ -1,23 +1,30 @@
 import { ErrorFallback } from "../components/ErrorFallback";
 import { Loading } from "../components/Loading";
+import { useAutoProgress } from "../components/AutoProgress";
 import { Navbar } from "../components/Navbar";
 import { pipe } from "../utility";
 import { withBlank } from "../utility/withBlank";
 import { withScrollRestoration } from "../utility/withScrollRestoration";
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useEffect, type JSX } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../state/locale";
+import { message } from "../i18n";
 
 const RoutesContainer = pipe(
   withBlank,
-  withScrollRestoration
+  withScrollRestoration,
 )(lazy(() => import("./Routes")));
 const BuildContainer = withBlank(lazy(() => import("./Build")));
 const EditRouteContainer = withBlank(lazy(() => import("./EditRoute")));
 
 export function App() {
+  useAutoProgress();
+  const locale = useAtomValue(localeSelector);
+
   return (
     <>
       <Navbar />
@@ -27,14 +34,17 @@ export function App() {
             <Route
               path="/"
               element={
-                <Page title="流亡成长指南" component={<RoutesContainer />} />
+                <Page
+                  title={message(locale, "appTitle")}
+                  component={<RoutesContainer />}
+                />
               }
             />
             <Route
               path="/build"
               element={
                 <Page
-                  title="流亡成长指南 - BD 配置"
+                  title={message(locale, "buildTitle")}
                   component={<BuildContainer />}
                 />
               }
@@ -43,7 +53,7 @@ export function App() {
               path="/edit-route"
               element={
                 <Page
-                  title="流亡成长指南 - 路线编辑"
+                  title={message(locale, "editRouteTitle")}
                   component={<EditRouteContainer />}
                 />
               }
@@ -58,6 +68,7 @@ export function App() {
         theme={"dark"}
         pauseOnFocusLoss={false}
         pauseOnHover={false}
+        newestOnTop={true}
       />
     </>
   );
@@ -69,9 +80,11 @@ interface PageProps {
 }
 
 function Page({ title, component }: PageProps) {
+  const locale = useAtomValue(localeSelector);
   useEffect(() => {
     document.title = title;
-  }, [title]);
+    document.documentElement.lang = locale;
+  }, [locale, title]);
 
   return component;
 }

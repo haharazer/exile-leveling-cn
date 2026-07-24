@@ -1,25 +1,14 @@
-import { RouteData } from "../../../../common/route-processing/types";
 import { SplitRow } from "../SplitRow";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-
-const CLASS_LABELS: Record<string, string> = {
-  Marauder: "野蛮人",
-  Duelist: "决斗者",
-  Ranger: "游侠",
-  Shadow: "暗影",
-  Witch: "女巫",
-  Templar: "圣堂武僧",
-  Scion: "贵族",
-};
-
-const BANDIT_LABELS: Record<string, string> = {
-  None: "全部击杀",
-  'Kill All': "全部击杀",
-  Alira: "阿丽拉",
-  Kraityn: "克雷顿",
-  Oak: "欧克",
-};
+import type { RouteData } from "common";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import {
+  banditLabels,
+  characterLabels,
+  message,
+} from "../../i18n";
 
 interface BuildInfoFormProps {
   buildData: RouteData.BuildData;
@@ -27,26 +16,40 @@ interface BuildInfoFormProps {
 }
 
 export function BuildInfoForm({ buildData, onSubmit }: BuildInfoFormProps) {
+  const locale = useAtomValue(localeSelector);
   return (
     <div className={classNames(styles.form)}>
       <SplitRow
-        left={<div className={classNames(styles.label)}>职业</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "characterClass")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
-            {CLASS_LABELS[buildData.characterClass] ?? buildData.characterClass}
+            {characterLabels[locale][buildData.characterClass] ??
+              buildData.characterClass}
           </div>
         }
       />
       <SplitRow
-        left={<div className={classNames(styles.label)}>强盗选择</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "bandit")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
-            {BANDIT_LABELS[buildData.bandit] ?? buildData.bandit}
+            {banditLabels[locale][buildData.bandit] ?? buildData.bandit}
           </div>
         }
       />
       <SplitRow
-        left={<div className={classNames(styles.label)}>赛季开荒模式</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "leagueStart")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -58,13 +61,17 @@ export function BuildInfoForm({ buildData, onSubmit }: BuildInfoFormProps) {
                   leagueStart: evt.target.checked,
                 });
               }}
-              aria-label="赛季开荒模式"
+              aria-label={message(locale, "leagueStart")}
             />
           </div>
         }
       />
       <SplitRow
-        left={<div className={classNames(styles.label)}>图书馆支线</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "library")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -76,7 +83,7 @@ export function BuildInfoForm({ buildData, onSubmit }: BuildInfoFormProps) {
                   library: evt.target.checked,
                 });
               }}
-              aria-label="图书馆支线"
+              aria-label={message(locale, "library")}
             />
           </div>
         }

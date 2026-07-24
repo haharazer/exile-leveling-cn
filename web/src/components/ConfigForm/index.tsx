@@ -1,7 +1,10 @@
-import { Config } from "../../state/config";
+import type { Config } from "../../state/config";
 import { SplitRow } from "../SplitRow";
 import styles from "./styles.module.css";
 import classNames from "classnames";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
 interface ConfigFormProps {
   config: Config;
@@ -9,10 +12,15 @@ interface ConfigFormProps {
 }
 
 export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
+  const locale = useAtomValue(localeSelector);
   return (
     <div className={classNames(styles.form)}>
       <SplitRow
-        left={<div className={classNames(styles.label)}>仅显示宝石任务</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "gemsOnly")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -24,13 +32,17 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
                   gemsOnly: evt.target.checked,
                 });
               }}
-              aria-label="仅显示宝石任务"
+              aria-label={message(locale, "gemsOnly")}
             />
           </div>
         }
       />
       <SplitRow
-        left={<div className={classNames(styles.label)}>显示所有提示</div>}
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "showSubsteps")}
+          </div>
+        }
         right={
           <div className={classNames(styles.value)}>
             <input
@@ -42,7 +54,7 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
                   showSubsteps: evt.target.checked,
                 });
               }}
-              aria-label="显示提示"
+              aria-label={message(locale, "showSubsteps")}
             />
           </div>
         }

@@ -1,15 +1,19 @@
-import { SearchString } from "../../state/search-strings";
+import type { SearchString } from "../../state/search-strings";
 import { borderListStyles, interactiveStyles } from "../../styles";
 import styles from "./styles.module.css";
 import classNames from "classnames";
 import { FaRegClipboard } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
 interface SearchStringsProps {
   values: SearchString[];
 }
 
 export function SearchStrings({ values }: SearchStringsProps) {
+  const locale = useAtomValue(localeSelector);
   return (
     <div className={classNames(styles.searchStrings)}>
       {values.map((value, i) => (
@@ -23,7 +27,7 @@ export function SearchStrings({ values }: SearchStringsProps) {
           )}
           onClick={() => {
             navigator.clipboard.writeText(value.text);
-            toast.success("已复制到剪贴板");
+            toast.success(message(locale, "copied"));
           }}
         >
           <div>

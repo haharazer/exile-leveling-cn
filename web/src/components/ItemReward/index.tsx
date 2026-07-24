@@ -1,20 +1,22 @@
-import { Data } from "../../../../common/data";
-import { RouteData } from "../../../../common/route-processing/types";
 import { CopyToClipboard } from "../CopyToClipboard";
 import { GemCost } from "../GemCost";
 import { InlineFakeBlock } from "../InlineFakeBlock";
 import { SplitRow } from "../SplitRow";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { ReactNode } from "react";
+import { Data, type RouteData } from "common";
+import type { ReactNode } from "react";
 import { MdCircle } from "react-icons/md";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { gameText, message, type Locale } from "../../i18n";
 
-function ItemRewardVerb(type: ItemRewardProps["rewardType"]) {
+function ItemRewardVerb(type: ItemRewardProps["rewardType"], locale: Locale) {
   switch (type) {
     case "quest":
-      return <span>领取 </span>;
+      return <span>{message(locale, "take")}</span>;
     case "vendor":
-      return <span>购买 </span>;
+      return <span>{message(locale, "buy")}</span>;
     default:
       return <></>;
   }
@@ -28,14 +30,17 @@ interface ItemRewardProps {
 }
 
 export function ItemReward({ item, count, cost, rewardType }: ItemRewardProps) {
+  const locale = useAtomValue(localeSelector);
   return (
     <>
-      {ItemRewardVerb(rewardType)}
-      <span className={classNames(styles.default)}>{item}</span>
+      {ItemRewardVerb(rewardType, locale)}
+      <span className={classNames(styles.default)}>
+        {gameText(locale, item)}
+      </span>
       {count && count > 1 && <span> x{count}</span>}
       {rewardType === "vendor" && cost !== undefined && (
         <div className={classNames(styles.noWrap)}>
-          <span> 需要 </span>
+          <span>{message(locale, "requires")}</span>
           <InlineFakeBlock child={cost} />
         </div>
       )}
@@ -50,12 +55,13 @@ interface GemRewardProps {
 }
 
 export function GemReward({ requiredGem, count, rewardType }: GemRewardProps) {
+  const locale = useAtomValue(localeSelector);
   const gem = Data.Gems[requiredGem.id];
 
   if (!gem)
     return (
       <div className={classNames(styles.gemError)}>
-        糟糕，未找到 <b>{requiredGem.id}</b> 的宝石数据
+        {message(locale, "gemMissing")} <b>{requiredGem.id}</b>
       </div>
     );
 
@@ -68,7 +74,7 @@ export function GemReward({ requiredGem, count, rewardType }: GemRewardProps) {
             className={classNames("inlineIcon")}
           />
           <ItemReward
-            item={gem.name}
+            item={gameText(locale, gem.name)}
             cost={<GemCost gem={gem} />}
             rewardType={rewardType}
             count={count}
@@ -77,7 +83,8 @@ export function GemReward({ requiredGem, count, rewardType }: GemRewardProps) {
       }
       right={
         <div className={classNames(styles.rewardNote)}>
-          {requiredGem.note} <CopyToClipboard text={gem.name} />
+          {requiredGem.note}{" "}
+          <CopyToClipboard text={gameText(locale, gem.name)} />
         </div>
       }
     />

@@ -1,8 +1,11 @@
+import { formStyles } from "../../styles";
 import styles from "./styles.module.css";
 import classNames from "classnames";
 import { useEffect, useRef } from "react";
 import ReactModal from "react-modal";
-import { formStyles } from "../../styles";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
 ReactModal.setAppElement("#root");
 
@@ -23,7 +26,7 @@ export function Modal(props: ReactModal.Props & ModalSizeProps) {
 interface TextModalProps extends ModalSizeProps {
   label: string;
   isOpen: boolean;
-  onSubmit: (value: string | undefined) => void;
+  onSubmit: (value: string | null) => void;
   onRequestClose: () => void;
 }
 
@@ -34,10 +37,11 @@ export function TextModal({
   onRequestClose,
   size,
 }: TextModalProps) {
-  const valueRef = useRef<string>();
+  const locale = useAtomValue(localeSelector);
+  const valueRef = useRef<string>(null);
 
   useEffect(() => {
-    if (!isOpen) valueRef.current = undefined;
+    if (!isOpen) valueRef.current = null;
   }, [isOpen]);
 
   return (
@@ -62,7 +66,7 @@ export function TextModal({
               onRequestClose();
             }}
           >
-            取消
+            {message(locale, "cancel")}
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -71,7 +75,7 @@ export function TextModal({
               onSubmit(valueRef.current);
             }}
           >
-            确认
+            {message(locale, "confirm")}
           </button>
         </div>
       </div>

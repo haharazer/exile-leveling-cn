@@ -1,10 +1,16 @@
 import { formStyles } from "../../styles";
-import { UrlRewriter, fetchStringOrUrl, getRewriteUrl } from "../../utility";
+import {
+  type UrlRewriter,
+  fetchStringOrUrl,
+  getRewriteUrl,
+} from "../../utility";
 import { TextModal } from "../Modal";
-import { PobData, processPob } from "./pob";
 import classNames from "classnames";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
 const URL_REWRITERS: UrlRewriter[] = [
   (url) => {
@@ -26,6 +32,12 @@ const URL_REWRITERS: UrlRewriter[] = [
     return `pobb.in/${match[1]}/raw`;
   },
   (url) => {
+    const match = /maxroll\.gg\/poe\/pob\/(.+)$/.exec(url);
+    if (!match) return null;
+
+    return `maxroll.gg/poe/api/pob/${match[1]}`;
+  },
+  (url) => {
     const match = /youtube.com\/redirect\?.+?q=(.+?)(?:&|$)/.exec(url);
     if (!match) return null;
     const redirectUrl = decodeURIComponent(match[1]);
@@ -35,39 +47,37 @@ const URL_REWRITERS: UrlRewriter[] = [
 ];
 
 interface BuildImportFormProps {
-  onSubmit: (pobData: PobData, pobCode: string) => void;
+  onSubmit: (pobCode: string) => void;
   onReset: () => void;
 }
 
 export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const locale = useAtomValue(localeSelector);
 
   return (
     <>
       <TextModal
-        label="PoB 导入代码"
+        label={message(locale, "pobCode")}
         size="small"
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         onSubmit={(pobCodeOrUrl) =>
           toast.promise(
             async () => {
-              if (!pobCodeOrUrl) return Promise.reject("无效的 PoB 代码或链接");
+              if (!pobCodeOrUrl) return Promise.reject("invalid pobCodeOrUrl");
               const pobCode = await fetchStringOrUrl(
                 pobCodeOrUrl,
-                URL_REWRITERS
+                URL_REWRITERS,
               );
 
-              const pobData = processPob(pobCode);
-              if (!pobData) return Promise.reject("解析失败");
-
-              onSubmit(pobData, pobCode);
+              onSubmit(pobCode);
             },
             {
-              pending: "正在导入 BD",
-              success: "导入成功",
-              error: "导入失败",
-            }
+              pending: message(locale, "importingBuild"),
+              success: message(locale, "importSuccess"),
+              error: message(locale, "importFailed"),
+            },
           )
         }
       />
@@ -78,7 +88,7 @@ export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
             onReset();
           }}
         >
-          重置 BD
+          {message(locale, "reset")}
         </button>
         <button
           className={classNames(formStyles.formButton)}
@@ -86,7 +96,7 @@ export function BuildImportForm({ onSubmit, onReset }: BuildImportFormProps) {
             setIsOpen(true);
           }}
         >
-          导入 BD
+          {message(locale, "importBuild")}
         </button>
       </div>
     </>

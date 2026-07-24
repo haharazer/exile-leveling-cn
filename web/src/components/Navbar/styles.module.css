@@ -52,6 +52,38 @@
   padding: var(--size-3);
 }
 
+.localeSwitch {
+  display: inline-flex;
+  align-self: center;
+  flex-shrink: 0;
+  gap: var(--size-1);
+  min-width: 12rem;
+  margin: var(--size-1) var(--size-3);
+  padding: var(--size-1);
+  border: var(--border-width) solid var(--accent-primary);
+  border-radius: calc(var(--border-radius) * 2);
+  background-color: var(--primary);
+}
+
+.localeOption {
+  flex: 1;
+  padding: var(--size-2) var(--size-3);
+  border-radius: var(--border-radius);
+  color: var(--on-primary);
+  font-weight: var(--font-heavy);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.localeOption:hover {
+  background-color: var(--highlight-secondary);
+}
+
+.localeOption.active {
+  background-color: var(--on-secondary);
+  color: var(--primary);
+}
+
 .navIcon {
   display: block;
   box-sizing: content-box;
@@ -67,10 +99,16 @@
   top: 100%;
 }
 
-.navItems:not(.expand) > *:nth-child(n + 3) {
+.navItems:not(.expand) > *:nth-child(n + 3):not(.localeSwitch) {
   display: none;
 }
 
 .navAccordion:not(.expand) > * {
   display: none;
+}
+
+@media (max-width: 34rem) {
+  .navItems:not(.expand) > .navItem {
+    display: none;
+  }
 }
