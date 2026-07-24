@@ -1,0 +1,75 @@
+#section 第七幕
+{waypoint|2_7_town} #橋墩營地
+➞ {enter|2_7_1} #河畔斷橋
+#ifdef LEAGUE_START
+    找到并拾取 {quest_text|銀色寶盒}
+        #sub 沿着道路前进，找到损坏的{waypoint}
+#endif
+➞ {enter|2_7_2} #危機叉路
+    #sub 沿着道路前进
+获取 {waypoint_get}
+➞ {enter|2_7_3} #墮道遺跡
+    #sub 向{dir|135}方向前进
+➞ {enter|2_7_4} #靜謐陵墓
+    #sub 沿着道路前进
+#ifdef LEAGUE_START
+    完成 {trial}
+    获取 {crafting}
+#endif
+找到 {generic|大型石棺} 前往下一层
+找到并拾取 {quest_text|馬雷葛蘿的地圖}
+{logout}
+{waypoint|2_7_2} #危機叉路
+➞ {enter|2_7_5_1} #罪孽之殿：第 1 層
+    #sub 向{dir|315}方向前进
+获取 {crafting}
+获取 {waypoint_get}
+激活 {quest_text|黃金制圖儀} 并使用 {quest_text|馬雷葛蘿的地圖}
+➞ {enter|2_7_5_map} #馬雷葛蘿的書房
+➞ {arena|馬雷加羅工坊}，击杀 {kill|藝術家馬雷葛蘿}，取得 {quest_text|災厄毒液}
+    #sub 沿着地图边缘前进并穿过角落的桥
+    #sub 桥梁通常生成在对角的角落
+{logout}
+提交 {quest|a7q2} #藝術家的精髓
+#ifdef LEAGUE_START
+    提交 {quest|a7q5} #銀盒
+#endif
+{waypoint|2_7_5_1} #罪孽之殿：第 1 層
+提交 {quest|a7q3}，取得 {quest_text|黑曜之鑰} #秘密網羅
+➞ {enter|2_7_5_2} #罪孽之殿：第 2 層
+    #sub 沿着{waypoint}的方向前进
+#ifdef LEAGUE_START
+    完成 {trial}
+        #sub 找到藏在{generic|升華試煉石碑}后的机关，取得{generic|隱藏寶石：品質}
+    获取 {crafting}
+#endif
+打开 {generic|秘密通道} ➞ {enter|2_7_6} #獸穴
+➞ {enter|2_7_7} #旱木原野
+➞ {arena|森林營地}，击杀 {kill|叢林之霸古斯特}
+    #sub 向{dir|225}方向前进
+➞ {enter|2_7_8} #北部密林
+获取 {waypoint_get}
+➞ {enter|2_7_10} #堤道
+获取 {crafting}
+找到并拾取 {quest_text|奇夏拉之心}
+➞ {enter|2_7_11} #瓦爾城市
+找到 {waypoint_get}
+{waypoint|2_7_8} #北部密林
+➞ {enter|2_7_9} #驚魂樹洞
+收集7个{quest_text|螢火蟲}
+获取 {crafting}
+➞ {arena|絕望巢穴}，击杀 {kill|絕望之母葛魯斯寇}
+{portal|use}
+提交 {quest|a7q1} #裝容大師
+提交 {quest|a7q9} #絕望之后
+提交 {quest|a7q6} #奇夏拉之心
+{waypoint|Labyrinth_Airlock} #試煉者廣場
+{ascend|cruel}
+获取 {crafting|2_Labyrinth_boss_3}
+{waypoint|2_7_11} #瓦爾城市
+提交 {quest|a7q7} #點亮路途
+➞ {enter|2_7_12_1} #腐朽寺廟：第一層
+    #sub 在中央有深坑的房间，向{dir|225}或{dir|45}寻找支路，取得一件{generic|腐化傳奇物品}
+➞ {enter|2_7_12_2} #墜欲之殿 2 層
+获取 {crafting}
+➞ {arena|阿拉卡力之網}，击杀 {kill|暗影織網者阿拉卡力}

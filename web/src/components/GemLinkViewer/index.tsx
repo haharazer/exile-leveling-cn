@@ -1,16 +1,18 @@
-import { Data } from "../../../../common/data";
-import { RouteData } from "../../../../common/route-processing/types";
-import { GameData } from "../../../../common/types";
 import { formStyles } from "../../styles";
 import { GemCost } from "../GemCost";
 import { InlineFakeBlock } from "../InlineFakeBlock";
 import { SidebarTooltip } from "../SidebarTooltip";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import React from "react";
+import { Data, type RouteData } from "common";
+import React, { type JSX } from "react";
 import { useEffect, useState } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { MdCircle } from "react-icons/md";
+import flattenChildren from "react-keyed-flatten-children";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { gameText, message } from "../../i18n";
 
 interface GemLinkViewerProps {
   gemLinks: RouteData.GemLinkGroup[];
@@ -65,12 +67,12 @@ export function GemLinkViewer({ gemLinks }: GemLinkViewerProps) {
       </div>
       {activeGemLinks.length > 0 && (
         <div className={classNames(styles.gemLinkSection)}>
-          {React.Children.toArray(
+          {flattenChildren(
             activeGemLinks.map(({ primaryGems, secondaryGems }, i) => (
               <>
                 {i !== 0 && <hr />}
                 <div className={classNames(styles.gemLinkRow)}>
-                  {React.Children.toArray(
+                  {flattenChildren(
                     primaryGems.map((gem) => (
                       <GemLink
                         gemLink={gem}
@@ -79,7 +81,7 @@ export function GemLinkViewer({ gemLinks }: GemLinkViewerProps) {
                       />
                     ))
                   )}
-                  {React.Children.toArray(
+                  {flattenChildren(
                     secondaryGems.map((gem) => (
                       <GemLink
                         gemLink={gem}
@@ -105,6 +107,7 @@ interface GemLinkProps {
 }
 
 function GemLink({ gemLink, isPrimary, onTooltip }: GemLinkProps) {
+  const locale = useAtomValue(localeSelector);
   const gem = Data.Gems[gemLink.id];
   return (
     <div
@@ -120,7 +123,7 @@ function GemLink({ gemLink, isPrimary, onTooltip }: GemLinkProps) {
         color={Data.GemColours[gem.primary_attribute]}
         className={classNames("inlineIcon")}
       />
-      <span>{gem.name}</span>
+      <span>{gameText(locale, gem.name)}</span>
     </div>
   );
 }
@@ -130,6 +133,7 @@ interface GemTooltipProps {
 }
 
 function GemTooltip({ gemLink }: GemTooltipProps) {
+  const locale = useAtomValue(localeSelector);
   const gem = Data.Gems[gemLink.id];
 
   return (
@@ -141,7 +145,7 @@ function GemTooltip({ gemLink }: GemTooltipProps) {
               color={Data.GemColours[gem.primary_attribute]}
               className={classNames("inlineIcon")}
             />
-            {gem.name}
+            {gameText(locale, gem.name)}
           </span>
           <InlineFakeBlock child={<GemCost gem={gem} />} />
         </div>
@@ -152,13 +156,14 @@ function GemTooltip({ gemLink }: GemTooltipProps) {
           const quest = Data.Quests[x.questId];
           const npc = quest.reward_offers[x.rewardOfferId]?.vendor[gem.id]?.npc;
           const text = (
-            <>
+            <React.Fragment key={i}>
               {i !== 0 && <hr className={classNames(styles.questSeperator)} />}
-              <span>{quest.name}</span>
-              <span>{npc}</span>
-              <span>第{quest.act}幕</span>
-            </>
+              <span>{gameText(locale, quest.name)}</span>
+              <span>{npc && gameText(locale, npc)}</span>
+              <span>{message(locale, "act")(quest.act)}</span>
+            </React.Fragment>
           );
+
           return text;
         })}
       </div>

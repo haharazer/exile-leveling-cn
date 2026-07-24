@@ -1,0 +1,75 @@
+#section 第七幕
+{waypoint|2_7_town} #断桥营地
+➞ {enter|2_7_1} #河畔断桥
+#ifdef LEAGUE_START
+    找到并拾取 {quest_text|银色吊坠}
+        #sub 沿着道路前进，找到损坏的{waypoint}
+#endif
+➞ {enter|2_7_2} #危机叉路
+    #sub 沿着道路前进
+获取 {waypoint_get}
+➞ {enter|2_7_3} #堕道遗迹
+    #sub 向{dir|135}方向前进
+➞ {enter|2_7_4} #寂静陵墓
+    #sub 沿着道路前进
+#ifdef LEAGUE_START
+    完成 {trial}
+    获取 {crafting}
+#endif
+找到 {generic|大型石棺} 前往下一层
+找到并拾取 {quest_text|马雷格罗的地图}
+{logout}
+{waypoint|2_7_2} #危机叉路
+➞ {enter|2_7_5_1} #罪孽之殿 1 层
+    #sub 向{dir|315}方向前进
+获取 {crafting}
+获取 {waypoint_get}
+激活 {quest_text|黄金制图仪} 并使用 {quest_text|马雷格罗的地图}
+➞ {enter|2_7_5_map} #马雷格罗的藏身处
+➞ {arena|马雷加罗工坊}，击杀 {kill|奇才马雷格罗}，取得 {quest_text|灾厄毒液}
+    #sub 沿着地图边缘前进并穿过角落的桥
+    #sub 桥梁通常生成在对角的角落
+{logout}
+提交 {quest|a7q2} #马雷格罗
+#ifdef LEAGUE_START
+    提交 {quest|a7q5} #银色吊坠
+#endif
+{waypoint|2_7_5_1} #罪孽之殿 1 层
+提交 {quest|a7q3}，取得 {quest_text|黑曜石钥匙} #灾异之兆
+➞ {enter|2_7_5_2} #罪孽之殿 2 层
+    #sub 沿着{waypoint}的方向前进
+#ifdef LEAGUE_START
+    完成 {trial}
+        #sub 找到藏在{generic|升华试炼石碑}后的机关，取得{generic|隐藏宝石：品质}
+    获取 {crafting}
+#endif
+打开 {generic|秘密通道} ➞ {enter|2_7_6} #兽穴
+➞ {enter|2_7_7} #灰原
+➞ {arena|森林营地}，击杀 {kill|受拉克斯操纵的古斯特}
+    #sub 向{dir|225}方向前进
+➞ {enter|2_7_8} #北部密林
+获取 {waypoint_get}
+➞ {enter|2_7_10} #堤道
+获取 {crafting}
+找到并拾取 {quest_text|琪莎拉之星}
+➞ {enter|2_7_11} #瓦尔古城
+找到 {waypoint_get}
+{waypoint|2_7_8} #北部密林
+➞ {enter|2_7_9} #惊魂树洞
+收集7个{quest_text|萤火虫}
+获取 {crafting}
+➞ {arena|绝望巢穴}，击杀 {kill|格鲁丝克}
+{portal|use}
+提交 {quest|a7q1} #盗贼头目
+提交 {quest|a7q9} #格鲁丝克
+提交 {quest|a7q6} #琪莎拉之星
+{waypoint|Labyrinth_Airlock} #试炼者广场
+{ascend|cruel}
+获取 {crafting|2_Labyrinth_boss_3}
+{waypoint|2_7_11} #瓦尔古城
+提交 {quest|a7q7} #照亮道路
+➞ {enter|2_7_12_1} #坠欲之殿 1 层
+    #sub 在中央有深坑的房间，向{dir|225}或{dir|45}寻找支路，取得一件{generic|腐化传奇物品}
+➞ {enter|2_7_12_2} #坠欲之殿 2 层
+获取 {crafting}
+➞ {arena|阿拉卡力之网}，击杀 {kill|暗影织网者阿拉卡力}

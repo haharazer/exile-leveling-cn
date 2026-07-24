@@ -1,24 +1,28 @@
+import { useAtom } from "jotai";
 import { searchStringsAtom } from "../../state/search-strings";
 import { formStyles } from "../../styles";
 import { CodeEditor } from "../CodeEditor";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { Grammar } from "prismjs";
-import { useRecoilState } from "recoil";
+import { type Grammar } from "prismjs";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
 const SearchStringGrammar: Grammar = {
   comment: /#.*/,
 };
 
 export function SearchStringsEditor() {
-  const [searchStrings, setSearchStrings] = useRecoilState(searchStringsAtom);
+  const [searchStrings, setSearchStrings] = useAtom(searchStringsAtom);
+  const locale = useAtomValue(localeSelector);
 
   return (
     <div className={classNames(formStyles.formRow)}>
       <label>
-        搜索语法 {"("}
+        {message(locale, "searchSyntax")} {"("}
         <a href="https://poe.re/" target="_blank">
-          PoE 正则工具
+          {message(locale, "regexTool")}
         </a>
         {/* TODO Should add some hints for alias format */}
         {")"}

@@ -1,11 +1,14 @@
-import { useClearGemProgress } from "../../state/gem-progress";
-import { pobCodeAtom } from "../../state/pob-code";
+import { useAtom, useAtomValue } from "jotai";
 import { routeSelector } from "../../state/route";
 import { routeFilesSelector } from "../../state/route-files";
-import { useClearRouteProgress } from "../../state/route-progress";
-import { useClearCollapseProgress } from "../../state/section-collapse";
+import { localeSelector } from "../../state/locale";
+import {
+  localeLabels,
+  message,
+  SUPPORTED_LOCALES,
+  type Locale,
+} from "../../i18n";
 import { borderListStyles, interactiveStyles } from "../../styles";
-import { trackEvent } from "../../utility/telemetry";
 import styles from "./styles.module.css";
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
@@ -19,7 +22,8 @@ import {
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useRecoilCallback, useRecoilValue } from "recoil";
+import { RESET, useAtomCallback } from "jotai/utils";
+import { pobAtom } from "../../state/pob";
 
 interface NavbarItemProps {
   label: string;
@@ -49,27 +53,22 @@ interface NavbarProps {}
 
 export function Navbar({}: NavbarProps) {
   const [navExpand, setNavExpand] = useState<boolean>(false);
+  const [locale, setLocale] = useAtom(localeSelector);
   const navigate = useNavigate();
 
-  const clipboardRoute = useRecoilCallback(
-    ({ snapshot }) =>
-      async () => {
-        const route = await snapshot.getPromise(routeSelector);
-        const pobCode = await snapshot.getPromise(pobCodeAtom);
+  const clipboardRoute = useAtomCallback(async (get) => {
+    const route = await get(routeSelector);
+    const pobCode = get(pobAtom);
 
-        const output =
-          pobCode === null
-            ? [...route, `pob-code:none`]
-            : [...route, `pob-code:${pobCode}`];
-        navigator.clipboard.writeText(JSON.stringify(output));
-      },
-    []
-  );
-  const clearRouteProgress = useClearRouteProgress();
-  const clearGemProgress = useClearGemProgress();
-  const clearCollapseProgress = useClearCollapseProgress();
+    const output = [...route.sections, `pob-code:${pobCode ?? "none"}`];
+    navigator.clipboard.writeText(JSON.stringify(output));
+  });
 
-  const routeFiles = useRecoilValue(routeFilesSelector);
+  const reset = useAtomCallback((_get, set) => {
+    set(pobAtom, RESET);
+  });
+
+  const routeFiles = useAtomValue(routeFilesSelector);
 
   return (
     <div
@@ -84,10 +83,10 @@ export function Navbar({}: NavbarProps) {
       >
         <button onClick={() => setNavExpand(!navExpand)}>
           <FaBars
-            aria-label="菜单"
+            aria-label={message(locale, "menu")}
             className={classNames(
               styles.navIcon,
-              interactiveStyles.activePrimary
+              interactiveStyles.activePrimary,
             )}
             display="block"
           />
@@ -103,7 +102,7 @@ export function Navbar({}: NavbarProps) {
             })}
           >
             <NavbarItem
-              label="路线"
+              label={message(locale, "route")}
               expand={navExpand}
               icon={<FaMap className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -112,7 +111,7 @@ export function Navbar({}: NavbarProps) {
               }}
             />
             <NavbarItem
-              label="BD 配置"
+              label={message(locale, "build")}
               expand={navExpand}
               icon={<FaTools className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -120,7 +119,19 @@ export function Navbar({}: NavbarProps) {
                 setNavExpand(false);
               }}
             />
-            <NavAccordion label="章节目录" navExpand={navExpand}>
+            <NavbarItem
+              label={message(locale, "reset")}
+              expand={navExpand}
+              icon={<FaUndoAlt className={classNames("inlineIcon")} />}
+              onClick={() => {
+                reset();
+                setNavExpand(false);
+              }}
+            />
+            <NavAccordion
+              label={message(locale, "sections")}
+              navExpand={navExpand}
+            >
               {routeFiles.map((x, i) => (
                 <NavbarItem
                   key={i}
@@ -134,7 +145,7 @@ export function Navbar({}: NavbarProps) {
               ))}
             </NavAccordion>
             <NavbarItem
-              label="路线编辑器"
+              label={message(locale, "editRoute")}
               expand={navExpand}
               icon={<FaTools className={classNames("inlineIcon")} />}
               onClick={() => {
@@ -143,42 +154,51 @@ export function Navbar({}: NavbarProps) {
               }}
             />
             <NavbarItem
-              label="重置进度"
-              expand={navExpand}
-              icon={<FaUndoAlt className={classNames("inlineIcon")} />}
-              onClick={() => {
-                clearRouteProgress();
-                clearGemProgress();
-                clearCollapseProgress();
-
-                setNavExpand(false);
-              }}
-            />
-            <NavbarItem
-              label="导出至第三方"
+              label={message(locale, "export")}
               expand={navExpand}
               icon={<FaRegClipboard className={classNames("inlineIcon")} />}
               onClick={() => {
                 clipboardRoute();
-                trackEvent({ name: "第三方导出" });
-                toast.success("已复制到剪贴板");
+                toast.success(message(locale, "exported"));
                 setNavExpand(false);
               }}
             />
             <NavbarItem
-              label="GitHub 项目主页"
+              label={message(locale, "github")}
               expand={navExpand}
               icon={<FaGithub className={classNames("inlineIcon")} />}
               onClick={() => {
                 window
                   .open(
-                    "https://github.com/HeartofPhos/exile-leveling",
-                    "_blank"
+                    "https://github.com/haharazer/exile-leveling-cn",
+                    "_blank",
                   )
                   ?.focus();
                 setNavExpand(false);
               }}
             />
+            <div
+              className={styles.localeSwitch}
+              role="group"
+              aria-label={message(locale, "language")}
+            >
+              {SUPPORTED_LOCALES.map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  className={classNames(styles.localeOption, {
+                    [styles.active]: locale === value,
+                  })}
+                  aria-pressed={locale === value}
+                  onClick={() => {
+                    setLocale(value as Locale);
+                    setNavExpand(false);
+                  }}
+                >
+                  {localeLabels[value]}
+                </button>
+              ))}
+            </div>
           </div>
           {navExpand && <hr />}
         </div>

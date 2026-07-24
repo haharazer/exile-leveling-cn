@@ -13,10 +13,10 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Exile Leveling",
-        short_name: "Exile Leveling",
+        name: "Exile Leveling 中文版",
+        short_name: "Exile Leveling 中文",
         description:
-          "Exile Leveling is a Path of Exile leveling guide with Path of Building integration",
+          "支持简体中文与繁體中文游戏专名的 Path of Exile 升级指南",
         theme_color: "#000000",
         background_color: "#000000",
         icons: [

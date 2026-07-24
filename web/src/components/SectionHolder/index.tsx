@@ -1,10 +1,10 @@
-import { sectionCollapseSelectorFamily } from "../../state/section-collapse";
-import { TaskList, TaskListProps } from "../TaskList";
+import { useAtom } from "jotai";
+import { sectionCollapseFamily } from "../../state/section-collapse";
+import { TaskList, type TaskListProps } from "../TaskList";
 import styles from "./styles.module.css";
 import classNames from "classnames";
 import { useLayoutEffect } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import { useRecoilState } from "recoil";
 
 interface SectionHolderProps {
   name: string;
@@ -13,35 +13,33 @@ interface SectionHolderProps {
 
 export function SectionHolder({ name, items }: SectionHolderProps) {
   const sectionId = `section-${name.replace(/\s+/g, "_")}`;
-  const [collapsed, setCollapsed] = useRecoilState(
-    sectionCollapseSelectorFamily(sectionId)
-  );
+  const [collapsed, setCollapsed] = useAtom(sectionCollapseFamily(sectionId));
 
   const scrollToSection = (collapsed: boolean) => {
     if (!collapsed) return;
 
     const element = document.getElementById(sectionId);
-    if (element) element.scrollIntoView({ behavior: "auto", block: "nearest" });
+    if (element)
+      element.scrollIntoView({
+        behavior: "auto",
+        block: "nearest",
+        inline: "nearest",
+      });
   };
 
   useLayoutEffect(() => {
-    // scrollToSection after sticky positioning is applied
     scrollToSection(collapsed);
   }, [collapsed]);
 
   const icon = collapsed ? <FiChevronDown /> : <FiChevronUp />;
   return (
-    <div>
-      <div id={sectionId} className={classNames(styles.sectionbar)}>
+    <div id={sectionId}>
+      <div className={classNames(styles.sectionbar)}>
         <button
           aria-label={name}
           className={classNames(styles.header, styles.sectionbarHeader)}
           onClick={() => {
-            const updateCollapsed = !collapsed;
-            setCollapsed(updateCollapsed);
-
-            // scrollToSection before sticky positioning is applied
-            scrollToSection(updateCollapsed);
+            setCollapsed(!collapsed);
           }}
         >
           {icon}

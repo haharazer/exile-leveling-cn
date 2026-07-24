@@ -1,19 +1,20 @@
-import {
-  buildRouteSource,
-  getRouteFiles,
-} from "../../../../common/route-processing";
-import { Language } from "../../../../common/route-processing/fragment/language";
-import { RouteData } from "../../../../common/route-processing/types";
 import { formStyles } from "../../styles";
-import { UrlRewriter, fetchStringOrUrl } from "../../utility";
+import { type UrlRewriter, fetchStringOrUrl } from "../../utility";
 import { Modal, TextModal } from "../Modal";
 import { Workspace } from "./Workspace";
 import styles from "./styles.module.css";
 import classNames from "classnames";
+import { buildRouteSource, getRouteFiles } from "common";
+import type { RouteData } from "common";
 import React from "react";
 import { useEffect, useState } from "react";
 import { BiHelpCircle } from "react-icons/bi";
+import flattenChildren from "react-keyed-flatten-children";
 import { toast } from "react-toastify";
+import { FragmentDescriptionLookup } from "../../../../common/src/route-processing/fragment/language";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { gameText, message } from "../../i18n";
 
 function cloneRouteFiles(routeFiles: RouteData.RouteFile[]) {
   return routeFiles.map((x) => ({ ...x }));
@@ -39,6 +40,7 @@ export function RouteEditor({
   onSubmit,
   onReset,
 }: RouteEditorProps) {
+  const locale = useAtomValue(localeSelector);
   const [workingFiles, setWorkingFiles] = useState<RouteData.RouteFile[]>([]);
   const [importIsOpen, setImportIsOpen] = useState<boolean>(false);
   const [guideIsOpen, setGuideIsOpen] = useState<boolean>(false);
@@ -69,7 +71,7 @@ export function RouteEditor({
     <>
       <TextModal
         size="large"
-        label="导入路线文件"
+        label={message(locale, "importRoute")}
         isOpen={importIsOpen}
         onRequestClose={() => setImportIsOpen(false)}
         onSubmit={(routeOrUrl) =>
@@ -78,17 +80,17 @@ export function RouteEditor({
               if (!routeOrUrl) return;
               const routeSrc = await fetchStringOrUrl(
                 routeOrUrl,
-                URL_REWRITERS
+                URL_REWRITERS,
               );
 
               const routeFiles = getRouteFiles([routeSrc]);
               onSubmit(routeFiles);
             },
             {
-              pending: "正在导入路线",
-              success: "导入成功",
-              error: "导入失败",
-            }
+              pending: message(locale, "importingRoute"),
+              success: message(locale, "importSuccess"),
+              error: message(locale, "importFailed"),
+            },
           )
         }
       />
@@ -120,10 +122,10 @@ export function RouteEditor({
             onClick={() => {
               const routeSource = buildRouteSource(workingFiles);
               navigator.clipboard.writeText(routeSource);
-              toast.success("已复制到剪贴板");
+              toast.success(message(locale, "exported"));
             }}
           >
-            导出
+            {message(locale, "exportButton")}
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -131,7 +133,7 @@ export function RouteEditor({
               setImportIsOpen(true);
             }}
           >
-            导入
+            {message(locale, "importButton")}
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -140,7 +142,7 @@ export function RouteEditor({
               onReset();
             }}
           >
-            重置
+            {message(locale, "reset")}
           </button>
           <button
             className={classNames(formStyles.formButton)}
@@ -148,7 +150,7 @@ export function RouteEditor({
               submitWorkingFiles();
             }}
           >
-            保存
+            {message(locale, "save")}
           </button>
         </div>
       </div>
@@ -159,7 +161,7 @@ export function RouteEditor({
 
 function HelpPage() {
   const fragmentDescriptions: React.ReactNode[] = Object.entries(
-    Language.FragmentDescriptionLookup
+    FragmentDescriptionLookup,
   ).map(([key, variants], i) => (
     <React.Fragment key={key}>
       {variants.map((variant, j) => (
@@ -176,12 +178,12 @@ function HelpPage() {
             ))}
             <span className="token keyword control-flow">{"}"}</span>
             <br />
-            <span>{variant.description}</span>
+            <span>{gameText("zh-CN", variant.description)}</span>
             <br />
             {variant.parameters.map((param, j) => (
               <React.Fragment key={`variant-description-${j}`}>
                 <span className="token property">{param.name}</span>:{" "}
-                {param.description}
+                {gameText("zh-CN", param.description)}
                 <br />
               </React.Fragment>
             ))}
@@ -193,7 +195,7 @@ function HelpPage() {
 
   return (
     <div className={classNames(styles.help)}>
-      {React.Children.toArray(fragmentDescriptions)}
+      {flattenChildren(fragmentDescriptions)}
     </div>
   );
 }

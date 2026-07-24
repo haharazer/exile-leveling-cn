@@ -1,0 +1,172 @@
+#section 第二幕
+➞ {enter|1_2_1} #南部森林
+➞ {enter|1_2_town} #森林营地
+➞ {enter|1_2_2} #前哨原野
+    #sub 向{dir|45}方向前进
+#ifdef LEAGUE_START
+    找到 {area|1_2_2a}，放置 {portal|set} #兽穴
+#endif
+➞ {enter|1_2_3} #危机叉路
+    #sub 沿着道路前进
+#ifdef LEAGUE_START
+    {waypoint|1_2_town} #森林营地
+        #sub 沿着道路前进
+    使用 {portal|use}
+    ➞ {enter|1_2_2a} #兽穴
+    找到并击杀 {kill|白色巨兽}
+    {logout}
+    提交 {quest|a2q10} #白色巨兽
+    {waypoint|1_2_3} #危机叉路
+#endif
+#ifndef LEAGUE_START
+    获取 {waypoint_get}
+#endif
+➞ {enter|1_2_6_1} #罪孽之殿 1 层
+    #sub 向{dir|315}方向前进
+➞ {enter|1_2_6_2} #罪孽之殿 2 层
+    #sub 沿着{waypoint}的方向前进
+#ifdef LEAGUE_START
+    完成 {trial}
+#endif
+击杀 {kill|悼灵者费德利塔斯}，取得 {quest_text|邪影宝石}
+    #sub 寻找长走廊
+    #sub 推荐等级：14-15
+{logout}
+提交 {quest|a2q6} #黑色入侵者
+{waypoint|1_2_3} #危机叉路
+➞ {enter|1_2_15} #堕道遗迹
+    #sub 向{dir|135}方向前进
+➞ {enter|1_2_5_1} #寂静陵墓 1 楼
+    #sub 沿着道路前进
+#ifdef LEAGUE_START
+    完成 {trial}
+#endif
+➞ {enter|1_2_5_2} #寂静陵墓 2 楼
+找到 {quest_text|祭坛}，取得 {quest_text|黄金之手}
+{logout}
+提交 {quest|a2q5} #梦中圣地
+➞ {enter|1_2_7} #河道
+    #sub 向{dir|225}方向前进
+获取 {waypoint_get}
+    #sub 沿着道路前进
+➞ {enter|1_2_9} #西部密林
+    #sub 沿着道路前进
+获取 {waypoint_get}
+    #sub 沿着道路前进
+➞ {enter|1_2_10} #织网者巢穴
+    #sub 往{waypoint}路边对面区域探索
+➞ {arena|织网之巢}，击杀 {kill|巨蛛之母}，取得 {quest_text|马雷格罗的尖刺}
+    #sub 优先前往{dir|270}方向，若被阻挡则改走{dir|45}
+    #sub 推荐等级：16
+{logout}
+提交 {quest|a2q4} #清理蜘蛛
+#ifdef BANDIT_KILL
+    {waypoint|1_2_3} #危机叉路
+    ➞ {enter|1_2_4} #河畔断桥
+        #sub 向{dir|45}方向前进
+    击杀 {kill|断魂之刃克雷顿}，取得 {quest_text|克雷顿的古灵之记}
+        #sub 沿着道路前进
+    {logout}
+    {waypoint|1_2_7} #河道
+    ➞ {enter|1_2_12} #湿地
+        #sub 在{waypoint}附近寻找两根石柱并沿着足迹（碎石路）前进
+    找到并击杀 {kill|裂颅巨杵欧克}，取得 {quest_text|欧克的古灵之记}
+    {waypoint|1_2_9} #西部密林
+        #sub 在营地入口的反方向搜索
+    击杀 {kill|禁忌祭者阿莉亚}，取得 {quest_text|阿莉亚的古灵之记}
+        #sub 朝{dir|180}方向前进，寻找贴近道路的火炬
+        #sub 沿着火炬指向的路线前进
+    击杀 {kill|阿特力队长}
+        #sub 沿着道路往{dir|225}方向走
+    使用 {quest_text|奇术徽章}，激活 {quest_text|奇术封印}
+    {logout}
+    提交 {quest|a2q7}，取得 {quest_text|巨灵之印} #与盗贼们打交道
+    {waypoint|1_1_town} #狮眼守望
+    提交 {quest|a1q9} #开路先锋
+    {waypoint|1_2_12} #湿地
+    用毒杀 {quest_text|树根} ➞ {enter|1_2_11} #瓦尔废墟
+#endif
+#ifdef BANDIT_ALIRA
+    {waypoint|1_2_3} #危机叉路
+    ➞ {enter|1_2_4} #河畔断桥
+        #sub 向{dir|45}方向前进
+    击杀 {kill|断魂之刃克雷顿}，取得 {quest_text|克雷顿的古灵之记}
+        #sub 沿着道路前进
+    {logout}
+    {waypoint|1_2_7} #河道
+    ➞ {enter|1_2_12} #湿地
+        #sub 在{waypoint}附近寻找两根石柱并沿着足迹（碎石路）前进
+    找到并击杀 {kill|裂颅巨杵欧克}，取得 {quest_text|欧克的古灵之记}
+    {waypoint|1_2_9} #西部密林
+        #sub 在营地入口的反方向搜索
+    帮助 {kill|禁忌祭者阿莉亚}，取得 {quest_text|巨灵之印}
+        #sub 朝{dir|180}方向前进，寻找贴近道路的火炬
+        #sub 沿着火炬指向的路线前进
+    击杀 {kill|阿特力队长}
+        #sub 沿着道路往{dir|225}方向走
+    使用 {quest_text|奇术徽章}，激活 {quest_text|奇术封印}
+    {logout}
+    {waypoint|1_1_town} #狮眼守望
+    提交 {quest|a1q9} #开路先锋
+    {waypoint|1_2_12} #湿地
+    用毒杀 {quest_text|树根} ➞ {enter|1_2_11} #瓦尔废墟
+#endif
+#ifdef BANDIT_KRAITYN
+    {waypoint|1_2_7} #河道
+    ➞ {enter|1_2_12} #湿地
+        #sub 在{waypoint}附近寻找两根石柱并沿着足迹（碎石路）前进
+    找到并击杀 {kill|裂颅巨杵欧克}，取得 {quest_text|欧克的古灵之记}
+    {waypoint|1_2_9} #西部密林
+        #sub 在营地入口的反方向搜索
+    击杀 {kill|禁忌祭者阿莉亚}，取得 {quest_text|阿莉亚的古灵之记}
+        #sub 朝{dir|180}方向前进，寻找贴近道路的火炬
+        #sub 沿着火炬指向的路线前进
+    击杀 {kill|阿特力队长}
+        #sub 沿着道路往{dir|225}方向走
+    使用 {quest_text|奇术徽章}，激活 {quest_text|奇术封印}
+    {logout}
+    {waypoint|1_1_town} #狮眼守望
+    提交 {quest|a1q9} #开路先锋
+    {waypoint|1_2_3} #危机叉路
+    ➞ {enter|1_2_4} #河畔断桥
+        #sub 向{dir|45}方向前进
+    帮助 {kill|断魂之刃克雷顿}，取得 {quest_text|巨灵之印}
+        #sub 沿着道路前进
+    {logout}
+    {waypoint|1_2_12} #湿地
+    用毒杀 {quest_text|树根} ➞ {enter|1_2_11} #瓦尔废墟
+#endif
+#ifdef BANDIT_OAK
+    {waypoint|1_2_3} #危机叉路
+    ➞ {enter|1_2_4} #河畔断桥
+        #sub 向{dir|45}方向前进
+    击杀 {kill|断魂之刃克雷顿}，取得 {quest_text|克雷顿的古灵之记}
+        #sub 沿着道路前进
+    {logout}
+    {waypoint|1_2_9} #西部密林
+    击杀 {kill|禁忌祭者阿莉亚}，取得 {quest_text|阿莉亚的古灵之记}
+        #sub 朝{dir|180}方向前进，寻找贴近道路的火炬
+        #sub 沿着火炬指向的路线前进
+    击杀 {kill|阿特力队长}
+        #sub 沿着道路往{dir|225}方向走
+    使用 {quest_text|奇术徽章}，激活 {quest_text|奇术封印}
+    {logout}
+    {waypoint|1_1_town} #狮眼守望
+    提交 {quest|a1q9} #开路先锋
+    {waypoint|1_2_7} #河道
+    ➞ {enter|1_2_12} #湿地
+        #sub 在{waypoint}附近寻找两根石柱并沿着足迹（碎石路）前进
+    找到并协助 {kill|裂颅巨杵欧克}，取得 {quest_text|巨灵之印}
+    用毒杀 {quest_text|树根} ➞ {enter|1_2_11} #瓦尔废墟
+        #sub 在营地入口的反方向搜索
+#endif
+➞ {enter|1_2_8} #北部密林
+    #sub S形或L形通道通向出口
+➞ {enter|1_2_14_2} #洞穴
+获取 {crafting}
+➞ {enter|1_2_14_3} #古金字塔
+➞ {arena|金字塔尖顶}，击杀 {kill|瓦尔超灵}
+    #sub 一层的出口通常在三个角落之一
+    #sub 其余楼层的出口位于入口的对角线方向
+    #sub 推荐等级：20-22
+获取 {crafting}

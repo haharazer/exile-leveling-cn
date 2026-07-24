@@ -1,4 +1,4 @@
-import { GameData } from "../../../../common/types";
+import type { GameData } from "common";
 
 interface GemCostProps {
   gem: GameData.Gem;

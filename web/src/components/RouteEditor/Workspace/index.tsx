@@ -1,9 +1,9 @@
-import { RouteData } from "../../../../../common/route-processing/types";
 import { CodeEditor } from "../../CodeEditor";
 import { SelectList } from "../../SelectList";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { Grammar } from "prismjs";
+import type { RouteData } from "common";
+import type { Grammar } from "prismjs";
 import { useEffect, useRef, useState } from "react";
 
 const RouteGrammar: Grammar = {

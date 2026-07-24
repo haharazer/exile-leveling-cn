@@ -1,5 +1,5 @@
-import { SkillTree } from "../../../common/data/tree/index";
-import { RawTree } from "./types";
+import type { RawTree } from "./types.js";
+import type { SkillTree } from "common";
 
 const ANGLES_16: number[] = [
   0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330,
@@ -31,6 +31,7 @@ const ASCENDANCY_OFFSETS: Record<string, SkillTree.Coord> = {
   ["Trickster"]: { x: 10200, y: -3700 },
   ["Saboteur"]: { x: 10200, y: -2200 },
   ["Ascendant"]: { x: -7800, y: 7200 },
+  ["Reliquarian"]: { x: -7800, y: 8900 },
   ["Warden"]: { x: 8250, y: 8350 },
   ["Primalist"]: { x: 7200, y: 9400 },
   ["Warlock"]: { x: 9300, y: 7300 },
@@ -44,6 +45,7 @@ const ASCENDANCY_OFFSETS: Record<string, SkillTree.Coord> = {
   ["KingInTheMists"]: { x: 3750, y: 12000 },
   ["Olroth"]: { x: 5250, y: 12000 },
   ["Oshabi"]: { x: 6750, y: 12000 },
+  ["Necromantic"]: { x: 8250, y: 12000 },
 };
 
 const TWO_PI = Math.PI * 2;

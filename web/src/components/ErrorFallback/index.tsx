@@ -1,11 +1,15 @@
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { FallbackProps } from "react-error-boundary";
+import { type FallbackProps } from "react-error-boundary";
+import { useAtomValue } from "jotai";
+import { localeSelector } from "../../state/locale";
+import { message } from "../../i18n";
 
-export function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
+export function ErrorFallback({}: FallbackProps) {
+  const locale = useAtomValue(localeSelector);
   return (
     <span>
-      {"糟糕，似乎出现了错误。点击 "}
+      {message(locale, "errorPrefix")}
       <span
         className={classNames(styles.reset)}
         onClick={() => {
@@ -13,9 +17,9 @@ export function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
           location.reload();
         }}
       >
-        这里
+        {message(locale, "here")}
       </span>
-      {" 以尝试修复。"}
+      {message(locale, "errorSuffix")}
     </span>
   );
 }

@@ -1,7 +1,7 @@
 {
   "1_1_1": {
     "id": "1_1_1",
-    "name": "绝望岩滩",
+    "name": "The Twilight Strand",
     "map_name": null,
     "act": 1,
     "level": 1,
@@ -15,7 +15,7 @@
   },
   "1_Labyrinth_boss_3": {
     "id": "1_Labyrinth_boss_3",
-    "name": "升华试炼",
+    "name": "Aspirant's Trial",
     "map_name": null,
     "act": 3,
     "level": 33,
@@ -24,12 +24,12 @@
     "parent_town_area_id": "1_3_town",
     "connection_ids": [],
     "crafting_recipes": [
-      "全元素抗性 - 等级 1"
+      "All Resistances - Rank 1"
     ]
   },
   "2_Labyrinth_boss_3": {
     "id": "2_Labyrinth_boss_3",
-    "name": "升华试炼",
+    "name": "Aspirant's Trial",
     "map_name": null,
     "act": 3,
     "level": 55,
@@ -38,12 +38,12 @@
     "parent_town_area_id": "1_3_town",
     "connection_ids": [],
     "crafting_recipes": [
-      "双重抗性 - 等级 2"
+      "Double Resistances - Rank 2"
     ]
   },
   "3_Labyrinth_boss_3": {
     "id": "3_Labyrinth_boss_3",
-    "name": "升华试炼",
+    "name": "Aspirant's Trial",
     "map_name": null,
     "act": 3,
     "level": 68,
@@ -52,12 +52,12 @@
     "parent_town_area_id": "1_3_town",
     "connection_ids": [],
     "crafting_recipes": [
-      "双重抗性 - 等级 3"
+      "Double Resistances - Rank 3"
     ]
   },
   "EndGame_Labyrinth_boss_3": {
     "id": "EndGame_Labyrinth_boss_3",
-    "name": "升华试炼",
+    "name": "Aspirant's Trial",
     "map_name": null,
     "act": 11,
     "level": 75,
@@ -66,13 +66,13 @@
     "parent_town_area_id": "1_3_town",
     "connection_ids": [],
     "crafting_recipes": [
-      "全元素抗性 - 等级 2"
+      "All Resistances - Rank 2"
     ]
   },
   "1_1_town": {
     "id": "1_1_town",
-    "name": "狮眼守望",
-    "map_name": "狮眼守望",
+    "name": "Lioneye's Watch",
+    "map_name": "Lioneye's Watch",
     "act": 1,
     "level": 13,
     "has_waypoint": true,
@@ -86,8 +86,8 @@
   },
   "1_1_2": {
     "id": "1_1_2",
-    "name": "暮光海滩",
-    "map_name": "暮光海滩",
+    "name": "The Coast",
+    "map_name": "The Coast",
     "act": 1,
     "level": 2,
     "has_waypoint": true,
@@ -102,7 +102,7 @@
   },
   "1_1_3": {
     "id": "1_1_3",
-    "name": "炙热盐沼",
+    "name": "The Mud Flats",
     "map_name": null,
     "act": 1,
     "level": 4,
@@ -118,7 +118,7 @@
   },
   "1_1_2a": {
     "id": "1_1_2a",
-    "name": "海潮孤岛",
+    "name": "The Tidal Island",
     "map_name": null,
     "act": 1,
     "level": 3,
@@ -132,8 +132,8 @@
   },
   "1_1_4_1": {
     "id": "1_1_4_1",
-    "name": "海潮地穴",
-    "map_name": "海潮地穴",
+    "name": "The Submerged Passage",
+    "map_name": "The Submerged Passage",
     "act": 1,
     "level": 5,
     "has_waypoint": true,
@@ -142,13 +142,14 @@
     "connection_ids": [
       "1_1_3",
       "1_1_5",
+      "1_1_4_0",
       "1_1_4_0"
     ],
     "crafting_recipes": []
   },
   "1_1_3a": {
     "id": "1_1_3a",
-    "name": "恶水池",
+    "name": "The Fetid Pool",
     "map_name": null,
     "act": 1,
     "level": 5,
@@ -162,8 +163,8 @@
   },
   "1_1_5": {
     "id": "1_1_5",
-    "name": "沉寂海崖",
-    "map_name": "沉寂海崖",
+    "name": "The Ledge",
+    "map_name": "The Ledge",
     "act": 1,
     "level": 6,
     "has_waypoint": true,
@@ -177,7 +178,7 @@
   },
   "1_1_4_0": {
     "id": "1_1_4_0",
-    "name": "水声之渊",
+    "name": "The Flooded Depths",
     "map_name": null,
     "act": 1,
     "level": 6,
@@ -185,14 +186,15 @@
     "is_town_area": false,
     "parent_town_area_id": "1_1_town",
     "connection_ids": [
+      "1_1_4_1",
       "1_1_4_1"
     ],
     "crafting_recipes": []
   },
   "1_1_6": {
     "id": "1_1_6",
-    "name": "碎岩山坡",
-    "map_name": "碎岩山坡",
+    "name": "The Climb",
+    "map_name": "The Climb",
     "act": 1,
     "level": 7,
     "has_waypoint": true,
@@ -206,8 +208,8 @@
   },
   "1_1_7_1": {
     "id": "1_1_7_1",
-    "name": "禁灵之狱下层",
-    "map_name": "监狱",
+    "name": "The Lower Prison",
+    "map_name": "The Prison",
     "act": 1,
     "level": 8,
     "has_waypoint": true,
@@ -221,7 +223,7 @@
   },
   "1_1_7_2": {
     "id": "1_1_7_2",
-    "name": "禁灵之狱上层",
+    "name": "The Upper Prison",
     "map_name": null,
     "act": 1,
     "level": 9,
@@ -236,8 +238,8 @@
   },
   "1_1_8": {
     "id": "1_1_8",
-    "name": "监狱大门",
-    "map_name": "监狱大门",
+    "name": "Prisoner's Gate",
+    "map_name": "Prisoner's Gate",
     "act": 1,
     "level": 10,
     "has_waypoint": true,
@@ -252,8 +254,8 @@
   },
   "1_1_9": {
     "id": "1_1_9",
-    "name": "魅影船墓",
-    "map_name": "魅影船墓",
+    "name": "The Ship Graveyard",
+    "map_name": "The Ship Graveyard",
     "act": 1,
     "level": 11,
     "has_waypoint": true,
@@ -269,8 +271,8 @@
   },
   "1_2_9": {
     "id": "1_2_9",
-    "name": "西部密林",
-    "map_name": "西部密林",
+    "name": "The Western Forest",
+    "map_name": "The Western Forest",
     "act": 2,
     "level": 17,
     "has_waypoint": true,
@@ -285,7 +287,7 @@
   },
   "1_1_9a": {
     "id": "1_1_9a",
-    "name": "魅影船墓洞穴",
+    "name": "The Ship Graveyard Cave",
     "map_name": null,
     "act": 1,
     "level": 12,
@@ -300,8 +302,8 @@
   },
   "1_1_11_1": {
     "id": "1_1_11_1",
-    "name": "怨忿之窟",
-    "map_name": "梅薇尔洞穴",
+    "name": "The Cavern of Wrath",
+    "map_name": "Merveil's Caverns",
     "act": 1,
     "level": 12,
     "has_waypoint": true,
@@ -315,8 +317,8 @@
   },
   "1_2_7": {
     "id": "1_2_7",
-    "name": "河道",
-    "map_name": "河道",
+    "name": "The Riverways",
+    "map_name": "The Riverways",
     "act": 2,
     "level": 15,
     "has_waypoint": true,
@@ -331,7 +333,7 @@
   },
   "1_2_10": {
     "id": "1_2_10",
-    "name": "织网者巢穴",
+    "name": "The Weaver's Chambers",
     "map_name": null,
     "act": 2,
     "level": 18,
@@ -345,7 +347,7 @@
   },
   "1_1_11_2": {
     "id": "1_1_11_2",
-    "name": "怨忿之窟深处",
+    "name": "The Cavern of Anger",
     "map_name": null,
     "act": 1,
     "level": 13,
@@ -360,8 +362,8 @@
   },
   "1_2_town": {
     "id": "1_2_town",
-    "name": "森林营地",
-    "map_name": "森林营地",
+    "name": "The Forest Encampment",
+    "map_name": "The Forest Encampment",
     "act": 2,
     "level": 23,
     "has_waypoint": true,
@@ -376,8 +378,8 @@
   },
   "1_2_12": {
     "id": "1_2_12",
-    "name": "湿地",
-    "map_name": "湿地",
+    "name": "The Wetlands",
+    "map_name": "The Wetlands",
     "act": 2,
     "level": 19,
     "has_waypoint": true,
@@ -391,8 +393,8 @@
   },
   "1_2_1": {
     "id": "1_2_1",
-    "name": "南部森林",
-    "map_name": "南部森林",
+    "name": "The Southern Forest",
+    "map_name": "The Southern Forest",
     "act": 2,
     "level": 13,
     "has_waypoint": true,
@@ -406,7 +408,7 @@
   },
   "1_2_2": {
     "id": "1_2_2",
-    "name": "前哨原野",
+    "name": "The Old Fields",
     "map_name": null,
     "act": 2,
     "level": 14,
@@ -423,7 +425,7 @@
   },
   "1_2_11": {
     "id": "1_2_11",
-    "name": "瓦尔废墟",
+    "name": "The Vaal Ruins",
     "map_name": null,
     "act": 2,
     "level": 20,
@@ -438,7 +440,7 @@
   },
   "1_2_2a": {
     "id": "1_2_2a",
-    "name": "兽穴",
+    "name": "The Den",
     "map_name": null,
     "act": 2,
     "level": 15,
@@ -453,8 +455,8 @@
   },
   "1_2_3": {
     "id": "1_2_3",
-    "name": "危机叉路",
-    "map_name": "危机叉路",
+    "name": "The Crossroads",
+    "map_name": "The Crossroads",
     "act": 2,
     "level": 15,
     "has_waypoint": true,
@@ -470,8 +472,8 @@
   },
   "1_2_8": {
     "id": "1_2_8",
-    "name": "北部密林",
-    "map_name": "北部密林",
+    "name": "The Northern Forest",
+    "map_name": "The Northern Forest",
     "act": 2,
     "level": 21,
     "has_waypoint": true,
@@ -486,8 +488,8 @@
   },
   "1_2_4": {
     "id": "1_2_4",
-    "name": "河畔断桥",
-    "map_name": "河畔断桥",
+    "name": "The Broken Bridge",
+    "map_name": "The Broken Bridge",
     "act": 2,
     "level": 16,
     "has_waypoint": true,
@@ -500,7 +502,7 @@
   },
   "1_2_15": {
     "id": "1_2_15",
-    "name": "堕道遗迹",
+    "name": "The Fellshrine Ruins",
     "map_name": null,
     "act": 2,
     "level": 16,
@@ -515,8 +517,8 @@
   },
   "1_2_6_1": {
     "id": "1_2_6_1",
-    "name": "罪孽之殿 1 层",
-    "map_name": "罪恶之室",
+    "name": "The Chamber of Sins Level 1",
+    "map_name": "The Chamber of Sins",
     "act": 2,
     "level": 15,
     "has_waypoint": true,
@@ -530,7 +532,7 @@
   },
   "1_2_13": {
     "id": "1_2_13",
-    "name": "惊魂树洞",
+    "name": "The Dread Thicket",
     "map_name": null,
     "act": 2,
     "level": 21,
@@ -544,8 +546,8 @@
   },
   "1_2_14_2": {
     "id": "1_2_14_2",
-    "name": "洞穴",
-    "map_name": "洞穴",
+    "name": "The Caverns",
+    "map_name": "The Caverns",
     "act": 2,
     "level": 22,
     "has_waypoint": true,
@@ -556,13 +558,13 @@
       "1_2_14_3"
     ],
     "crafting_recipes": [
-      "瓦尔技能伤害 - 等级 1"
+      "Vaal Skill Damage - Rank 1"
     ]
   },
   "1_2_5_1": {
     "id": "1_2_5_1",
-    "name": "寂静陵墓 1 楼",
-    "map_name": "寂静陵墓",
+    "name": "The Crypt Level 1",
+    "map_name": "The Crypt",
     "act": 2,
     "level": 17,
     "has_waypoint": true,
@@ -576,7 +578,7 @@
   },
   "1_2_6_2": {
     "id": "1_2_6_2",
-    "name": "罪孽之殿 2 层",
+    "name": "The Chamber of Sins Level 2",
     "map_name": null,
     "act": 2,
     "level": 16,
@@ -590,7 +592,7 @@
   },
   "1_2_14_3": {
     "id": "1_2_14_3",
-    "name": "古金字塔",
+    "name": "The Ancient Pyramid",
     "map_name": null,
     "act": 2,
     "level": 23,
@@ -602,12 +604,12 @@
       "1_3_1"
     ],
     "crafting_recipes": [
-      "法术伤害 - 等级 1"
+      "Spell Damage - Rank 1"
     ]
   },
   "1_2_5_2": {
     "id": "1_2_5_2",
-    "name": "寂静陵墓 2 楼",
+    "name": "The Crypt Level 2",
     "map_name": null,
     "act": 2,
     "level": 18,
@@ -621,8 +623,8 @@
   },
   "1_3_1": {
     "id": "1_3_1",
-    "name": "萨恩城废墟",
-    "map_name": "萨恩城废墟",
+    "name": "The City of Sarn",
+    "map_name": "The City of Sarn",
     "act": 3,
     "level": 23,
     "has_waypoint": true,
@@ -633,13 +635,13 @@
       "1_3_town"
     ],
     "crafting_recipes": [
-      "移动速度 - 等级 1"
+      "Movement Speed - Rank 1"
     ]
   },
   "1_3_town": {
     "id": "1_3_town",
-    "name": "萨恩营地",
-    "map_name": "萨恩营地",
+    "name": "The Sarn Encampment",
+    "map_name": "The Sarn Encampment",
     "act": 3,
     "level": 33,
     "has_waypoint": true,
@@ -655,7 +657,7 @@
   },
   "1_3_2": {
     "id": "1_3_2",
-    "name": "贫民窟",
+    "name": "The Slums",
     "map_name": null,
     "act": 3,
     "level": 24,
@@ -671,7 +673,7 @@
   },
   "ffa1_1": {
     "id": "ffa1_1",
-    "name": "萨恩竞技场",
+    "name": "Sarn Arena",
     "map_name": null,
     "act": 3,
     "level": 36,
@@ -683,7 +685,7 @@
   },
   "Labyrinth_Airlock": {
     "id": "Labyrinth_Airlock",
-    "name": "试炼者广场",
+    "name": "Aspirants' Plaza",
     "map_name": null,
     "act": 3,
     "level": 33,
@@ -698,8 +700,8 @@
   },
   "1_3_3_1": {
     "id": "1_3_3_1",
-    "name": "火葬场",
-    "map_name": "火葬场",
+    "name": "The Crematorium",
+    "map_name": "The Crematorium",
     "act": 3,
     "level": 25,
     "has_waypoint": true,
@@ -709,13 +711,13 @@
       "1_3_2"
     ],
     "crafting_recipes": [
-      "防御数值 - 等级 1"
+      "Defences - Rank 1"
     ]
   },
   "1_3_10_1": {
     "id": "1_3_10_1",
-    "name": "下水道",
-    "map_name": "下水道",
+    "name": "The Sewers",
+    "map_name": "The Sewers",
     "act": 3,
     "level": 26,
     "has_waypoint": true,
@@ -727,13 +729,13 @@
       "1_3_13"
     ],
     "crafting_recipes": [
-      "物理伤害 - 等级 1"
+      "Physical Damage - Rank 1"
     ]
   },
   "2_8_town": {
     "id": "2_8_town",
-    "name": "萨恩营地",
-    "map_name": "萨恩营地",
+    "name": "The Sarn Encampment",
+    "map_name": "The Sarn Encampment",
     "act": 8,
     "level": 60,
     "has_waypoint": true,
@@ -749,8 +751,8 @@
   },
   "1_3_5": {
     "id": "1_3_5",
-    "name": "市集地带",
-    "map_name": "市集地带",
+    "name": "The Marketplace",
+    "map_name": "The Marketplace",
     "act": 3,
     "level": 26,
     "has_waypoint": true,
@@ -765,8 +767,8 @@
   },
   "1_3_13": {
     "id": "1_3_13",
-    "name": "乌旗守卫兵营",
-    "map_name": "乌旗守卫兵营",
+    "name": "The Ebony Barracks",
+    "map_name": "The Ebony Barracks",
     "act": 3,
     "level": 29,
     "has_waypoint": true,
@@ -781,8 +783,8 @@
   },
   "2_8_1": {
     "id": "2_8_1",
-    "name": "奇迹之墙",
-    "map_name": "奇迹之墙",
+    "name": "The Sarn Ramparts",
+    "map_name": "The Sarn Ramparts",
     "act": 8,
     "level": 55,
     "has_waypoint": true,
@@ -796,7 +798,7 @@
   },
   "2_8_2_1": {
     "id": "2_8_2_1",
-    "name": "剧毒管道",
+    "name": "The Toxic Conduits",
     "map_name": null,
     "act": 8,
     "level": 56,
@@ -811,7 +813,7 @@
   },
   "ffa3_1": {
     "id": "ffa3_1",
-    "name": "萨恩竞技场",
+    "name": "Sarn Arena",
     "map_name": null,
     "act": 3,
     "level": 68,
@@ -823,7 +825,7 @@
   },
   "1_3_6": {
     "id": "1_3_6",
-    "name": "黑石陵墓",
+    "name": "The Catacombs",
     "map_name": null,
     "act": 3,
     "level": 27,
@@ -834,13 +836,13 @@
       "1_3_5"
     ],
     "crafting_recipes": [
-      "攻击附加元素伤害 - 等级 1"
+      "Elemental Damage with Attacks - Rank 1"
     ]
   },
   "1_3_7": {
     "id": "1_3_7",
-    "name": "激战广场",
-    "map_name": "激战广场",
+    "name": "The Battlefront",
+    "map_name": "The Battlefront",
     "act": 3,
     "level": 27,
     "has_waypoint": true,
@@ -855,8 +857,8 @@
   },
   "1_3_14_1": {
     "id": "1_3_14_1",
-    "name": "月影神殿 1 层",
-    "map_name": "月神殿",
+    "name": "The Lunaris Temple Level 1",
+    "map_name": "The Lunaris Temple",
     "act": 3,
     "level": 29,
     "has_waypoint": true,
@@ -870,8 +872,8 @@
   },
   "1_3_15": {
     "id": "1_3_15",
-    "name": "皇家花园",
-    "map_name": "皇家花园",
+    "name": "The Imperial Gardens",
+    "map_name": "The Imperial Gardens",
     "act": 3,
     "level": 30,
     "has_waypoint": true,
@@ -883,12 +885,12 @@
       "1_3_18_1"
     ],
     "crafting_recipes": [
-      "全属性 - 等级 1"
+      "All Attributes - Rank 1"
     ]
   },
   "2_7_12_2": {
     "id": "2_7_12_2",
-    "name": "坠欲之殿 2 层",
+    "name": "The Temple of Decay Level 2",
     "map_name": null,
     "act": 7,
     "level": 55,
@@ -900,13 +902,13 @@
       "2_8_1"
     ],
     "crafting_recipes": [
-      "混沌伤害 - 等级 1"
+      "Chaos Damage - Rank 1"
     ]
   },
   "2_8_2_2": {
     "id": "2_8_2_2",
-    "name": "德瑞的污水坑",
-    "map_name": "剧毒管道",
+    "name": "Doedre's Cesspool",
+    "map_name": "The Toxic Conduits",
     "act": 8,
     "level": 56,
     "has_waypoint": true,
@@ -918,13 +920,13 @@
       "2_8_8"
     ],
     "crafting_recipes": [
-      "元素抗性 - 等级 3"
+      "Elemental Resistances - Rank 3"
     ]
   },
   "1_3_8_1": {
     "id": "1_3_8_1",
-    "name": "日耀神殿 1 层",
-    "map_name": "日耀神殿 1 层",
+    "name": "The Solaris Temple Level 1",
+    "map_name": "The Solaris Temple Level 1",
     "act": 3,
     "level": 27,
     "has_waypoint": true,
@@ -938,8 +940,8 @@
   },
   "1_3_9": {
     "id": "1_3_9",
-    "name": "不朽海港",
-    "map_name": "不朽海港",
+    "name": "The Docks",
+    "map_name": "The Docks",
     "act": 3,
     "level": 29,
     "has_waypoint": true,
@@ -952,7 +954,7 @@
   },
   "1_3_14_2": {
     "id": "1_3_14_2",
-    "name": "月影神殿 2 层",
+    "name": "The Lunaris Temple Level 2",
     "map_name": null,
     "act": 3,
     "level": 30,
@@ -963,13 +965,13 @@
       "1_3_14_1"
     ],
     "crafting_recipes": [
-      "闪电伤害 - 等级 1"
+      "Lightning Damage - Rank 1"
     ]
   },
   "1_3_17_1": {
     "id": "1_3_17_1",
-    "name": "图书馆",
-    "map_name": "图书馆",
+    "name": "The Library",
+    "map_name": "The Library",
     "act": 3,
     "level": 30,
     "has_waypoint": true,
@@ -983,8 +985,8 @@
   },
   "1_3_18_1": {
     "id": "1_3_18_1",
-    "name": "神权之塔",
-    "map_name": "神权之塔",
+    "name": "The Sceptre of God",
+    "map_name": "The Sceptre of God",
     "act": 3,
     "level": 32,
     "has_waypoint": true,
@@ -998,7 +1000,7 @@
   },
   "2_7_12_1": {
     "id": "2_7_12_1",
-    "name": "坠欲之殿 1 层",
+    "name": "The Temple of Decay Level 1",
     "map_name": null,
     "act": 7,
     "level": 54,
@@ -1013,7 +1015,7 @@
   },
   "2_8_3": {
     "id": "2_8_3",
-    "name": "月色回廊",
+    "name": "The Grand Promenade",
     "map_name": null,
     "act": 8,
     "level": 56,
@@ -1028,7 +1030,7 @@
   },
   "2_8_8": {
     "id": "2_8_8",
-    "name": "中转码头",
+    "name": "The Quay",
     "map_name": null,
     "act": 8,
     "level": 57,
@@ -1043,8 +1045,8 @@
   },
   "1_3_8_2": {
     "id": "1_3_8_2",
-    "name": "日耀神殿 2 层",
-    "map_name": "日耀神殿 2 层",
+    "name": "The Solaris Temple Level 2",
+    "map_name": "The Solaris Temple Level 2",
     "act": 3,
     "level": 28,
     "has_waypoint": true,
@@ -1054,12 +1056,12 @@
       "1_3_8_1"
     ],
     "crafting_recipes": [
-      "火焰伤害 - 等级 1"
+      "Fire Damage - Rank 1"
     ]
   },
   "1_3_17_2": {
     "id": "1_3_17_2",
-    "name": "档案室",
+    "name": "The Archives",
     "map_name": null,
     "act": 3,
     "level": 31,
@@ -1070,12 +1072,12 @@
       "1_3_17_1"
     ],
     "crafting_recipes": [
-      "生命与魔力回复 - 等级 1"
+      "Life and Mana Regeneration - Rank 1"
     ]
   },
   "1_3_18_2": {
     "id": "1_3_18_2",
-    "name": "上层神权之塔",
+    "name": "The Upper Sceptre of God",
     "map_name": null,
     "act": 3,
     "level": 33,
@@ -1090,8 +1092,8 @@
   },
   "2_7_11": {
     "id": "2_7_11",
-    "name": "瓦尔古城",
-    "map_name": "瓦尔古城",
+    "name": "The Vaal City",
+    "map_name": "The Vaal City",
     "act": 7,
     "level": 54,
     "has_waypoint": true,
@@ -1105,8 +1107,8 @@
   },
   "2_8_5": {
     "id": "2_8_5",
-    "name": "古兵工厂",
-    "map_name": "古兵工厂",
+    "name": "The Bath House",
+    "map_name": "The Bath House",
     "act": 8,
     "level": 57,
     "has_waypoint": true,
@@ -1119,13 +1121,13 @@
       "2_8_14"
     ],
     "crafting_recipes": [
-      "药剂持续时间 - 等级 1"
+      "Flask Duration - Rank 1"
     ]
   },
   "2_8_9": {
     "id": "2_8_9",
-    "name": "稻穗之门",
-    "map_name": "稻穗之门",
+    "name": "The Grain Gate",
+    "map_name": "The Grain Gate",
     "act": 8,
     "level": 57,
     "has_waypoint": true,
@@ -1140,8 +1142,8 @@
   },
   "1_4_1": {
     "id": "1_4_1",
-    "name": "水道遗迹",
-    "map_name": "水道遗迹",
+    "name": "The Aqueduct",
+    "map_name": "The Aqueduct",
     "act": 4,
     "level": 33,
     "has_waypoint": true,
@@ -1155,8 +1157,8 @@
   },
   "2_7_10": {
     "id": "2_7_10",
-    "name": "堤道",
-    "map_name": "堤道",
+    "name": "The Causeway",
+    "map_name": "The Causeway",
     "act": 7,
     "level": 54,
     "has_waypoint": true,
@@ -1167,13 +1169,13 @@
       "2_7_11"
     ],
     "crafting_recipes": [
-      "冰霜伤害 - 等级 2"
+      "Cold Damage - Rank 2"
     ]
   },
   "2_8_6": {
     "id": "2_8_6",
-    "name": "月影广场",
-    "map_name": "月影广场",
+    "name": "The Lunaris Concourse",
+    "map_name": "The Lunaris Concourse",
     "act": 8,
     "level": 58,
     "has_waypoint": true,
@@ -1188,7 +1190,7 @@
   },
   "2_8_4": {
     "id": "2_8_4",
-    "name": "贵族花园",
+    "name": "The High Gardens",
     "map_name": null,
     "act": 8,
     "level": 58,
@@ -1202,7 +1204,7 @@
   },
   "2_8_14": {
     "id": "2_8_14",
-    "name": "隐蔽底港",
+    "name": "The Hidden Underbelly",
     "map_name": null,
     "act": 8,
     "level": 58,
@@ -1218,8 +1220,8 @@
   },
   "2_8_10": {
     "id": "2_8_10",
-    "name": "帝国平原",
-    "map_name": "帝国平原",
+    "name": "The Imperial Fields",
+    "map_name": "The Imperial Fields",
     "act": 8,
     "level": 58,
     "has_waypoint": true,
@@ -1233,8 +1235,8 @@
   },
   "1_4_town": {
     "id": "1_4_town",
-    "name": "统治者之殿",
-    "map_name": "统治者之殿",
+    "name": "Highgate",
+    "map_name": "Highgate",
     "act": 4,
     "level": 40,
     "has_waypoint": true,
@@ -1250,8 +1252,8 @@
   },
   "2_7_8": {
     "id": "2_7_8",
-    "name": "北部密林",
-    "map_name": "北部密林",
+    "name": "The Northern Forest",
+    "map_name": "The Northern Forest",
     "act": 7,
     "level": 53,
     "has_waypoint": true,
@@ -1266,8 +1268,8 @@
   },
   "2_8_7_1_": {
     "id": "2_8_7_1_",
-    "name": "月影神殿 1 层",
-    "map_name": "月神殿",
+    "name": "The Lunaris Temple Level 1",
+    "map_name": "The Lunaris Temple",
     "act": 8,
     "level": 59,
     "has_waypoint": true,
@@ -1281,7 +1283,7 @@
   },
   "2_8_13": {
     "id": "2_8_13",
-    "name": "港湾大桥",
+    "name": "The Harbour Bridge",
     "map_name": null,
     "act": 8,
     "level": 60,
@@ -1298,8 +1300,8 @@
   },
   "2_8_11": {
     "id": "2_8_11",
-    "name": "日耀广场",
-    "map_name": "日耀广场",
+    "name": "The Solaris Concourse",
+    "map_name": "The Solaris Concourse",
     "act": 8,
     "level": 58,
     "has_waypoint": true,
@@ -1315,8 +1317,8 @@
   },
   "2_8_12_1": {
     "id": "2_8_12_1",
-    "name": "日耀神殿 1 层",
-    "map_name": "日神殿",
+    "name": "The Solaris Temple Level 1",
+    "map_name": "The Solaris Temple",
     "act": 8,
     "level": 59,
     "has_waypoint": true,
@@ -1331,7 +1333,7 @@
   },
   "1_4_2": {
     "id": "1_4_2",
-    "name": "干涸湖岸",
+    "name": "The Dried Lake",
     "map_name": null,
     "act": 4,
     "level": 34,
@@ -1342,12 +1344,12 @@
       "1_4_town"
     ],
     "crafting_recipes": [
-      "攻击、施法与战吼速度 - 等级 1"
+      "Attack, Cast and Warcry Speed - Rank 1"
     ]
   },
   "1_4_3_1": {
     "id": "1_4_3_1",
-    "name": "漆黑矿坑:第 1 层",
+    "name": "The Mines Level 1",
     "map_name": null,
     "act": 4,
     "level": 34,
@@ -1359,12 +1361,12 @@
       "1_4_3_2"
     ],
     "crafting_recipes": [
-      "插槽颜色"
+      "Socket Colours"
     ]
   },
   "1_4_7": {
     "id": "1_4_7",
-    "name": "奥瑞亚之道",
+    "name": "The Ascent",
     "map_name": null,
     "act": 4,
     "level": 40,
@@ -1376,13 +1378,13 @@
       "1_5_1"
     ],
     "crafting_recipes": [
-      "异常、晕眩与诅咒减免 - 等级 1"
+      "Ailment, Stun and Curse Mitigation - Rank 1"
     ]
   },
   "2_7_7": {
     "id": "2_7_7",
-    "name": "灰原",
-    "map_name": "灰原",
+    "name": "The Ashen Fields",
+    "map_name": "The Ashen Fields",
     "act": 7,
     "level": 53,
     "has_waypoint": true,
@@ -1396,7 +1398,7 @@
   },
   "2_7_9": {
     "id": "2_7_9",
-    "name": "惊魂树洞",
+    "name": "The Dread Thicket",
     "map_name": null,
     "act": 7,
     "level": 53,
@@ -1407,12 +1409,12 @@
       "2_7_8"
     ],
     "crafting_recipes": [
-      "火焰伤害 - 等级 2"
+      "Fire Damage - Rank 2"
     ]
   },
   "2_8_7_2": {
     "id": "2_8_7_2",
-    "name": "月影神殿 2 层",
+    "name": "The Lunaris Temple Level 2",
     "map_name": null,
     "act": 8,
     "level": 59,
@@ -1423,13 +1425,13 @@
       "2_8_7_1_"
     ],
     "crafting_recipes": [
-      "召唤生物 - 等级 1"
+      "Minions - Rank 1"
     ]
   },
   "2_9_1": {
     "id": "2_9_1",
-    "name": "赤红通道",
-    "map_name": "赤红通道",
+    "name": "The Blood Aqueduct",
+    "map_name": "The Blood Aqueduct",
     "act": 9,
     "level": 61,
     "has_waypoint": true,
@@ -1443,7 +1445,7 @@
   },
   "2_8_12_2": {
     "id": "2_8_12_2",
-    "name": "日耀神殿 2 层",
+    "name": "The Solaris Temple Level 2",
     "map_name": null,
     "act": 8,
     "level": 59,
@@ -1454,12 +1456,12 @@
       "2_8_12_1"
     ],
     "crafting_recipes": [
-      "陷阱与地雷 - 等级 1"
+      "Traps and Mines - Rank 1"
     ]
   },
   "1_4_3_2": {
     "id": "1_4_3_2",
-    "name": "漆黑矿坑:第 2 层",
+    "name": "The Mines Level 2",
     "map_name": null,
     "act": 4,
     "level": 35,
@@ -1474,8 +1476,8 @@
   },
   "1_5_1": {
     "id": "1_5_1",
-    "name": "奴隶深坑",
-    "map_name": "奴隶深坑",
+    "name": "The Slave Pens",
+    "map_name": "The Slave Pens",
     "act": 5,
     "level": 41,
     "has_waypoint": true,
@@ -1489,8 +1491,8 @@
   },
   "2_7_6": {
     "id": "2_7_6",
-    "name": "兽穴",
-    "map_name": "兽穴",
+    "name": "The Den",
+    "map_name": "The Den",
     "act": 7,
     "level": 53,
     "has_waypoint": true,
@@ -1504,8 +1506,8 @@
   },
   "2_9_town": {
     "id": "2_9_town",
-    "name": "统治者之殿",
-    "map_name": "统治者之殿",
+    "name": "Highgate",
+    "map_name": "Highgate",
     "act": 9,
     "level": 67,
     "has_waypoint": true,
@@ -1519,8 +1521,8 @@
   },
   "1_4_3_3": {
     "id": "1_4_3_3",
-    "name": "水晶矿脉",
-    "map_name": "水晶矿脉",
+    "name": "The Crystal Veins",
+    "map_name": "The Crystal Veins",
     "act": 4,
     "level": 36,
     "has_waypoint": true,
@@ -1533,13 +1535,13 @@
       "1_4_6_1"
     ],
     "crafting_recipes": [
-      "冰霜伤害 - 等级 1"
+      "Cold Damage - Rank 1"
     ]
   },
   "1_5_town": {
     "id": "1_5_town",
-    "name": "狱卒之塔",
-    "map_name": "狱卒之塔",
+    "name": "Overseer's Tower",
+    "map_name": "Overseer's Tower",
     "act": 5,
     "level": 45,
     "has_waypoint": true,
@@ -1553,7 +1555,7 @@
   },
   "2_7_5_2": {
     "id": "2_7_5_2",
-    "name": "罪孽之殿 2 层",
+    "name": "The Chamber of Sins Level 2",
     "map_name": null,
     "act": 7,
     "level": 52,
@@ -1565,12 +1567,12 @@
       "2_7_6"
     ],
     "crafting_recipes": [
-      "魔力回复 - 等级 1"
+      "Mana Regen - Rank 1"
     ]
   },
   "2_9_2": {
     "id": "2_9_2",
-    "name": "斜坡",
+    "name": "The Descent",
     "map_name": null,
     "act": 9,
     "level": 61,
@@ -1585,7 +1587,7 @@
   },
   "1_4_4_1": {
     "id": "1_4_4_1",
-    "name": "冈姆的幻境",
+    "name": "Kaom's Dream",
     "map_name": null,
     "act": 4,
     "level": 37,
@@ -1600,7 +1602,7 @@
   },
   "1_4_5_1": {
     "id": "1_4_5_1",
-    "name": "德瑞索的幻境",
+    "name": "Daresso's Dream",
     "map_name": null,
     "act": 4,
     "level": 37,
@@ -1615,7 +1617,7 @@
   },
   "1_4_6_1": {
     "id": "1_4_6_1",
-    "name": "巨兽沼泽 1 层",
+    "name": "The Belly of the Beast Level 1",
     "map_name": null,
     "act": 4,
     "level": 38,
@@ -1630,7 +1632,7 @@
   },
   "1_5_2": {
     "id": "1_5_2",
-    "name": "控制区",
+    "name": "The Control Blocks",
     "map_name": null,
     "act": 5,
     "level": 41,
@@ -1646,8 +1648,8 @@
   },
   "2_7_5_1": {
     "id": "2_7_5_1",
-    "name": "罪孽之殿 1 层",
-    "map_name": "罪恶之室",
+    "name": "The Chamber of Sins Level 1",
+    "map_name": "The Chamber of Sins",
     "act": 7,
     "level": 52,
     "has_waypoint": true,
@@ -1659,13 +1661,13 @@
       "2_7_5_map"
     ],
     "crafting_recipes": [
-      "闪电伤害 - 等级 2"
+      "Lightning Damage - Rank 2"
     ]
   },
   "2_9_3": {
     "id": "2_9_3",
-    "name": "贫瘠之地",
-    "map_name": "贫瘠之地",
+    "name": "The Vastiri Desert",
+    "map_name": "The Vastiri Desert",
     "act": 9,
     "level": 61,
     "has_waypoint": true,
@@ -1677,13 +1679,13 @@
       "2_9_5"
     ],
     "crafting_recipes": [
-      "攻击与施法速度 - 等级 2"
+      "Attack and Cast Speed - Rank 2"
     ]
   },
   "1_4_4_3": {
     "id": "1_4_4_3",
-    "name": "冈姆的堡垒",
-    "map_name": "冈姆的堡垒",
+    "name": "Kaom's Stronghold",
+    "map_name": "Kaom's Stronghold",
     "act": 4,
     "level": 38,
     "has_waypoint": true,
@@ -1693,13 +1695,13 @@
       "1_4_4_1"
     ],
     "crafting_recipes": [
-      "插槽链接 - 2 至 4 连结"
+      "Socket Links - 2 to 4 Linked Sockets"
     ]
   },
   "1_4_5_2": {
     "id": "1_4_5_2",
-    "name": "大竞技场",
-    "map_name": "大竞技场",
+    "name": "The Grand Arena",
+    "map_name": "The Grand Arena",
     "act": 4,
     "level": 38,
     "has_waypoint": true,
@@ -1709,12 +1711,12 @@
       "1_4_5_1"
     ],
     "crafting_recipes": [
-      "插槽数量 - 2 至 4 格"
+      "Socket Numbers - 2 to 4 Sockets"
     ]
   },
   "1_4_6_2": {
     "id": "1_4_6_2",
-    "name": "巨兽沼泽 2 层",
+    "name": "The Belly of the Beast Level 2",
     "map_name": null,
     "act": 4,
     "level": 39,
@@ -1726,13 +1728,13 @@
       "1_4_6_3"
     ],
     "crafting_recipes": [
-      "元素抗性 - 等级 2"
+      "Elemental Resistances - Rank 2"
     ]
   },
   "1_5_3": {
     "id": "1_5_3",
-    "name": "奥瑞亚广场",
-    "map_name": "奥瑞亚广场",
+    "name": "Oriath Square",
+    "map_name": "Oriath Square",
     "act": 5,
     "level": 42,
     "has_waypoint": true,
@@ -1746,8 +1748,8 @@
   },
   "2_7_2": {
     "id": "2_7_2",
-    "name": "危机叉路",
-    "map_name": "危机叉路",
+    "name": "The Crossroads",
+    "map_name": "The Crossroads",
     "act": 7,
     "level": 51,
     "has_waypoint": true,
@@ -1762,7 +1764,7 @@
   },
   "2_7_5_map": {
     "id": "2_7_5_map",
-    "name": "马雷格罗的藏身处",
+    "name": "Maligaro's Sanctum",
     "map_name": null,
     "act": 7,
     "level": 52,
@@ -1776,7 +1778,7 @@
   },
   "2_9_4": {
     "id": "2_9_4",
-    "name": "绿洲",
+    "name": "The Oasis",
     "map_name": null,
     "act": 9,
     "level": 61,
@@ -1790,8 +1792,8 @@
   },
   "2_9_5": {
     "id": "2_9_5",
-    "name": "巨石丘陵",
-    "map_name": "巨石丘陵",
+    "name": "The Foothills",
+    "map_name": "The Foothills",
     "act": 9,
     "level": 62,
     "has_waypoint": true,
@@ -1806,8 +1808,8 @@
   },
   "1_4_6_3": {
     "id": "1_4_6_3",
-    "name": "收割者",
-    "map_name": "收割者",
+    "name": "The Harvest",
+    "map_name": "The Harvest",
     "act": 4,
     "level": 40,
     "has_waypoint": true,
@@ -1821,8 +1823,8 @@
   },
   "1_5_4": {
     "id": "1_5_4",
-    "name": "圣堂高庭",
-    "map_name": "圣堂高庭",
+    "name": "The Templar Courts",
+    "map_name": "The Templar Courts",
     "act": 5,
     "level": 42,
     "has_waypoint": true,
@@ -1836,7 +1838,7 @@
   },
   "2_7_1": {
     "id": "2_7_1",
-    "name": "河畔断桥",
+    "name": "The Broken Bridge",
     "map_name": null,
     "act": 7,
     "level": 50,
@@ -1851,7 +1853,7 @@
   },
   "2_7_3": {
     "id": "2_7_3",
-    "name": "堕道遗迹",
+    "name": "The Fellshrine Ruins",
     "map_name": null,
     "act": 7,
     "level": 51,
@@ -1867,7 +1869,7 @@
   },
   "2_9_6": {
     "id": "2_9_6",
-    "name": "沸水湖泊",
+    "name": "The Boiling Lake",
     "map_name": null,
     "act": 9,
     "level": 62,
@@ -1878,13 +1880,13 @@
       "2_9_5"
     ],
     "crafting_recipes": [
-      "法术伤害 - 等级 3"
+      "Spell Damage - Rank 3"
     ]
   },
   "2_9_7": {
     "id": "2_9_7",
-    "name": "隧道",
-    "map_name": "隧道",
+    "name": "The Tunnel",
+    "map_name": "The Tunnel",
     "act": 9,
     "level": 62,
     "has_waypoint": true,
@@ -1895,13 +1897,13 @@
       "2_9_8"
     ],
     "crafting_recipes": [
-      "全属性 - 等级 2"
+      "All Attributes - Rank 2"
     ]
   },
   "1_5_5": {
     "id": "1_5_5",
-    "name": "纯净圣殿",
-    "map_name": "纯净圣殿",
+    "name": "The Chamber of Innocence",
+    "map_name": "The Chamber of Innocence",
     "act": 5,
     "level": 43,
     "has_waypoint": true,
@@ -1912,13 +1914,13 @@
       "1_5_4b"
     ],
     "crafting_recipes": [
-      "移动速度与战吼强化攻击 - 等级 2"
+      "Movement Speed and Exerted Attacks - Rank 2"
     ]
   },
   "2_7_town": {
     "id": "2_7_town",
-    "name": "断桥营地",
-    "map_name": "断桥营地",
+    "name": "The Bridge Encampment",
+    "map_name": "The Bridge Encampment",
     "act": 7,
     "level": 55,
     "has_waypoint": true,
@@ -1932,7 +1934,7 @@
   },
   "SanctumFoyer_Fellshrine": {
     "id": "SanctumFoyer_Fellshrine",
-    "name": "禁忌圣所",
+    "name": "The Forbidden Sanctum",
     "map_name": null,
     "act": 7,
     "level": 1,
@@ -1946,8 +1948,8 @@
   },
   "2_7_4": {
     "id": "2_7_4",
-    "name": "寂静陵墓",
-    "map_name": "寂静陵墓",
+    "name": "The Crypt",
+    "map_name": "The Crypt",
     "act": 7,
     "level": 51,
     "has_waypoint": true,
@@ -1957,13 +1959,13 @@
       "2_7_3"
     ],
     "crafting_recipes": [
-      "持续伤害 - 等级 1"
+      "Damage over Time - Rank 1"
     ]
   },
   "2_9_8": {
     "id": "2_9_8",
-    "name": "采石场",
-    "map_name": "采石场",
+    "name": "The Quarry",
+    "map_name": "The Quarry",
     "act": 9,
     "level": 63,
     "has_waypoint": true,
@@ -1975,12 +1977,12 @@
       "2_9_10_1"
     ],
     "crafting_recipes": [
-      "物理伤害 - 等级 3"
+      "Physical Damage - Rank 3"
     ]
   },
   "1_5_4b": {
     "id": "1_5_4b",
-    "name": "化作火海的高庭",
+    "name": "The Torched Courts",
     "map_name": null,
     "act": 5,
     "level": 44,
@@ -1995,8 +1997,8 @@
   },
   "2_6_15": {
     "id": "2_6_15",
-    "name": "惊海之王的海礁",
-    "map_name": "惊海之王的海礁",
+    "name": "The Brine King's Reef",
+    "map_name": "The Brine King's Reef",
     "act": 6,
     "level": 50,
     "has_waypoint": true,
@@ -2010,7 +2012,7 @@
   },
   "2_9_9": {
     "id": "2_9_9",
-    "name": "精炼厂",
+    "name": "The Refinery",
     "map_name": null,
     "act": 9,
     "level": 63,
@@ -2021,12 +2023,12 @@
       "2_9_8"
     ],
     "crafting_recipes": [
-      "使用技能时触发插槽内的法术"
+      "Trigger a Socketed Spell when you Use a Skill or Focus"
     ]
   },
   "2_9_10_1": {
     "id": "2_9_10_1",
-    "name": "巨兽沼泽",
+    "name": "The Belly of the Beast",
     "map_name": null,
     "act": 9,
     "level": 63,
@@ -2041,8 +2043,8 @@
   },
   "1_5_3b": {
     "id": "1_5_3b",
-    "name": "广场遗迹",
-    "map_name": "广场遗迹",
+    "name": "The Ruined Square",
+    "map_name": "The Ruined Square",
     "act": 5,
     "level": 44,
     "has_waypoint": true,
@@ -2058,8 +2060,8 @@
   },
   "2_6_14": {
     "id": "2_6_14",
-    "name": "孤岛灯塔",
-    "map_name": "孤岛灯塔",
+    "name": "The Beacon",
+    "map_name": "The Beacon",
     "act": 6,
     "level": 49,
     "has_waypoint": true,
@@ -2070,12 +2072,12 @@
       "2_6_15"
     ],
     "crafting_recipes": [
-      "生命与魔力 - 等级 2"
+      "Life and Mana - Rank 2"
     ]
   },
   "2_9_10_2": {
     "id": "2_9_10_2",
-    "name": "育灵之室",
+    "name": "The Rotting Core",
     "map_name": null,
     "act": 9,
     "level": 64,
@@ -2090,7 +2092,7 @@
   },
   "1_5_6": {
     "id": "1_5_6",
-    "name": "藏古堂",
+    "name": "The Ossuary",
     "map_name": null,
     "act": 5,
     "level": 44,
@@ -2101,13 +2103,13 @@
       "1_5_3b"
     ],
     "crafting_recipes": [
-      "物理伤害 - 等级 2"
+      "Physical Damage - Rank 2"
     ]
   },
   "1_5_8": {
     "id": "1_5_8",
-    "name": "教堂顶楼",
-    "map_name": "教堂顶楼",
+    "name": "The Cathedral Rooftop",
+    "map_name": "The Cathedral Rooftop",
     "act": 5,
     "level": 45,
     "has_waypoint": true,
@@ -2121,8 +2123,8 @@
   },
   "1_5_7": {
     "id": "1_5_7",
-    "name": "遗物圣所",
-    "map_name": "遗物圣所",
+    "name": "The Reliquary",
+    "map_name": "The Reliquary",
     "act": 5,
     "level": 44,
     "has_waypoint": true,
@@ -2132,12 +2134,12 @@
       "1_5_3b"
     ],
     "crafting_recipes": [
-      "命中值 - 等级 1"
+      "Accuracy - Rank 1"
     ]
   },
   "2_6_13": {
     "id": "2_6_13",
-    "name": "怨忿之窟深处",
+    "name": "The Cavern of Anger",
     "map_name": null,
     "act": 6,
     "level": 49,
@@ -2152,8 +2154,8 @@
   },
   "2_10_town": {
     "id": "2_10_town",
-    "name": "奥瑞亚港",
-    "map_name": "奥瑞亚港",
+    "name": "Oriath Docks",
+    "map_name": "Oriath Docks",
     "act": 10,
     "level": 69,
     "has_waypoint": true,
@@ -2169,8 +2171,8 @@
   },
   "2_6_town": {
     "id": "2_6_town",
-    "name": "狮眼守望",
-    "map_name": "狮眼守望",
+    "name": "Lioneye's Watch",
+    "map_name": "Lioneye's Watch",
     "act": 6,
     "level": 50,
     "has_waypoint": true,
@@ -2185,8 +2187,8 @@
   },
   "2_6_12": {
     "id": "2_6_12",
-    "name": "南部森林",
-    "map_name": "南部森林",
+    "name": "The Southern Forest",
+    "map_name": "The Southern Forest",
     "act": 6,
     "level": 49,
     "has_waypoint": true,
@@ -2200,7 +2202,7 @@
   },
   "2_10_1": {
     "id": "2_10_1",
-    "name": "教堂顶楼",
+    "name": "The Cathedral Rooftop",
     "map_name": null,
     "act": 10,
     "level": 64,
@@ -2215,7 +2217,7 @@
   },
   "2_10_6": {
     "id": "2_10_6",
-    "name": "饲槽",
+    "name": "The Feeding Trough",
     "map_name": null,
     "act": 10,
     "level": 67,
@@ -2227,13 +2229,13 @@
       "2_10_town"
     ],
     "crafting_recipes": [
-      "生命与魔力 - 等级 3"
+      "Life and Mana - Rank 3"
     ]
   },
   "2_11_endgame_town": {
     "id": "2_11_endgame_town",
-    "name": "卡鲁海岸",
-    "map_name": "卡鲁海岸",
+    "name": "Karui Shores",
+    "map_name": "Karui Shores",
     "act": 11,
     "level": 69,
     "has_waypoint": true,
@@ -2243,13 +2245,13 @@
       "2_10_town"
     ],
     "crafting_recipes": [
-      "移动速度与药剂附魔 - 等级 3"
+      "Movement Speed and Flask Enchantments - Rank 3"
     ]
   },
   "2_6_2": {
     "id": "2_6_2",
-    "name": "暮光海滩",
-    "map_name": "暮光海滩",
+    "name": "The Coast",
+    "map_name": "The Coast",
     "act": 6,
     "level": 45,
     "has_waypoint": true,
@@ -2264,7 +2266,7 @@
   },
   "2_6_1": {
     "id": "2_6_1",
-    "name": "绝望岩滩",
+    "name": "The Twilight Strand",
     "map_name": null,
     "act": 6,
     "level": 45,
@@ -2278,8 +2280,8 @@
   },
   "2_6_10": {
     "id": "2_6_10",
-    "name": "河道",
-    "map_name": "河道",
+    "name": "The Riverways",
+    "map_name": "The Riverways",
     "act": 6,
     "level": 48,
     "has_waypoint": true,
@@ -2294,8 +2296,8 @@
   },
   "2_10_2": {
     "id": "2_10_2",
-    "name": "广场遗迹",
-    "map_name": "广场遗迹",
+    "name": "The Ravaged Square",
+    "map_name": "The Ravaged Square",
     "act": 10,
     "level": 64,
     "has_waypoint": true,
@@ -2313,7 +2315,7 @@
   },
   "2_10_5": {
     "id": "2_10_5",
-    "name": "藏骸运河",
+    "name": "The Canals",
     "map_name": null,
     "act": 10,
     "level": 66,
@@ -2328,7 +2330,7 @@
   },
   "2_6_4": {
     "id": "2_6_4",
-    "name": "炙热盐沼",
+    "name": "The Mud Flats",
     "map_name": null,
     "act": 6,
     "level": 46,
@@ -2343,7 +2345,7 @@
   },
   "2_6_3": {
     "id": "2_6_3",
-    "name": "海潮孤岛",
+    "name": "The Tidal Island",
     "map_name": null,
     "act": 6,
     "level": 45,
@@ -2357,8 +2359,8 @@
   },
   "2_6_9": {
     "id": "2_6_9",
-    "name": "西部密林",
-    "map_name": "西部密林",
+    "name": "The Western Forest",
+    "map_name": "The Western Forest",
     "act": 6,
     "level": 48,
     "has_waypoint": true,
@@ -2369,12 +2371,12 @@
       "2_6_10"
     ],
     "crafting_recipes": [
-      "单一属性 - 等级 2"
+      "Attributes - Rank 2"
     ]
   },
   "2_6_11": {
     "id": "2_6_11",
-    "name": "湿地",
+    "name": "The Wetlands",
     "map_name": null,
     "act": 6,
     "level": 48,
@@ -2388,7 +2390,7 @@
   },
   "2_10_3": {
     "id": "2_10_3",
-    "name": "化作火海的高庭",
+    "name": "The Torched Courts",
     "map_name": null,
     "act": 10,
     "level": 65,
@@ -2403,7 +2405,7 @@
   },
   "2_10_9": {
     "id": "2_10_9",
-    "name": "藏古堂",
+    "name": "The Ossuary",
     "map_name": null,
     "act": 10,
     "level": 67,
@@ -2414,13 +2416,13 @@
       "2_10_2"
     ],
     "crafting_recipes": [
-      "混沌伤害 - 等级 2"
+      "Chaos Damage - Rank 2"
     ]
   },
   "2_10_8": {
     "id": "2_10_8",
-    "name": "遗物圣所",
-    "map_name": "遗物圣所",
+    "name": "The Reliquary",
+    "map_name": "The Reliquary",
     "act": 10,
     "level": 67,
     "has_waypoint": true,
@@ -2433,8 +2435,8 @@
   },
   "2_10_7": {
     "id": "2_10_7",
-    "name": "控制区",
-    "map_name": "控制区",
+    "name": "The Control Blocks",
+    "map_name": "The Control Blocks",
     "act": 10,
     "level": 66,
     "has_waypoint": true,
@@ -2447,7 +2449,7 @@
   },
   "2_6_5": {
     "id": "2_6_5",
-    "name": "卡鲁要塞",
+    "name": "The Karui Fortress",
     "map_name": null,
     "act": 6,
     "level": 46,
@@ -2459,13 +2461,13 @@
       "2_6_6"
     ],
     "crafting_recipes": [
-      "防御数值 - 等级 2"
+      "Defences - Rank 2"
     ]
   },
   "2_6_8": {
     "id": "2_6_8",
-    "name": "监狱大门",
-    "map_name": "监狱大门",
+    "name": "Prisoner's Gate",
+    "map_name": "Prisoner's Gate",
     "act": 6,
     "level": 47,
     "has_waypoint": true,
@@ -2479,8 +2481,8 @@
   },
   "2_10_4": {
     "id": "2_10_4",
-    "name": "亵渎之间",
-    "map_name": "亵渎之间",
+    "name": "The Desecrated Chambers",
+    "map_name": "The Desecrated Chambers",
     "act": 10,
     "level": 65,
     "has_waypoint": true,
@@ -2490,13 +2492,13 @@
       "2_10_3"
     ],
     "crafting_recipes": [
-      "命中值 - 等级 2"
+      "Accuracy - Rank 2"
     ]
   },
   "2_6_6": {
     "id": "2_6_6",
-    "name": "寂默山岭",
-    "map_name": "寂默山岭",
+    "name": "The Ridge",
+    "map_name": "The Ridge",
     "act": 6,
     "level": 46,
     "has_waypoint": true,
@@ -2510,7 +2512,7 @@
   },
   "2_6_7_2": {
     "id": "2_6_7_2",
-    "name": "薛朗之塔",
+    "name": "Shavronne's Tower",
     "map_name": null,
     "act": 6,
     "level": 47,
@@ -2522,13 +2524,13 @@
       "2_6_8"
     ],
     "crafting_recipes": [
-      "法术伤害 - 等级 2"
+      "Spell Damage - Rank 2"
     ]
   },
   "2_6_7_1": {
     "id": "2_6_7_1",
-    "name": "禁灵之狱下层",
-    "map_name": "监狱",
+    "name": "The Lower Prison",
+    "map_name": "The Prison",
     "act": 6,
     "level": 47,
     "has_waypoint": true,
@@ -2539,7 +2541,7 @@
       "2_6_7_2"
     ],
     "crafting_recipes": [
-      "双重抗性 - 等级 1"
+      "Double Resistances - Rank 1"
     ]
   }
 }

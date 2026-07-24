@@ -1,29 +1,30 @@
-import { RouteData } from "../../../../common/route-processing/types";
+import { useAtomValue } from "jotai";
 import { configSelector } from "../../state/config";
+import { localeSelector } from "../../state/locale";
 import { SplitRow } from "../SplitRow";
 import { Fragment } from "./Fragment";
 import styles from "./styles.module.css";
 import classNames from "classnames";
+import type { RouteData } from "common";
 import React, { useState } from "react";
 import { BiInfoCircle, BiSolidInfoCircle } from "react-icons/bi";
-import { useRecoilValue } from "recoil";
+import flattenChildren from "react-keyed-flatten-children";
 
 interface StepProps {
   step: RouteData.FragmentStep;
 }
 
 export function FragmentStep({ step }: StepProps) {
-  const config = useRecoilValue(configSelector);
-  const [showSubSteps, setShowSubSteps] = useState(
-    config.showSubsteps && step.subSteps.length > 0
-  );
+  const config = useAtomValue(configSelector);
+  const locale = useAtomValue(localeSelector);
+  const [showSubSteps, setShowSubSteps] = useState(config.showSubsteps);
 
   const headNodes: React.ReactNode[] = [];
   const tailNodes: React.ReactNode[] = [];
 
   for (let i = 0; i < step.parts.length; i++) {
     const fragment = step.parts[i];
-    const [head, tail] = Fragment(fragment);
+    const [head, tail] = Fragment(fragment, locale);
 
     if (head) headNodes.push(head);
     if (tail) tailNodes.push(tail);
@@ -46,7 +47,7 @@ export function FragmentStep({ step }: StepProps) {
             <BiInfoCircle className={classNames("inlineIcon")} />
           )}
         </button>
-      </>
+      </>,
     );
   }
 
@@ -54,22 +55,22 @@ export function FragmentStep({ step }: StepProps) {
     <>
       {headNodes.length > 0 && tailNodes.length > 0 ? (
         <SplitRow
-          left={React.Children.toArray(headNodes)}
-          right={React.Children.toArray(tailNodes)}
+          left={flattenChildren(headNodes)}
+          right={flattenChildren(tailNodes)}
         />
       ) : (
-        <span>{React.Children.toArray(headNodes)}</span>
+        <span>{flattenChildren(headNodes)}</span>
       )}
-      {showSubSteps && (
+      {showSubSteps && step.subSteps.length > 0 && (
         <>
           <hr />
-          {React.Children.toArray(
+          {flattenChildren(
             step.subSteps.map((x) => (
               <span>
                 {"• "}
                 <FragmentStep step={x} />
               </span>
-            ))
+            )),
           )}
         </>
       )}
