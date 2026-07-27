@@ -25,6 +25,15 @@ TABLES = (
     "gems.csv",
 )
 
+MANUAL_TRANSLATIONS = {
+    "zh-CN": {},
+    "zh-TW": {
+        # PoEDB has published the Taiwan client name; the Simplified Chinese
+        # client page still uses the English placeholder as of 3.29.
+        "Mana-Infused Staff": "魔能長杖",
+    },
+}
+
 LEGACY_DATA_FILES = (
     "common/data/json/areas.json",
     "common/data/json/gems.json",
@@ -186,6 +195,8 @@ def main() -> None:
         "zh-CN": read_locale(args.translation_root, "zh"),
         "zh-TW": read_locale(args.translation_root, "tw"),
     }
+    for locale, translations in MANUAL_TRANSLATIONS.items():
+        locale_data[locale].update(translations)
 
     if args.base_ref and args.translated_ref:
         for path in LEGACY_DATA_FILES:

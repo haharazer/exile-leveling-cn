@@ -32,6 +32,7 @@ const ASCENDANCY_OFFSETS: Record<string, SkillTree.Coord> = {
   ["Saboteur"]: { x: 10200, y: -2200 },
   ["Ascendant"]: { x: -7800, y: 7200 },
   ["Reliquarian"]: { x: -7800, y: 8900 },
+  ["Luminary"]: { x: -7800, y: 10600 },
   ["Warden"]: { x: 8250, y: 8350 },
   ["Primalist"]: { x: 7200, y: 9400 },
   ["Warlock"]: { x: 9300, y: 7300 },
@@ -46,6 +47,8 @@ const ASCENDANCY_OFFSETS: Record<string, SkillTree.Coord> = {
   ["Olroth"]: { x: 5250, y: 12000 },
   ["Oshabi"]: { x: 6750, y: 12000 },
   ["Necromantic"]: { x: 8250, y: 12000 },
+  ["Abyssal"]: { x: -750, y: 13600 },
+  ["Brinerot"]: { x: 750, y: 13600 },
 };
 
 const TWO_PI = Math.PI * 2;
@@ -223,7 +226,7 @@ function filterConnection(a: RawTree.Node, b: RawTree.Node) {
 
 function buildNode(
   node: RawTree.Node,
-  pos: SkillTree.Coord
+  pos: SkillTree.Coord,
 ): SkillTree.Node | null {
   let kind: SkillTree.Node["k"];
   if (node.isAscendancyStart) {

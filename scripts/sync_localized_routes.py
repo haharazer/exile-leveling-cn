@@ -13,6 +13,8 @@ from pathlib import Path
 
 
 NEW_LINE_TRANSLATIONS = {
+    "Kill {kill|Captain Fairgraves}, take {quest_text|Allflame}":
+        "找到并击杀 {kill|费尔船长}，取得 {quest_text|永恒之焰}",
     "Take the {generic|Boat} ➞ {enter|1_1_4_1} #The Submerged Passage":
         "乘坐{generic|小船} ➞ {enter|1_1_4_1} #海潮地穴",
     "    #sub Go {dir|180} until you find the hanged Karui":

@@ -59,15 +59,9 @@
 {waypoint|1_1_8} #監獄大門
 ➞ {enter|1_1_9} #魅影船墓
     #sub 沿着道路旁的斜坡向下走
-找到 {area|1_1_9a}，洞口放置 {portal|set} #魅影船墓洞穴
+找到并击杀 {kill|費爾船長}，取得 {quest_text|不滅之火}
 ➞ {enter|1_1_11_1} #怨忿之窟
 {waypoint|1_1_town} #獅眼守望
-使用 {portal|use}
-➞ {enter|1_1_9a} #魅影船墓洞穴
-找到 {quest_text|奴隸少女}，取得 {quest_text|不滅之火}
-    #sub 朝入口反方向搜索
-➞ {enter|1_1_9}，击杀 {kill|費爾船長} #魅影船墓
-{logout}
 提交 {quest|a1q6} #被放逐的水手
 提交 {quest|a1q3} #海妖之歌
 {waypoint|1_1_11_1} #怨忿之窟
