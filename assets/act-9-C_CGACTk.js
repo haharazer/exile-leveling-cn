@@ -1,0 +1,63 @@
+var e=`#section 第九幕
+{waypoint|2_9_town} #統治者之殿
+➞ {enter|2_9_2} #下沉地區
+➞ {enter|2_9_3} #瓦斯提里荒漠
+获取 {waypoint_get}
+    #sub 向{dir|90}方向前进
+获取 {crafting}
+找到并拾取 {quest_text|風暴飛刃}
+➞ {enter|2_9_5} #山麓
+    #sub 向{dir|315}方向前进
+获取 {waypoint_get}
+    #sub 朝{dir|45}方向前进直到悬崖
+    #sub 向{dir|315}方向前进
+➞ {enter|2_9_6} #沸騰湖泊
+找到并击杀 {kill|草莽巨蜥}，取得 {quest_text|蛇怪酸液}
+    #sub 朝{dir|45}方向前进，寻找石化士兵
+获取 {crafting}
+{logout}
+与 {generic|罪}对话
+提交 {quest|a9q3}
+提交 {quest|a9q5|a9q5_offer}，取得 {quest_text|瓶風暴}
+{waypoint|2_9_3} #瓦斯提里荒漠
+➞ {enter|2_9_4} #幻景綠洲
+    #sub 向{dir|45}方向前进
+➞ {arena|流沙坑}，击杀 {kill|沙瀑女王夏卡莉}
+{logout}
+提交 {quest|a9q5|a9q5} #沙瀑女王
+{waypoint|2_9_5} #山麓
+➞ {enter|2_9_7} #隧道遺跡
+    #sub 向{dir|315}方向前进
+#ifdef LEAGUE_START
+    在 {waypoint}之前，完成 {trial}
+        #sub 在通往{generic|升華試煉石碑}的途中，于入口对角寻找隐藏机关，取得{generic|隱藏寶石：變異}
+    获取 {crafting}
+#endif
+➞ {enter|2_9_8} #廢棄挖石場
+获取 {waypoint_get}
+    #sub 向{dir|315}方向前进
+获取 {crafting}
+➞ {arena|風暴祭壇}，击杀 {kill|颶風女王卡洛翰}，取得 {quest_text|領袖之羽}
+    #sub {dir|45}或{dir|225}
+{logout}
+提交 {quest|a9q2} #統治者之爭
+{waypoint|2_9_8} #廢棄挖石場
+➞ {enter|2_9_9} #破損煉油廠
+    #sub {dir|315}或{dir|45}
+获取 {crafting}
+    #sub 寻找通往{arena|煉油廠隧道}的下水道井盖，它连接着车辙
+找到并击杀 {kill|艾杜斯將軍}，取得 {quest_text|特拉珊粉}
+    #sub 朝{dir|45}方向前进，沿着车辙走
+{logout}
+{waypoint|2_9_8} #廢棄挖石場
+与 {generic|罪}对话
+➞ {enter|2_9_10_1} #獸穴之腹
+➞ {enter|2_9_10_2} #腐敗之核
+➞ {arena|黑核}
+与 {generic|罪}对话
+➞ {arena|多瑞的絕望}，击杀 {kill|黯黑靈魂德瑞}
+➞ {arena|馬雷加羅悲憫}，击杀 {kill|破碎者馬雷葛蘿}
+➞ {arena|紗弗隆哀傷}，击杀 {kill|自由之身薛朗}
+与 {generic|罪}对话 ➞ {arena|漆黑之心}，击杀 {kill|墮道三巨頭}
+{portal|use}
+`;export{e as default};

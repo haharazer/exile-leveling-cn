@@ -1,0 +1,101 @@
+var e=`#section 第三幕
+➞ {enter|1_3_1} #薩恩城廢墟
+获取 {crafting}
+帮助并与 {generic|卡爾麗莎}对话
+➞ {enter|1_3_town} #薩恩營地
+➞ {enter|1_3_2} #貧民窟
+    #sub 向{dir|0}方向前进
+➞ {enter|1_3_3_1} #火葬場
+    #sub 沿着楼梯前进
+#ifdef LEAGUE_START
+    完成 {trial}
+#endif
+找到并击杀 {kill|派蒂}，取得 {quest_text|托爾曼的手鐲}
+获取 {crafting}
+{logout}
+与 {generic|卡爾麗莎}对话，取得 {quest_text|下水道鑰匙}
+提交 {quest|a3q1} #迷失的愛情
+➞ {enter|1_3_2} #貧民窟
+    #sub 向{dir|0}方向前进
+➞ {enter|1_3_10_1} #下水道迷宮
+收集1个{quest_text|白金半身像}
+获取 {waypoint_get}
+收集2个{quest_text|白金半身像}
+➞ {enter|1_3_5} #市集地帶
+获取 {waypoint_get}
+#ifdef LEAGUE_START
+    ➞ {enter|1_3_6} #黑石陵墓
+        #sub 在传送点附近寻找
+    完成 {trial}
+    获取 {crafting}
+#endif
+{logout}
+提交 {quest|a3q11} #維多里奧的秘寶
+{waypoint|1_3_5} #市集地帶
+➞ {enter|1_3_7} #激戰廣場
+    #sub 向{dir|0}方向搜索
+获取 {waypoint_get}
+    #sub 向{dir|315}方向前进
+找到并拾取 {quest_text|緞帶之軸}
+    #sub 向{dir|225}方向前进
+➞ {enter|1_3_8_1} #日耀神殿：第 1 層
+    #sub 向{dir|45}方向前进
+➞ {enter|1_3_8_2} #日耀神殿：第 2 層
+➞ {arena|永恒實驗室}，获得 {crafting}
+{waypoint|1_3_7} #激戰廣場
+➞ {enter|1_3_9} #不朽海港
+    #sub 向{dir|315}方向前进
+找到并拾取 {quest_text|托麥迪克亞硫酸}
+{logout}
+{waypoint|1_3_8_2} #日耀神殿：第 2 層
+与 {generic|達拉夫人}对话
+提交 {quest|a3q4} #絲帶線軸
+提交 {quest|a3q5}，取得 {quest_text|煉獄之粉} #餘燼之塵
+{waypoint|1_3_10_1} #下水道迷宮
+焚烧 {quest_text|永生者障礙}
+获取 {crafting}
+➞ {enter|1_3_13} #烏旗守衛兵營
+获取 {waypoint_get}
+击杀 {kill|格拉維奇將軍}
+    #sub 向{dir|315}方向前进
+➞ {enter|1_3_14_1} #月影神殿：第 1 層
+➞ {enter|1_3_14_2} #月影神殿：第 2 層
+找到并击杀 {kill|派蒂}，取得 {quest_text|神塔之鑰}
+    #sub 沿着向上的楼梯前进
+    #sub 在有马车的岔路口选择只有一辆马车的道路
+获取 {crafting}
+{logout}
+提交 {quest|a3q9} #派蒂的寵物
+提交 {quest|a3q8} #剷除左右手
+{waypoint|1_3_13} #烏旗守衛兵營
+➞ {enter|1_3_15} #皇家花園
+    #sub 向{dir|45}方向前进
+获取 {waypoint_get}
+    #sub 沿着道路前进
+#ifdef LEAGUE_START
+    完成 {trial}
+        #sub 向{dir|0}方向前进
+    获取 {crafting}
+    {logout}
+    {waypoint|1_3_15} #皇家花園
+#endif
+#ifdef LIBRARY
+    ➞ {enter|1_3_17_1} #圖書館
+        #sub 向{dir|315}方向前进
+    获取 {waypoint_get}
+    找到 {generic|松動的蠟燭} ➞ {enter|1_3_17_2} #檔案室
+        #sub 在狭窄走廊中寻找蜡烛
+    获取 {crafting}
+    收集4个{quest_text|黃金書頁}
+    {logout}
+    {waypoint|1_3_17_1} #圖書館
+        #sub 将购买技能宝石所需的通货放进背包
+    提交 {quest|a3q12} #命運之語
+    {waypoint|1_3_15} #皇家花園
+#endif
+➞ {enter|1_3_18_1} #神權之塔
+➞ {enter|1_3_18_2} #上層神權之塔
+    #sub 楼梯会生成在某个角落
+➞ {arena|塔頂}，击杀 {kill|圣宗神主}
+    #sub 寻找路障
+`;export{e as default};

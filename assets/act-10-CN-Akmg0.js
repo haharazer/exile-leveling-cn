@@ -1,0 +1,60 @@
+var e=`#section 第十幕
+{waypoint|2_10_town} #奧瑞亞港口
+➞ {enter|2_10_1} #聖堂屋頂
+➞ {arena|大教堂尖塔}，击杀 {kill|瘟疫之源}
+    #sub 向{dir|0}方向前进
+➞ {enter|2_10_2} #殘摧大廣場
+放置 {portal|set} 在广场
+➞ {enter|2_10_7} #鎮壓地帶
+    #sub 向{dir|180}方向前进
+{waypoint|2_10_town} #奧瑞亞港口
+提交 {quest|a10q1} #安全通關
+使用 {portal|use}
+获取 {waypoint_get}
+    #sub 向{dir|45}方向前进
+#ifdef LEAGUE_START
+    ➞ {enter|2_10_9} #葬骨禮堂
+    获取 {crafting}
+    完成 {trial}
+        #sub 与锯齿形墙壁前的机关互动，前往另一侧取得 {generic|隱藏寶石：裁決之鏡}
+    {logout}
+#endif
+{waypoint|2_10_7} #鎮壓地帶
+找到并击杀 {kill|范尼達}
+{logout}
+提交 {quest|a10q6} #范尼達的復仇
+{waypoint|Labyrinth_Airlock}
+{ascend|merciless}
+获取 {crafting|3_Labyrinth_boss_3}
+{waypoint|2_10_2} #殘摧大廣場
+➞ {enter|2_10_3} #焚燒大教堂
+    #sub 向{dir|135}方向前进
+➞ {enter|2_10_4} #褻瀆之室
+    #sub 顺时针绕圈
+获取 {crafting}
+➞ {arena|純潔圣殿}，击杀 {kill|復仇者伊爾莉斯}，取得 {quest_text|純凈之杖}
+    #sub 向{dir|315}方向逆时针绕行
+{logout}
+与 {generic|班恩}对话
+提交 {quest|a10q2} #死與生
+{waypoint|2_10_2} #殘摧大廣場
+与 {generic|善}对话
+    #sub 向{dir|45}方向前进
+➞ {enter|2_10_5} #陰屍河道
+➞ {enter|2_10_6} #破沿血道
+获取 {crafting}
+与 {generic|罪}对话
+➞ {arena|饕餮祭壇}，击杀 {kill|貪得無厭奇塔弗}
+与 {generic|罪}对话 ➞ {enter|2_10_town} #奧瑞亞港口
+与 {generic|莉莉羅斯}对话，从奥瑞亚启航
+➞ {enter|2_11_endgame_town} #卡魯海岸
+获取 {crafting}
+#ifdef BANDIT_KILL
+    提交 {quest|a10q3} #終結饑荒
+        #sub 在聊天输入{generic|/passives}确认你已完成24个任务天赋点
+#endif
+#ifndef BANDIT_KILL
+    提交 {quest|a10q3} #終結饑荒
+        #sub 在聊天输入{generic|/passives}确认你已完成23个任务天赋点
+#endif
+`;export{e as default};

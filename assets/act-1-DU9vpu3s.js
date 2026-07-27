@@ -1,0 +1,73 @@
+var e=`#section 第一幕
+找到并击杀 {kill|西拉克}
+➞ {enter|1_1_town} #獅眼守望
+提交 {quest|a1q1} #大門口的敵人
+➞ {enter|1_1_2} #暮光海灘
+#ifdef LEAGUE_START
+    获取 {waypoint_get}
+#endif
+➞ {enter|1_1_3} #炙熱鹽沼
+收集3个{quest_text|雕紋}
+    #sub 三个恐喙鸟巢穴由小溪连接，顺着小溪很好找
+    #sub 巢穴通常呈三角形，偶尔排成一条直线
+➞ {enter|1_1_4_1} #海潮地穴
+#ifdef LEAGUE_START
+    {waypoint|1_1_2} #暮光海灘
+    ➞ {enter|1_1_2a} #海潮孤島
+    找到并击杀 {kill|酷寒之使}，取得 {quest_text|醫藥箱}
+        #sub 向{dir|270}方向探索
+        #sub 如果遇到高台就折返朝{dir|90}
+        #sub 推荐等级：4
+    {logout}
+    提交 {quest|a1q4} #打破鳥蛋
+    提交 {quest|a1q5} #醫者之心
+#endif
+#ifndef LEAGUE_START
+    {waypoint|1_1_town} #獅眼守望
+    提交 {quest|a1q4} #打破鳥蛋
+#endif
+{waypoint|1_1_4_1} #海潮地穴
+➞ {enter|1_1_4_0} #水聲之淵
+    #sub 从桥的右侧前进
+找到并击杀 {kill|深淵巨蟹}
+    #sub 朝入口反方向搜索
+    #sub 寻找宽敞的空房间
+乘坐{generic|小船} ➞ {enter|1_1_4_1} #海潮地穴
+➞ {enter|1_1_5} #沉寂海崖
+➞ {enter|1_1_6} #碎岩山坡
+➞ {enter|1_1_7_1} #禁靈之獄下層
+{waypoint|1_1_town} #獅眼守望
+提交 {quest|a1q7} #深淵巨蟹
+提交 {quest|a1q2|a1q2b} #衝出監牢
+{waypoint|1_1_7_1} #禁靈之獄下層
+#ifdef LEAGUE_START
+    完成 {trial}
+        #sub 通常位于{dir|45}
+#endif
+➞ {enter|1_1_7_2} #禁靈之獄上層
+#ifdef LEAGUE_START
+    找到 {generic|藥師的保險箱}
+        #sub 留意地图图标，并使用附近的机关进入
+        #sub 极大概率掉落{generic|水銀藥劑}
+        #sub 商店配方：{generic|水银药剂} + {generic|改造石} + 普通{generic|靴子} = 移速{generic|靴子}
+        #sub 商店配方：{generic|水银药剂} + {generic|改造石} + 移速{generic|靴子} = 更高移速移速{generic|靴子}
+#endif
+➞ {arena|典獄長寢室}，击杀 {kill|典獄長布魯特斯}
+    #sub 推荐等级：8
+{logout}
+提交 {quest|a1q2|a1q2} #衝出監牢
+{waypoint|1_1_8} #監獄大門
+➞ {enter|1_1_9} #魅影船墓
+    #sub 沿着道路旁的斜坡向下走
+找到并击杀 {kill|費爾船長}，取得 {quest_text|不滅之火}
+➞ {enter|1_1_11_1} #怨忿之窟
+{waypoint|1_1_town} #獅眼守望
+提交 {quest|a1q6} #被放逐的水手
+提交 {quest|a1q3} #海妖之歌
+{waypoint|1_1_11_1} #怨忿之窟
+➞ {enter|1_1_11_2} #忿怒山洞
+    #sub 沿着水域前进
+➞ {arena|梅薇爾巢穴}，击杀 {kill|海妖莫薇兒}
+    #sub 沿着水域前进
+    #sub 推荐等级：12
+`;export{e as default};
