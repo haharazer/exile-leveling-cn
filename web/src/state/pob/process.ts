@@ -83,18 +83,21 @@ function processSkills(
         const note = cleanPobText(
           recentEmptySkillLabel || parentTitle || skillLabel || "",
         );
-        const gem: RouteData.RequiredGem = {
+        const requiredGem: RouteData.RequiredGem = {
           id: gemId,
           note: note,
           count: 1,
         };
 
         if (!requiredGems.some((x) => x.id === gemId)) {
-          requiredGems.push(gem);
+          requiredGems.push(requiredGem);
         }
 
-        if (Data.Gems[gemId].is_support) secondaryGemIds.push(gemId);
-        else primaryGemIds.push(gemId);
+        const gem = Data.Gems[gemId];
+        if (gem !== undefined) {
+          if (gem.is_support) secondaryGemIds.push(gemId);
+          else primaryGemIds.push(gemId);
+        }
       }
     }
 

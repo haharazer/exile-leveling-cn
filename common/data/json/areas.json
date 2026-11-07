@@ -1293,7 +1293,6 @@
     "connection_ids": [
       "2_8_6",
       "2_8_11",
-      "2_8_11",
       "2_9_1"
     ],
     "crafting_recipes": []
@@ -1309,7 +1308,6 @@
     "parent_town_area_id": "2_8_town",
     "connection_ids": [
       "2_8_12_1",
-      "2_8_13",
       "2_8_13",
       "2_8_14"
     ],

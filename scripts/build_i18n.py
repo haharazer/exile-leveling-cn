@@ -26,11 +26,33 @@ TABLES = (
 )
 
 MANUAL_TRANSLATIONS = {
-    "zh-CN": {},
+    "zh-CN": {
+        "Communion Support": "神圣宗派（辅）",
+        "Coursing Current Support": "冰电奔涌（辅）",
+        "Crystalfall Support": "水晶陨落（辅）",
+        "Dark Bargain": "黑暗交易",
+        "Mana-Infused Staff": "注魔长杖",
+        "Pact of Beidat": "贝达特契约",
+        "Pact of Ghorr": "咕尔契约",
+        "Pact of K'Tash": "科塔席契约",
+        "Pact of Lycia": "莉西娅契约",
+        "The Spirit Flame": "灵魂火焰",
+        "Valerie, the Corsair": "海盗瓦莱丽",
+        "Vesper": "维斯珀",
+    },
     "zh-TW": {
-        # PoEDB has published the Taiwan client name; the Simplified Chinese
-        # client page still uses the English placeholder as of 3.29.
+        "Communion Support": "共融輔助",
+        "Coursing Current Support": "雷鳴湍流輔助",
+        "Crystalfall Support": "晶墜輔助",
+        "Dark Bargain": "暗夜血契",
         "Mana-Infused Staff": "魔能長杖",
+        "Pact of Beidat": "貝達特誓約",
+        "Pact of Ghorr": "戈沃誓約",
+        "Pact of K'Tash": "克塔什誓約",
+        "Pact of Lycia": "利希亞誓約",
+        "The Spirit Flame": "靈魂之火",
+        "Valerie, the Corsair": "海盜．薇洛里",
+        "Vesper": "海盜．薇洛里",
     },
 }
 

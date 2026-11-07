@@ -839,6 +839,13 @@
     "required_level": 16,
     "is_support": false
   },
+  "Metadata/Items/Gems/SkillGemManaInfusedStaff": {
+    "id": "Metadata/Items/Gems/SkillGemManaInfusedStaff",
+    "name": "Mana-Infused Staff",
+    "primary_attribute": "intelligence",
+    "required_level": 16,
+    "is_support": false
+  },
   "Metadata/Items/Gems/SkillGemMoltenShell": {
     "id": "Metadata/Items/Gems/SkillGemMoltenShell",
     "name": "Molten Shell",
@@ -2255,7 +2262,7 @@
   },
   "Metadata/Items/Gems/SkillGemDarkPact": {
     "id": "Metadata/Items/Gems/SkillGemDarkPact",
-    "name": "Dark Pact",
+    "name": "Dark Bargain",
     "primary_attribute": "intelligence",
     "required_level": 28,
     "is_support": false
@@ -4537,7 +4544,7 @@
   },
   "Metadata/Items/Gems/SkillGemDarkPactRoyale": {
     "id": "Metadata/Items/Gems/SkillGemDarkPactRoyale",
-    "name": "Dark Pact",
+    "name": "Dark Bargain",
     "primary_attribute": "intelligence",
     "required_level": 4,
     "is_support": false
@@ -5643,7 +5650,7 @@
   },
   "Metadata/Items/Gems/SupportGemMinionPact": {
     "id": "Metadata/Items/Gems/SupportGemMinionPact",
-    "name": "Minion Pact Support",
+    "name": "Communion Support",
     "primary_attribute": "intelligence",
     "required_level": 72,
     "is_support": true
@@ -5672,6 +5679,20 @@
   "Metadata/Items/Gems/SupportGemTransfusion": {
     "id": "Metadata/Items/Gems/SupportGemTransfusion",
     "name": "Transfusion Support",
+    "primary_attribute": "strength",
+    "required_level": 72,
+    "is_support": true
+  },
+  "Metadata/Items/Gems/SupportGemCrustaceousGrasp": {
+    "id": "Metadata/Items/Gems/SupportGemCrustaceousGrasp",
+    "name": "Coursing Current Support",
+    "primary_attribute": "intelligence",
+    "required_level": 72,
+    "is_support": true
+  },
+  "Metadata/Items/Gems/SupportGemCrystalfall": {
+    "id": "Metadata/Items/Gems/SupportGemCrystalfall",
+    "name": "Crystalfall Support",
     "primary_attribute": "strength",
     "required_level": 72,
     "is_support": true
@@ -5870,6 +5891,34 @@
     "name": "Order: To me!",
     "primary_attribute": "none",
     "required_level": 0,
+    "is_support": false
+  },
+  "Metadata/Items/Gems/SkillGemPactOfBeidat": {
+    "id": "Metadata/Items/Gems/SkillGemPactOfBeidat",
+    "name": "Pact of Beidat",
+    "primary_attribute": "none",
+    "required_level": 24,
+    "is_support": false
+  },
+  "Metadata/Items/Gems/SkillGemPactOfGhorr": {
+    "id": "Metadata/Items/Gems/SkillGemPactOfGhorr",
+    "name": "Pact of Ghorr",
+    "primary_attribute": "none",
+    "required_level": 24,
+    "is_support": false
+  },
+  "Metadata/Items/Gems/SkillGemPactOfKtash": {
+    "id": "Metadata/Items/Gems/SkillGemPactOfKtash",
+    "name": "Pact of K'Tash",
+    "primary_attribute": "none",
+    "required_level": 24,
+    "is_support": false
+  },
+  "Metadata/Items/Gems/SkillGemPactOfLycia": {
+    "id": "Metadata/Items/Gems/SkillGemPactOfLycia",
+    "name": "Pact of Lycia",
+    "primary_attribute": "none",
+    "required_level": 24,
     "is_support": false
   }
 }

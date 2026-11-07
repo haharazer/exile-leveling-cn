@@ -2693,6 +2693,11 @@
               "Templar"
             ]
           },
+          "Metadata/Items/Gems/SkillGemManaInfusedStaff": {
+            "classes": [
+              "Templar"
+            ]
+          },
           "Metadata/Items/Gems/SkillGemWarlordsMark": {
             "classes": [
               "Marauder",
@@ -11171,6 +11176,61 @@
         "quest_npc": "Eagon Caeserius",
         "quest": {
           "Metadata/Items/Currency/AstrolabeGeneric": {
+            "classes": []
+          }
+        },
+        "vendor": {}
+      }
+    }
+  },
+  "DeepwaterFairgravesAllflameQuest": {
+    "id": "DeepwaterFairgravesAllflameQuest",
+    "name": "The Spirit Flame",
+    "act": "1",
+    "reward_offers": {
+      "DeepwaterCraftingTutorial1": {
+        "quest_npc": "Vesper",
+        "quest": {
+          "Metadata/Items/Currency/CurrencyDeepwater": {
+            "classes": []
+          }
+        },
+        "vendor": {}
+      },
+      "DeepwaterCraftingTutorial2": {
+        "quest_npc": "Vesper",
+        "quest": {
+          "Metadata/Items/Rings/Ring2": {
+            "classes": []
+          }
+        },
+        "vendor": {}
+      },
+      "DeepwaterCraftingTutorial3": {
+        "quest_npc": "Vesper",
+        "quest": {
+          "Metadata/Items/Currency/CurrencyUpgradeToRare": {
+            "classes": []
+          }
+        },
+        "vendor": {}
+      },
+      "DeepwaterCraftingTutorial4": {
+        "quest_npc": "Valerie, the Corsair",
+        "quest": {
+          "Metadata/Items/Rings/Ring1": {
+            "classes": []
+          },
+          "Metadata/Items/Rings/Ring3": {
+            "classes": []
+          }
+        },
+        "vendor": {}
+      },
+      "DeepwaterCraftingTutorial5": {
+        "quest_npc": "Valerie, the Corsair",
+        "quest": {
+          "Metadata/Items/Currency/CurrencyUpgradeToMagic": {
             "classes": []
           }
         },
