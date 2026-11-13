@@ -12,6 +12,7 @@ import { routeProgressFamily } from "../route-progress";
 import { sectionCollapseFamily } from "../section-collapse";
 import { toast } from "react-toastify";
 import { activeEdgeAtom } from "../route";
+import { gemNotesAtom } from "../gem-annotations";
 
 const POB_CODE_VERSION = 0;
 
@@ -32,6 +33,7 @@ export const pobAtom = atom(
   (get) => get(pobCodeAtom),
   (_get, set, value: string | typeof RESET) => {
     if (value === RESET) {
+      set(gemNotesAtom, RESET);
       toast.success("Reset");
       set(buildDataSelector, RESET);
       set(requiredGemsSelector, RESET);
@@ -46,6 +48,7 @@ export const pobAtom = atom(
     } else {
       const pob = processPob(value);
       if (pob !== null) {
+        set(gemNotesAtom, RESET);
         set(buildDataSelector, pob.buildData);
         set(requiredGemsSelector, pob.requiredGems);
         set(buildTreesSelector, pob.buildTrees);

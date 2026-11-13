@@ -1,5 +1,6 @@
 import { formStyles } from "../../styles";
 import { GemCost } from "../GemCost";
+import { GemLinkNote } from "../GemLinkNote";
 import { InlineFakeBlock } from "../InlineFakeBlock";
 import { SidebarTooltip } from "../SidebarTooltip";
 import styles from "./styles.module.css";
@@ -27,16 +28,15 @@ export function GemLinkViewer({ gemLinks }: GemLinkViewerProps) {
     return [...linkTitles];
   };
   const [curIndex, setCurIndex] = useState<number>(0);
-  const [gemSections, setGemSections] = useState<string[]>(
-    findUniqueGemTitles(gemLinks)
-  );
+  const gemSections = findUniqueGemTitles(gemLinks);
+  const sectionTitlesKey = JSON.stringify(gemSections);
   const [tooltipGemLink, setTooltipGemLink] =
     useState<RouteData.GemLink | null>(null);
 
   useEffect(() => {
-    setCurIndex(0); // Prevent out-of-bounds issues if the gem links change from a new build import
-    setGemSections(findUniqueGemTitles(gemLinks));
-  }, [gemLinks]);
+    // Editing a note keeps the current section; a new section list resets it.
+    setCurIndex(0);
+  }, [sectionTitlesKey]);
 
   const activeGemLinks: RouteData.GemLinkGroup[] = gemLinks.filter(
     (link) => link.title === gemSections[curIndex]
@@ -68,7 +68,7 @@ export function GemLinkViewer({ gemLinks }: GemLinkViewerProps) {
       {activeGemLinks.length > 0 && (
         <div className={classNames(styles.gemLinkSection)}>
           {flattenChildren(
-            activeGemLinks.map(({ primaryGems, secondaryGems }, i) => (
+            activeGemLinks.map(({ primaryGems, secondaryGems, note }, i) => (
               <>
                 {i !== 0 && <hr />}
                 <div className={classNames(styles.gemLinkRow)}>
@@ -90,6 +90,11 @@ export function GemLinkViewer({ gemLinks }: GemLinkViewerProps) {
                       />
                     ))
                   )}
+                  <GemLinkNote
+                    key={`${gemLinks.indexOf(activeGemLinks[i])}:${note ?? ""}`}
+                    groupIndex={gemLinks.indexOf(activeGemLinks[i])}
+                    note={note}
+                  />
                 </div>
               </>
             ))

@@ -19,6 +19,7 @@ export function GemEditForm({ requiredGems, onUpdate }: GemEditFormProps) {
       isCompletedState: gemProgressFamily(requiredGem.id),
       children: (
         <GemEdit
+          key={requiredGem.id}
           onMoveTop={() => {
             const splice = workingGems.splice(i, 1);
             workingGems.unshift(...splice);

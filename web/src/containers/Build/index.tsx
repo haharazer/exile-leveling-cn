@@ -3,6 +3,7 @@ import { BuildImportForm } from "../../components/BuildImportForm";
 import { BuildInfoForm } from "../../components/BuildInfoForm";
 import { ConfigForm } from "../../components/ConfigForm";
 import { GemEditForm } from "../../components/GemEditForm";
+import { GemSourceOptions } from "../../components/GemAnnotations";
 import { SearchStringsEditor } from "../../components/SearchStringsEditor";
 import { buildDataSelector } from "../../state/build-data";
 import { configSelector } from "../../state/config";
@@ -48,6 +49,7 @@ export default function BuildContainer() {
       <hr />
       {requiredGems.length > 0 && (
         <>
+          <GemSourceOptions />
           <GemEditForm
             requiredGems={requiredGems}
             onUpdate={(requiredGems) => {

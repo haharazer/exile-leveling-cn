@@ -1,5 +1,6 @@
 import { App } from "./containers";
 import "./index.css";
+import "./styles/chinese-layout.css";
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";

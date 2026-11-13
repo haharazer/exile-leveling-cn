@@ -1,12 +1,35 @@
 .holder {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap: var(--size-3);
 }
 
-.buttonGroup {
-  height: var(--line-height);
+.holder > :first-child {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.quantity {
   display: flex;
+  align-items: center;
+  gap: var(--size-2);
+  white-space: nowrap;
+}
+
+.noteButton {
+  color: var(--on-secondary);
+  border: var(--border-width) solid var(--accent-primary);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.buttonGroup {
+  min-height: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
   gap: var(--size-2);
 }
 

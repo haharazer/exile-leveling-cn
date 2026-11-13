@@ -63,6 +63,8 @@ function processSkills(
   characterClass: string,
 ) {
   const skillElements = Array.from(parentElement.getElementsByTagName("Skill"));
+  // Each call processes one SkillSet (or the single legacy configuration).
+  const gemCounts = new Map<string, number>();
 
   let recentEmptySkillLabel: string | undefined;
   for (const skillElement of skillElements) {
@@ -80,16 +82,21 @@ function processSkills(
       const attribute = gemElement.attributes.getNamedItem("gemId");
       if (attribute) {
         const gemId = MapGemId(attribute.value);
+        const count = (gemCounts.get(gemId) ?? 0) + 1;
+        gemCounts.set(gemId, count);
         const note = cleanPobText(
           recentEmptySkillLabel || parentTitle || skillLabel || "",
         );
         const requiredGem: RouteData.RequiredGem = {
           id: gemId,
           note: note,
-          count: 1,
+          count,
         };
 
-        if (!requiredGems.some((x) => x.id === gemId)) {
+        const existingGem = requiredGems.find((x) => x.id === gemId);
+        if (existingGem) {
+          existingGem.count = Math.max(existingGem.count, count);
+        } else {
           requiredGems.push(requiredGem);
         }
 
@@ -104,9 +111,11 @@ function processSkills(
     const gemLinkTitle = cleanPobText(
       parentTitle || recentEmptySkillLabel || "Default",
     );
+    const gemLinkNote = cleanPobText(skillLabel || "").trim() || undefined;
     if (primaryGemIds.length > 0)
       gemLinks.push({
         title: gemLinkTitle,
+        note: gemLinkNote,
         primaryGems: primaryGemIds.map((x) =>
           gemIdToGemLink(x, characterClass),
         ),
@@ -117,6 +126,7 @@ function processSkills(
     else if (secondaryGemIds.length > 0)
       gemLinks.push({
         title: gemLinkTitle,
+        note: gemLinkNote,
         primaryGems: secondaryGemIds.map((x) =>
           gemIdToGemLink(x, characterClass),
         ),

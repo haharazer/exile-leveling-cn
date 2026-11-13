@@ -1,4 +1,5 @@
 import { CopyToClipboard } from "../CopyToClipboard";
+import { GemAnnotations, GemUserNote } from "../GemAnnotations";
 import { GemCost } from "../GemCost";
 import { InlineFakeBlock } from "../InlineFakeBlock";
 import { SplitRow } from "../SplitRow";
@@ -79,12 +80,14 @@ export function GemReward({ requiredGem, count, rewardType }: GemRewardProps) {
             rewardType={rewardType}
             count={count}
           />
+          <GemUserNote gemId={requiredGem.id} />
         </>
       }
       right={
         <div className={classNames(styles.rewardNote)}>
-          {requiredGem.note}{" "}
-          <CopyToClipboard text={gameText(locale, gem.name)} />
+          <GemAnnotations gem={requiredGem}>
+            <CopyToClipboard text={gameText(locale, gem.name)} />
+          </GemAnnotations>
         </div>
       }
     />

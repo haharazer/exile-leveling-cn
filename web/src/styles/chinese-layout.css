@@ -1,0 +1,5 @@
+/* Local layout preference. Keep this separate from upstream's index.css.
+   The shared token also restores the previous button, icon and navbar sizing. */
+html:root {
+  --line-height: 1.5em;
+}

@@ -109,6 +109,7 @@ export namespace RouteData {
 
   export interface GemLinkGroup {
     title: string;
+    note?: string;
     primaryGems: GemLink[];
     secondaryGems: GemLink[];
   }

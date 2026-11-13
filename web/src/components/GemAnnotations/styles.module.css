@@ -1,0 +1,55 @@
+.options {
+  padding: var(--size-3);
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+}
+
+.annotations {
+  overflow-wrap: anywhere;
+  min-width: 0;
+  line-height: 1.4;
+}
+
+.sources {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: var(--size-3);
+  line-height: 1.4;
+}
+
+.note {
+  white-space: pre-wrap;
+  line-height: 1.4;
+  text-align: left;
+  overflow-wrap: anywhere;
+  margin-top: var(--size-2);
+}
+
+.editor {
+  flex-basis: 100%;
+  min-width: 0;
+  padding-top: var(--size-3);
+  line-height: 1.4;
+}
+
+.editor textarea {
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+  margin-top: var(--size-3);
+  font: inherit;
+  line-height: 1.4;
+  user-select: text;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-3);
+  margin-top: var(--size-3);
+}

@@ -5,6 +5,10 @@ import classNames from "classnames";
 import type { RouteData } from "common";
 import { HiChevronDoubleUp, HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { MdDeleteOutline } from "react-icons/md";
+import { useState } from "react";
+import { useSetAtom } from "jotai";
+import { GemNoteEditor } from "../GemAnnotations";
+import { removeGemNoteAtom } from "../../state/gem-annotations";
 
 interface GemOrderProps {
   requiredGem: RouteData.RequiredGem;
@@ -23,27 +27,48 @@ export function GemEdit({
   onDelete,
   onCountChange,
 }: GemOrderProps) {
+  const [editingNote, setEditingNote] = useState(false);
+  const removeNote = useSetAtom(removeGemNoteAtom);
   return (
     <div className={classNames(styles.holder)}>
       <GemReward requiredGem={requiredGem} count={1} />
-      <div className={classNames(styles.buttonGroup)}>
-        <input
-          className={classNames(formStyles.formInput, styles.inputCount)}
-          value={requiredGem.count}
-          onPointerDown={(e) => {
-            e.currentTarget.select();
-            e.preventDefault();
+      <div
+        className={classNames(styles.buttonGroup)}
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button
+          type="button"
+          className={styles.noteButton}
+          aria-expanded={editingNote}
+          onClick={(event) => {
+            event.stopPropagation();
+            setEditingNote(!editingNote);
           }}
-          onChange={(e) => {
-            if (onCountChange) {
-              let num = Number.parseInt(e.target.value);
-              if (!isNaN(num)) onCountChange(num);
-            }
-          }}
-          onClick={(e) => {
-            e.stopPropagation();
-          }}
-        />
+        >
+          备注
+        </button>
+        <label className={styles.quantity} title="需要准备的同名宝石数量">
+          数量
+          <input
+            type="number"
+            min={1}
+            step={1}
+            className={classNames(formStyles.formInput, styles.inputCount)}
+            value={requiredGem.count}
+            onFocus={(e) => {
+              e.currentTarget.select();
+            }}
+            onChange={(e) => {
+              if (onCountChange) {
+                const num = Number(e.target.value);
+                if (Number.isInteger(num) && num > 0) onCountChange(num);
+              }
+            }}
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          />
+        </label>
         <button
           className={classNames(styles.button, interactiveStyles.activePrimary)}
           onClick={(e) => {
@@ -75,12 +100,21 @@ export function GemEdit({
           className={classNames(styles.button)}
           onClick={(e) => {
             e.stopPropagation();
-            if (onDelete) onDelete();
+            if (onDelete) {
+              removeNote(requiredGem.id);
+              onDelete();
+            }
           }}
         >
           <MdDeleteOutline className={classNames(styles.buttonImage)} />
         </button>
       </div>
+      {editingNote && (
+        <GemNoteEditor
+          gemId={requiredGem.id}
+          onClose={() => setEditingNote(false)}
+        />
+      )}
     </div>
   );
 }
