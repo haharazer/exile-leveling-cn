@@ -59,6 +59,28 @@ export function ConfigForm({ config, onSubmit }: ConfigFormProps) {
           </div>
         }
       />
+      <SplitRow
+        left={
+          <div className={classNames(styles.label)}>
+            {message(locale, "showViscera")}
+          </div>
+        }
+        right={
+          <div className={classNames(styles.value)}>
+            <input
+              type="checkbox"
+              checked={config.showViscera === true}
+              onChange={(evt) => {
+                onSubmit({
+                  ...config,
+                  showViscera: evt.target.checked,
+                });
+              }}
+              aria-label={message(locale, "showViscera")}
+            />
+          </div>
+        }
+      />
     </div>
   );
 }

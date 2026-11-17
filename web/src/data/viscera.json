@@ -1,0 +1,2081 @@
+{
+  "source": "https://poedb.tw/cn/Viscera",
+  "retrievedAt": "2026-11-17",
+  "areaOverrides": {
+    "Bandit_Warriors_Head": "1_2_12",
+    "Solar_Shield": "2_8_13",
+    "Crescent_Blade": "2_8_13",
+    "Smugglers_Hand": "2_8_14",
+    "Inquisitors_Head": "2_9_10_2"
+  },
+  "areas": {
+    "1_1_2": [
+      {
+        "id": "Scorched_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scorched Arm",
+          "boss": "怒炎之使",
+          "effects": ["有 (10—15)% 的几率点燃"]
+        },
+        "zh-TW": {
+          "name": "焦黑手臂",
+          "boss": "怒炎之使",
+          "effects": ["(10—15)% 機率使用火焰傷害擊中敵人造成點燃效果"]
+        }
+      }
+    ],
+    "1_1_3": [
+      {
+        "id": "Severed_Rhoa_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Severed Rhoa Head",
+          "boss": "腐生恐喙鸟",
+          "effects": ["混沌伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "恐喙鳥之首",
+          "boss": "腐生恐喙",
+          "effects": ["增加 (10—15)% 混沌傷害"]
+        }
+      }
+    ],
+    "1_1_4_1": [
+      {
+        "id": "Sea_Witchs_Tentacle",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Sea Witch's Tentacle",
+          "boss": "海虫之母",
+          "effects": ["召唤生物的伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "海巫的觸手",
+          "boss": "海蟲之母",
+          "effects": ["增加 (10—15)% 召喚物所造成的傷害"]
+        }
+      }
+    ],
+    "1_1_4_0": [
+      {
+        "id": "Crustaceans_Claw",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Crustacean's Claw",
+          "boss": "深渊巨蟹",
+          "effects": ["攻击附加 (2—4) - (5—7) 基础物理伤害"]
+        },
+        "zh-TW": {
+          "name": "甲殼鉗",
+          "boss": "深淵巨蟹",
+          "effects": ["攻擊附加 (2—4) 至 (5—7) 物理傷害"]
+        }
+      }
+    ],
+    "1_1_5": [
+      {
+        "id": "Totemic_Visage",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Totemic Visage",
+          "boss": "伪神库度古",
+          "effects": ["闪电伤害击中时有 (10—15)% 的几率使敌人受到感电效果影响"]
+        },
+        "zh-TW": {
+          "name": "圖騰面具",
+          "boss": "偽神庫度古",
+          "effects": ["(10—15)% 機率使用閃電傷害擊中敵人造成感電效果"]
+        }
+      }
+    ],
+    "1_1_6": [
+      {
+        "id": "Skeletal_Archers_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Skeletal Archer's Arm",
+          "boss": "遗世铁锋",
+          "effects": ["每穿透一个敌人，投射物的击中和异常状态伤害提高 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "骷髏弓手手臂",
+          "boss": "遺世鐵鋒",
+          "effects": ["投射物根據每次穿透敵人，增加 (8—12)% 擊中和異常狀態傷害"]
+        }
+      }
+    ],
+    "1_1_7_1": [
+      {
+        "id": "Skeletal_Warriors_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Skeletal Warrior's Leg",
+          "boss": "寒霜之语",
+          "effects": ["你和 5 米范围内的友军造成 8 到 12 点额外冰霜伤害"]
+        },
+        "zh-TW": {
+          "name": "骷髏戰士腿骨",
+          "boss": "寒霜之語",
+          "effects": ["你和你5公尺範圍內的友方造成8至12附加冰冷傷害"]
+        }
+      }
+    ],
+    "1_1_7_2": [
+      {
+        "id": "Wardens_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Warden's Arm",
+          "boss": "典狱长布鲁特斯",
+          "effects": ["+(30—50) 最大生命"]
+        },
+        "zh-TW": {
+          "name": "典獄長手臂",
+          "boss": "典獄長布魯特斯",
+          "effects": ["+(30—50) 最大生命"]
+        }
+      }
+    ],
+    "1_1_8": [
+      {
+        "id": "Goatmans_Horn",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Goatman's Horn",
+          "boss": "羊人王恩格拉斯",
+          "effects": ["效果区域扩大 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "羊人之角",
+          "boss": "瓦古拉斯",
+          "effects": ["增加 (8—12)% 範圍效果"]
+        }
+      }
+    ],
+    "1_1_9": [
+      {
+        "id": "Mariners_Tricorne",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Mariner's Tricorne",
+          "boss": "费尔船长",
+          "effects": ["击败敌人时有 (8—12)% 的几率获得 4 秒迷踪状态"]
+        },
+        "zh-TW": {
+          "name": "水手的三角帽",
+          "boss": "費爾船長",
+          "effects": ["擊殺時有 (8—12)% 機率獲得 4 秒迷蹤效果"]
+        }
+      }
+    ],
+    "1_1_9a": [
+      {
+        "id": "Elemental_Essence",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Elemental Essence",
+          "boss": "噬魂之音",
+          "effects": ["+(14—18)% 冰霜抗性"]
+        },
+        "zh-TW": {
+          "name": "元素精華",
+          "boss": "噬魂之音",
+          "effects": ["+(14—18)% 冰冷抗性"]
+        }
+      }
+    ],
+    "1_1_11_1": [
+      {
+        "id": "Galvanic_Tentacle",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Galvanic Tentacle",
+          "boss": "莫薇儿之女埃玛莉莎",
+          "effects": ["+(14—18)% 闪电抗性"]
+        },
+        "zh-TW": {
+          "name": "電極觸手",
+          "boss": "莫薇兒之女艾瑪莉莎",
+          "effects": ["+(14—18)% 閃電抗性"]
+        }
+      }
+    ],
+    "1_1_11_2": [
+      {
+        "id": "Sirens_Tentacle",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Siren's Tentacle",
+          "boss": "海妖莫薇儿",
+          "effects": ["冰霜异常状态效果提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "塞壬的觸手",
+          "boss": "海妖莫薇兒",
+          "effects": ["增加 (10—15)% 冰冷異常狀態效果"]
+        }
+      }
+    ],
+    "1_2_1": [
+      {
+        "id": "Cutthroats_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Cutthroat's Head",
+          "boss": "裂颅者卡拉夫",
+          "effects": ["全局物理伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "割喉者頭顱",
+          "boss": "裂顱者卡拉夫",
+          "effects": ["增加 (10—15)% 全域物理傷害"]
+        }
+      }
+    ],
+    "1_2_2": [
+      {
+        "id": "Golemic_Stone",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Golemic Stone",
+          "boss": "白岩",
+          "effects": ["(10—15)% 几率避免被晕眩"]
+        },
+        "zh-TW": {
+          "name": "魔像石",
+          "boss": "白岩",
+          "effects": ["(10—15)% 機率避免被暈眩"]
+        }
+      }
+    ],
+    "1_2_2a": [
+      {
+        "id": "Gargantuan_Claws",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Gargantuan Claws",
+          "boss": "白色巨兽",
+          "effects": ["爪类攻击的攻击速度加快 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "巨像利爪",
+          "boss": "白色巨獸",
+          "effects": ["使用爪類武器時增加 (4—6)% 攻擊速度"]
+        }
+      }
+    ],
+    "1_2_3": [
+      {
+        "id": "Hollowed_Skull",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Hollowed Skull",
+          "boss": "布拉瓦罗",
+          "effects": ["攻击击中承受 (-15—-10) 物理伤害"]
+        },
+        "zh-TW": {
+          "name": "鏤空頭骨",
+          "boss": "布拉瓦羅",
+          "effects": ["攻擊擊中 (-15—-10) 承受物理傷害"]
+        }
+      }
+    ],
+    "1_2_5_1": [
+      {
+        "id": "Bonestalkers_Ribcage",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Bonestalker's Ribcage",
+          "boss": "Targoth, Undying Goliath",
+          "effects": ["受到的持续物理伤害效果降低 (4—5)%"]
+        },
+        "zh-TW": {
+          "name": "獵骨者肋胸",
+          "boss": "不朽巨人．塔爾戈斯",
+          "effects": ["減少 (4—5)% 承受物理持續傷害"]
+        }
+      }
+    ],
+    "1_2_5_2": [
+      {
+        "id": "Templar_Skull",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Templar Skull",
+          "boss": "造谣者大主教吉尔菲",
+          "effects": ["照亮范围扩大 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "聖宗之首",
+          "boss": "造謠者大主教吉爾菲",
+          "effects": ["增加 (8—12)% 照亮範圍"]
+        }
+      }
+    ],
+    "1_2_6_1": [
+      {
+        "id": "Arachnid_Fangs",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Arachnid Fangs",
+          "boss": "灾疫之兆",
+          "effects": ["击中时有 (10—15)% 的几率使目标中毒"]
+        },
+        "zh-TW": {
+          "name": "巨蛛毒牙",
+          "boss": "災疫之兆",
+          "effects": ["擊中時有 (10—15)% 機率使敵人中毒"]
+        }
+      }
+    ],
+    "1_2_6_2": [
+      {
+        "id": "Severed_Stinger",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Severed Stinger",
+          "boss": "悼灵者费德利塔斯",
+          "effects": ["伤害穿透 (3—4)% 的闪电抗性"]
+        },
+        "zh-TW": {
+          "name": "斬獲毒刺",
+          "boss": "悼靈者費德利塔斯",
+          "effects": ["傷害穿透 (3—4)% 閃電抗性"]
+        }
+      }
+    ],
+    "1_2_4": [
+      {
+        "id": "Bandit_Rogues_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Bandit Rogue's Head",
+          "boss": "克雷顿",
+          "effects": ["攻击与施法速度加快 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "匪徒盜賊之首",
+          "boss": "克雷頓",
+          "effects": ["增加 (4—6)% 攻擊與施放速度"]
+        }
+      }
+    ],
+    "1_2_7": [
+      {
+        "id": "Poachers_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Poacher's Leg",
+          "boss": "狩猎者塔戈",
+          "effects": ["被动物击中时承受 (-30—-20) 物理伤害"]
+        },
+        "zh-TW": {
+          "name": "盜獵者斷腿",
+          "boss": "偷獵者塔格",
+          "effects": ["被動物擊中時承受 (-30—-20) 物理傷害"]
+        }
+      }
+    ],
+    "1_2_8": [
+      {
+        "id": "Cobra_Tail",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Cobra Tail",
+          "boss": "响尾",
+          "effects": ["旅行技能的冷却回复率提高 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "毒蛇之尾",
+          "boss": "瑟蕊斯拉薩",
+          "effects": ["增加 (8—12)% 快行技能冷卻時間恢復率"]
+        }
+      }
+    ],
+    "1_2_9": [
+      {
+        "id": "Bandit_Witchs_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Bandit Witch's Head",
+          "boss": "阿莉亚",
+          "effects": ["每秒再生 (4—6) 魔力"]
+        },
+        "zh-TW": {
+          "name": "匪徒女巫之首",
+          "boss": "阿莉亞",
+          "effects": ["每秒 (4—6) 基本魔力回復"]
+        }
+      }
+    ],
+    "1_2_10": [
+      {
+        "id": "Arachnid_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Arachnid Leg",
+          "boss": "巨蛛之母",
+          "effects": ["有 (8—12)% 的几率在法术击中时使敌人缓速"]
+        },
+        "zh-TW": {
+          "name": "蜘蛛步足",
+          "boss": "織網者",
+          "effects": ["法術擊中時有 (8—12)% 機率阻礙敵人"]
+        }
+      }
+    ],
+    "1_2_11": [
+      {
+        "id": "Vaal_Appendage",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Vaal Appendage",
+          "boss": "Icali, Vaal Overseer",
+          "effects": ["近战打击范围 +(0.2—0.3) 米"]
+        },
+        "zh-TW": {
+          "name": "瓦爾附肢",
+          "boss": "瓦爾監督者．伊卡利",
+          "effects": ["+(0.2—0.3) 米近戰打擊距離"]
+        }
+      }
+    ],
+    "1_2_12": [
+      {
+        "id": "Bandit_Warriors_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Bandit Warrior's Head",
+          "boss": "欧克",
+          "effects": ["每秒再生 (0.8—1)% 生命"]
+        },
+        "zh-TW": {
+          "name": "匪徒戰士之首",
+          "boss": "歐克",
+          "effects": ["每秒回復 (0.8—1)% 生命"]
+        }
+      }
+    ],
+    "1_2_13": [
+      {
+        "id": "Primate_Foot",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Primate Foot",
+          "boss": "迅捷之影艾丹",
+          "effects": ["被点燃时移动速度加快 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "靈長類足部",
+          "boss": "迅捷之影艾丹",
+          "effects": ["被點燃時增加 (4—6)% 移動速度"]
+        }
+      }
+    ],
+    "1_2_14_2": [
+      {
+        "id": "Ursine_Flesh",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Ursine Flesh",
+          "boss": "库鲁",
+          "effects": ["敌人晕眩门槛降低 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "熊怪血肉",
+          "boss": "庫魯",
+          "effects": ["減少 (10—15)% 敵人暈眩門檻"]
+        }
+      }
+    ],
+    "1_2_14_3": [
+      {
+        "id": "Artificial_Appendage",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Artificial Appendage",
+          "boss": "瓦尔超灵",
+          "effects": [
+            "1: 冰缓效果提高 (20—30)%",
+            "攻击技能的效果区域扩大 (15—20)%",
+            "召唤生物的暴击率提高 (25—40)%"
+          ]
+        },
+        "zh-TW": {
+          "name": "人造附肢",
+          "boss": "瓦爾超靈",
+          "effects": [
+            "1: 增加 (20—30)% 冰緩效果",
+            "增加攻擊技能 (15—20)% 範圍效果",
+            "召喚物增加 (25—40)% 暴擊率"
+          ]
+        }
+      }
+    ],
+    "1_3_1": [
+      {
+        "id": "Captains_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Captain's Leg",
+          "boss": "守备队长",
+          "effects": ["移动速度加快 (3—4)%"]
+        },
+        "zh-TW": {
+          "name": "船長之腿",
+          "boss": "軍衛隊長",
+          "effects": ["增加 (3—4)% 移動速度"]
+        }
+      }
+    ],
+    "1_3_2": [
+      {
+        "id": "Spined_Claws",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Spined Claws",
+          "boss": "派柏图斯",
+          "effects": ["攻击有 (10—15)% 的几率导致流血"]
+        },
+        "zh-TW": {
+          "name": "脊骨巨爪",
+          "boss": "派柏圖斯",
+          "effects": ["攻擊有 (10—15)% 機率造成流血"]
+        }
+      }
+    ],
+    "1_3_3_1": [
+      {
+        "id": "Molten_Core",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Molten Core",
+          "boss": "憎恨之炎",
+          "effects": ["+(14—18)% 火焰抗性"]
+        },
+        "zh-TW": {
+          "name": "熔岩之核",
+          "boss": "憎恨之炎",
+          "effects": ["+(14—18)% 火焰抗性"]
+        }
+      }
+    ],
+    "1_3_5": [
+      {
+        "id": "Defaced_Bust",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Defaced Bust",
+          "boss": "沉沦者.穆希尔斯",
+          "effects": ["晕眩回复和格挡回复提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "破損半身像",
+          "boss": "沉淪者．穆希爾斯",
+          "effects": ["增加 (10—15)% 暈眩恢復和格擋恢復"]
+        }
+      }
+    ],
+    "1_3_6": [
+      {
+        "id": "Spectral_Hood",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Spectral Hood",
+          "boss": "The Black Phantom",
+          "effects": ["+(7—13)% 混沌抗性"]
+        },
+        "zh-TW": {
+          "name": "幽魂兜帽",
+          "boss": "黑色魅影",
+          "effects": ["+(7—13)% 混沌抗性"]
+        }
+      }
+    ],
+    "1_3_7": [
+      {
+        "id": "Soldiers_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Soldier's Head",
+          "boss": "奥瑞莱恩斯队长",
+          "effects": ["该装备的护甲提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "士兵之首",
+          "boss": "奧瑞萊恩斯隊長",
+          "effects": ["增加 (10—15)% 護甲"]
+        }
+      }
+    ],
+    "1_3_8_1": [
+      {
+        "id": "Flaming_Ribbon",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flaming Ribbon",
+          "boss": "狱火灵记",
+          "effects": ["受到的燃烧伤害降低 (4—5)%"]
+        },
+        "zh-TW": {
+          "name": "灼燃緞帶",
+          "boss": "獄火靈記",
+          "effects": ["減少 (4—5)% 承受的燃燒傷害"]
+        }
+      }
+    ],
+    "1_3_8_2": [
+      {
+        "id": "Statue_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Statue Leg",
+          "boss": "净域之女",
+          "effects": ["击中时有 (10—15)% 的几率击退敌人"]
+        },
+        "zh-TW": {
+          "name": "雕像之腿",
+          "boss": "淨域之女",
+          "effects": ["擊中時有 (10—15)% 機率擊退敵人"]
+        }
+      }
+    ],
+    "1_3_9": [
+      {
+        "id": "Voidbearers_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Voidbearer's Leg",
+          "boss": "虚影亡魂",
+          "effects": ["在燃烧地面上时，移动速度加快 (8—10)%"]
+        },
+        "zh-TW": {
+          "name": "虛影炎獸之腿",
+          "boss": "船墓之恐",
+          "effects": ["在燃燒地面上時增加 (8—10)% 移動速度"]
+        }
+      }
+    ],
+    "1_3_10_1": [
+      {
+        "id": "Voltaic_Apparatus",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Voltaic Apparatus",
+          "boss": "Lecius, the Woebegone",
+          "effects": ["击败敌人时有 (8—12)% 的几率获得一个暴击球"]
+        },
+        "zh-TW": {
+          "name": "電能儀器",
+          "boss": "愁苦者．勒修斯",
+          "effects": ["擊殺時有 (8—12)% 機率獲得 1 顆暴擊球"]
+        }
+      }
+    ],
+    "1_3_13": [
+      {
+        "id": "Generals_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "General's Head",
+          "boss": "格拉维奇将军",
+          "effects": ["能量护盾上限提高 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "將軍首級",
+          "boss": "格拉維奇將軍",
+          "effects": ["增加 (8—12)% 最大能量護盾"]
+        }
+      }
+    ],
+    "1_3_14_1": [
+      {
+        "id": "Brutes_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Brute's Arm",
+          "boss": "寇尔",
+          "effects": ["+(10—15) 力量"]
+        },
+        "zh-TW": {
+          "name": "蠻兵手臂",
+          "boss": "寇爾",
+          "effects": ["+(10—15) 力量"]
+        }
+      }
+    ],
+    "1_3_14_2": [
+      {
+        "id": "Thaumaturges_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Thaumaturge's Head",
+          "boss": "派蒂",
+          "effects": ["获得等同 (4—5)% 物理伤害的 1 个随机元素伤害"]
+        },
+        "zh-TW": {
+          "name": "奇術師之首",
+          "boss": "派蒂",
+          "effects": ["獲得等同 (4—5)% 物理傷害的一個隨機元素傷害"]
+        }
+      }
+    ],
+    "1_3_17_1": [
+      {
+        "id": "Skeletal_Beast_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Skeletal Beast Leg",
+          "boss": "巨兽霸主",
+          "effects": ["(18—24)% 几率避免致流血"]
+        },
+        "zh-TW": {
+          "name": "骨獸之腿",
+          "boss": "巨獸霸主",
+          "effects": ["(18—24)% 機率避免流血"]
+        }
+      }
+    ],
+    "1_3_17_2": [
+      {
+        "id": "Scholars_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scholar's Arm",
+          "boss": "图书馆长特里尼安",
+          "effects": ["+(10—15) 智慧"]
+        },
+        "zh-TW": {
+          "name": "學者之臂",
+          "boss": "圖書館長特里尼安",
+          "effects": ["+(10—15) 智慧"]
+        }
+      }
+    ],
+    "1_3_18_1": [
+      {
+        "id": "Aristocrats_Torso",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Aristocrat's Torso",
+          "boss": "大将卡莉嘉",
+          "effects": ["生命再生速度提高 (8—10)%"]
+        },
+        "zh-TW": {
+          "name": "貴族軀幹",
+          "boss": "大將卡莉嘉",
+          "effects": ["增加 (8—10)% 生命回復率"]
+        }
+      }
+    ],
+    "1_3_18_2": [
+      {
+        "id": "Despots_Fist",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Despot's Fist",
+          "boss": "圣宗神主",
+          "effects": ["徒手近战击中时附加 (1—3) 到 (40—60) 点闪电伤害"]
+        },
+        "zh-TW": {
+          "name": "霸主之拳",
+          "boss": "聖宗領導人神主",
+          "effects": ["附加 (1—3) 至 (40—60) 閃電傷害至空手近戰擊中"]
+        }
+      }
+    ],
+    "1_4_1": [
+      {
+        "id": "Vultures_Gut",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Vulture's Gut",
+          "boss": "影百足",
+          "effects": ["最后一击消耗灵柩，回复 (40—60) 点生命和 (20—30) 点魔力"]
+        },
+        "zh-TW": {
+          "name": "禽臟",
+          "boss": "影百足",
+          "effects": ["最後一擊會消耗屍體並恢復(40—60)生命和(20—30)魔力"]
+        }
+      }
+    ],
+    "1_4_2": [
+      {
+        "id": "Templar_Banner",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Templar Banner",
+          "boss": "帝王福尔",
+          "effects": ["每个暴击球使法术伤害提高 3%"]
+        },
+        "zh-TW": {
+          "name": "聖宗旗幟",
+          "boss": "帝王福爾",
+          "effects": ["每個暴擊球增加 3% 法術傷害"]
+        }
+      }
+    ],
+    "1_4_3_1": [
+      {
+        "id": "Pocked_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Pocked Leg",
+          "boss": "钉工",
+          "effects": ["头部装备和手部装备提供的护甲值提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "坑漥之腿",
+          "boss": "釘工",
+          "effects": ["增加 (20—30)% 裝備的頭盔和手套的護甲"]
+        }
+      }
+    ],
+    "1_4_3_2": [
+      {
+        "id": "Pocked_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Pocked Arm",
+          "boss": "锤烈",
+          "effects": ["头部装备和脚部装备提供的闪避值提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "坑漥之臂",
+          "boss": "鎚烈",
+          "effects": ["增加 (20—30)% 裝備的頭盔和鞋子的閃避值"]
+        }
+      },
+      {
+        "id": "Bats_Wings",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Bat's Wings",
+          "boss": "虚空之吼",
+          "effects": [
+            "1: (10—15)% 几率避免元素异常状态",
+            "2: (20—30)% 几率避免元素异常状态"
+          ]
+        },
+        "zh-TW": {
+          "name": "蝙蝠．翅膀",
+          "boss": "虛空之吼",
+          "effects": [
+            "1: (10—15)% 機率避免元素異常狀態",
+            "2: (20—30)% 機率避免元素異常狀態"
+          ]
+        }
+      }
+    ],
+    "1_4_3_3": [
+      {
+        "id": "Flesh-fused_Lantern",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flesh-fused Lantern",
+          "boss": "燃烧者",
+          "effects": ["+(6—8)% 火焰持续伤害加成"]
+        },
+        "zh-TW": {
+          "name": "燃軀燈籠",
+          "boss": "燃燒者",
+          "effects": ["+(6—8)% 火焰持續傷害加成"]
+        }
+      }
+    ],
+    "1_4_4_1": [
+      {
+        "id": "Carved_Haunches",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Carved Haunches",
+          "boss": "火柳",
+          "effects": ["图腾放置速度增加 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "雕刻後腰",
+          "boss": "火柳",
+          "effects": ["增加 (10—15)% 圖騰放置速度"]
+        }
+      }
+    ],
+    "1_4_4_3": [
+      {
+        "id": "Blazing_Skull",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Blazing Skull",
+          "boss": "卡鲁之王冈姆",
+          "effects": ["击中伤害对稀有怪物提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "燃火頭骨",
+          "boss": "國王岡姆",
+          "effects": ["擊中稀有怪物增加 (20—30)% 傷害"]
+        }
+      }
+    ],
+    "1_4_5_1": [
+      {
+        "id": "Gladiators_Heart",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Gladiator's Heart",
+          "boss": "巴尔克霍",
+          "effects": ["近战击中时获得 1 点怒火"]
+        },
+        "zh-TW": {
+          "name": "角鬥士之心",
+          "boss": "巴爾克霍",
+          "effects": ["近戰擊中時獲得 1 層盛怒"]
+        }
+      }
+    ],
+    "1_4_5_2": [
+      {
+        "id": "Swordmasters_Blade",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Swordmaster's Blade",
+          "boss": "斗剑之王德瑞索",
+          "effects": ["剑类攻击的攻击速度加快 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "劍聖之刃",
+          "boss": "鬥劍之王德瑞索",
+          "effects": ["使用劍類武器時增加 (4—6)% 攻擊速度"]
+        }
+      }
+    ],
+    "1_4_6_1": [
+      {
+        "id": "Chitinous_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Chitinous Leg",
+          "boss": "骸骨皇后",
+          "effects": ["生成的灵柩最大生命提高 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "幾丁之腿",
+          "boss": "骸骨皇后",
+          "effects": ["你產生的屍體增加 (4—6)% 最大生命"]
+        }
+      }
+    ],
+    "1_4_6_2": [
+      {
+        "id": "Engorged_Eye",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Engorged Eye",
+          "boss": "派蒂, 憎恨梦魇",
+          "effects": ["(30—50)% 的几率免疫腐化之血的流血"]
+        },
+        "zh-TW": {
+          "name": "腫脹之眼",
+          "boss": "憎恨夢魘派蒂",
+          "effects": ["(30—50)% 機率避免腐化之血"]
+        }
+      }
+    ],
+    "1_4_6_3": [
+      {
+        "id": "Corrupted_Carapace",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Corrupted Carapace",
+          "boss": "梦魇玛拉凯",
+          "effects": ["用生命施放技能时，其伤害提高 (18—24)%"]
+        },
+        "zh-TW": {
+          "name": "腐化甲殼",
+          "boss": "夢魘瑪拉凱",
+          "effects": ["消耗生命的技能增加 (18—24)% 傷害"]
+        }
+      }
+    ],
+    "1_4_7": [
+      {
+        "id": "Vendigo_Claws",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Vendigo Claws",
+          "boss": "白色死兆",
+          "effects": ["徒手攻击附加 (10—15) 到 (25—35) 冰霜伤害"]
+        },
+        "zh-TW": {
+          "name": "溫迪戈之爪",
+          "boss": "慘白死侍",
+          "effects": ["為空手攻擊附加(10—15)至(25—35)冰冷傷害"]
+        }
+      }
+    ],
+    "1_5_1": [
+      {
+        "id": "Overseers_Whip",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Overseer's Whip",
+          "boss": "监工头克劳",
+          "effects": [
+            "若你近期使用了召唤生物技能，则召唤生物的移动速度提高 (18—24)%"
+          ]
+        },
+        "zh-TW": {
+          "name": "監工之鞭",
+          "boss": "監工庫爾",
+          "effects": [
+            "若你近期使用過召喚物技能，你的召喚物增加(18—24)%移動速度"
+          ]
+        }
+      }
+    ],
+    "1_5_2": [
+      {
+        "id": "Justicars_Helm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Justicar's Helm",
+          "boss": "审判长卡斯提克斯",
+          "effects": ["晕眩门槛提高 (18—24)%"]
+        },
+        "zh-TW": {
+          "name": "判官之盔",
+          "boss": "判官卡斯蒂克斯",
+          "effects": ["增加 (18—24)% 暈眩門檻"]
+        }
+      }
+    ],
+    "1_5_3": [
+      {
+        "id": "Flaming_Furnace",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flaming Furnace",
+          "boss": "火神母祖",
+          "effects": ["击中时有 (8—12)% 的几率施加火焰曝露"]
+        },
+        "zh-TW": {
+          "name": "灼燃鍛爐",
+          "boss": "獄火神母",
+          "effects": ["擊中時有 (8—12)% 機率造成火焰曝曬"]
+        }
+      }
+    ],
+    "1_5_4": [
+      {
+        "id": "Adherents_Crown",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Adherent's Crown",
+          "boss": "Apostle of Holy Fire",
+          "effects": ["(10—15)% 的物理伤害转换为火焰伤害"]
+        },
+        "zh-TW": {
+          "name": "追隨者之冠",
+          "boss": "聖火使徒",
+          "effects": ["(10—15)% 物理傷害轉換為火焰傷害"]
+        }
+      }
+    ],
+    "1_5_4b": [
+      {
+        "id": "Heretical_Tome",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Heretical Tome",
+          "boss": "卡托, 理性之光",
+          "effects": ["+(6—8)% 物理持续伤害加成"]
+        },
+        "zh-TW": {
+          "name": "異端禁典",
+          "boss": "光明學者卡托",
+          "effects": ["+(6—8)% 物理持續傷害加成"]
+        }
+      }
+    ],
+    "1_5_6": [
+      {
+        "id": "Skeletal_Tail",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Skeletal Tail",
+          "boss": "Osseous Abomination",
+          "effects": ["投射物伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "骸骨之尾",
+          "boss": "骸骨憎惡",
+          "effects": ["增加 (10—15)% 投射物傷害"]
+        }
+      }
+    ],
+    "1_5_7": [
+      {
+        "id": "Scholars_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scholar's Leg",
+          "boss": "Tacitus, Fallen Archivist",
+          "effects": ["装备手套获得的加成提高 (5—6)%"]
+        },
+        "zh-TW": {
+          "name": "學者之腿",
+          "boss": "墮落典藏官．塔西圖斯",
+          "effects": ["從已裝備手套獲得的加成增加 (5—6)%"]
+        }
+      }
+    ],
+    "2_10_6": [
+      {
+        "id": "Ravenous_Skull",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Ravenous Skull",
+          "boss": "黑暗之灵奇塔弗",
+          "effects": [
+            "每 3 秒消耗 5 米范围内的一个灵柩，并回复 (2—3)% 的生命\n每 3 秒消耗 5 米范围内的一个灵柩，并回复 (2—3)% 的魔力"
+          ]
+        },
+        "zh-TW": {
+          "name": "貪婪頭骨",
+          "boss": "貪得無厭奇塔弗",
+          "effects": [
+            "每 3 秒，消耗 5 公尺內的屍體恢復 (2—3)% 生命\n每 3 秒，消耗一具位於 5 公尺內的屍體以恢復(2—3)%魔力"
+          ]
+        }
+      }
+    ],
+    "2_6_1": [
+      {
+        "id": "Nobles_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Noble's Head",
+          "boss": "艾布拉姆的里斯",
+          "effects": ["对亡灵怪物造成的伤害总增 (6—8)%"]
+        },
+        "zh-TW": {
+          "name": "貴族之首",
+          "boss": "亞伯蘭之里斯",
+          "effects": ["對不死怪物造成(6—8)%更多傷害"]
+        }
+      }
+    ],
+    "2_6_2": [
+      {
+        "id": "Conjoined_Hound_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Conjoined Hound Head",
+          "boss": "图克哈玛的鹰犬莱哈拉",
+          "effects": ["技能被释出辅助时，其封印获取频率提高 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "連體獵犬之首",
+          "boss": "圖克哈瑪的忠誠．萊哈拉",
+          "effects": ["被釋放輔助的技能增加 (8—12)% 封印獲得頻率"]
+        }
+      }
+    ],
+    "2_6_4": [
+      {
+        "id": "Scouts_Bow",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scout's Bow",
+          "boss": "卡鲁长者",
+          "effects": ["伤害穿透 (3—4)% 火焰抗性"]
+        },
+        "zh-TW": {
+          "name": "斥侯之弓",
+          "boss": "拜恥女王",
+          "effects": ["傷害穿透 (3—4)% 火焰抗性"]
+        }
+      }
+    ],
+    "2_6_5": [
+      {
+        "id": "Ancestors_Club",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Ancestor's Club",
+          "boss": "战争之父 图克哈玛",
+          "effects": [
+            "能设定额外目标的打击技能可以将设定额外目标的范围扩大 (10—15)%"
+          ]
+        },
+        "zh-TW": {
+          "name": "先祖棍棒",
+          "boss": "戰神卡魯圖克哈瑪",
+          "effects": ["瞄準額外敵人的打擊技能可以從 (10—15)% 更遠的地方進行"]
+        }
+      }
+    ],
+    "2_6_6": [
+      {
+        "id": "Skeleton_Wheel",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Skeleton Wheel",
+          "boss": "转轮僵尸",
+          "effects": ["若你近期内使用过位移技能，则攻击和施法速度加快 (5—7)%"]
+        },
+        "zh-TW": {
+          "name": "骸骨車輪",
+          "boss": "疾風拽輪",
+          "effects": ["近期內你若有使用移動技能，增加 (5—7)% 攻擊和施放速度"]
+        }
+      }
+    ],
+    "2_6_7_2": [
+      {
+        "id": "Flayed_Visage",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flayed Visage",
+          "boss": "重塑之布鲁特斯",
+          "effects": ["受到的混沌伤害无法穿透能量护盾的 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "剝皮面容",
+          "boss": "改造生物布魯特斯",
+          "effects": ["承受的 (8—12)% 混沌傷害不會無視能量護盾"]
+        }
+      }
+    ],
+    "2_6_10": [
+      {
+        "id": "Bear_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Bear Head",
+          "boss": "兽群",
+          "effects": ["怒火下限 +4"]
+        },
+        "zh-TW": {
+          "name": "熊首",
+          "boss": "成群猛獸",
+          "effects": ["最小盛怒 +4"]
+        }
+      },
+      {
+        "id": "Boar_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Boar Head",
+          "boss": "兽群",
+          "effects": ["若你近期内使敌人眩晕，则有 (8—10)% 的几率造成双倍伤害"]
+        },
+        "zh-TW": {
+          "name": "豬首",
+          "boss": "成群猛獸",
+          "effects": ["若你近期有暈眩敵人，有 (8—10)% 機率造成兩倍傷害"]
+        }
+      },
+      {
+        "id": "Stag_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Stag Head",
+          "boss": "兽群",
+          "effects": ["法术伤害压制率 +(8—12)%"]
+        },
+        "zh-TW": {
+          "name": "鹿首",
+          "boss": "成群猛獸",
+          "effects": ["+(8—12)% 壓抑法術傷害率"]
+        }
+      }
+    ],
+    "2_6_11": [
+      {
+        "id": "Arachnid_Egg_Sac",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Arachnid Egg Sac",
+          "boss": "傀儡女王瑞斯拉萨",
+          "effects": ["近期内创造的召唤生物攻击和施法速度加快 (5—7)%"]
+        },
+        "zh-TW": {
+          "name": "截肢卵囊",
+          "boss": "傀儡女王瑞斯拉薩",
+          "effects": ["近期製造的召喚物增加 (5—7)% 攻擊和施放速度"]
+        }
+      }
+    ],
+    "2_6_12": [
+      {
+        "id": "Infested_Torso",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Infested Torso",
+          "boss": "自愿宿主空颅",
+          "effects": ["召唤生物每秒再生 (0.8—1)% 生命"]
+        },
+        "zh-TW": {
+          "name": "感染軀幹",
+          "boss": "虛空亡顱狂熱寄生獸",
+          "effects": ["召喚物每秒回復 (0.8—1)% 生命"]
+        }
+      }
+    ],
+    "2_6_15": [
+      {
+        "id": "King_Crabs_Claw",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "King Crab's Claw",
+          "boss": "惊海之王索亚格斯",
+          "effects": [
+            "获得额外冰霜伤害，其数值等同于物理伤害的 (3—4)%\n获得额外闪电伤害，其数值等同于物理伤害的 (3—4)%"
+          ]
+        },
+        "zh-TW": {
+          "name": "帝王蟹之爪",
+          "boss": "海洋之王賽根斯",
+          "effects": [
+            "獲得 (3—4)% 物理傷害的冰冷傷害\n獲得 (3—4)% 物理傷害的閃電傷害"
+          ]
+        }
+      }
+    ],
+    "2_7_4": [
+      {
+        "id": "Wraith_Claws",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Wraith Claws",
+          "boss": "The Wailing Lament",
+          "effects": ["法术击中有 (5—7)% 的几率穿刺敌人"]
+        },
+        "zh-TW": {
+          "name": "狂怒之爪",
+          "boss": "哀號悲歌",
+          "effects": ["法術擊中有 (5—7)% 機率造成穿刺"]
+        }
+      }
+    ],
+    "2_7_5_2": [
+      {
+        "id": "Infected_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Infected Leg",
+          "boss": "播疫者",
+          "effects": ["召唤生物的持续伤害加成 +(6—8)%"]
+        },
+        "zh-TW": {
+          "name": "感染的腿",
+          "boss": "播疫者",
+          "effects": ["召喚物擁有+(6—8)%持續傷害加成"]
+        }
+      }
+    ],
+    "2_7_5_map": [
+      {
+        "id": "Inquisitors_Claw",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Inquisitor's Claw",
+          "boss": "奇才马雷格罗",
+          "effects": ["你施加的死亡凋零耗竭速度减慢 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "審判官之爪",
+          "boss": "藝術家馬雷葛蘿",
+          "effects": ["你造成的凋零減緩 (10—15)% 失效"]
+        }
+      }
+    ],
+    "2_7_6": [
+      {
+        "id": "Necromancers_Mask",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Necromancer's Mask",
+          "boss": "雕骨师",
+          "effects": ["奉献技能的持续时间延长 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "死靈面具",
+          "boss": "刻骨狂",
+          "effects": ["奉獻技能增加 (10—15)% 持續時間"]
+        }
+      }
+    ],
+    "2_7_7": [
+      {
+        "id": "Ornate_Torso",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Ornate Torso",
+          "boss": "受拉克斯操纵的古斯特",
+          "effects": ["召唤生物的最大生命提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "華麗軀幹",
+          "boss": "叢林之霸古斯特",
+          "effects": ["召喚物增加 (10—15)% 最大生命"]
+        }
+      }
+    ],
+    "2_7_8": [
+      {
+        "id": "Devourers_Antenna",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Devourer's Antenna",
+          "boss": "钩虫",
+          "effects": ["对满血敌人造成的击中和异常状态伤害提高 (40—60)%"]
+        },
+        "zh-TW": {
+          "name": "吞噬者觸角",
+          "boss": "地穴寄生獸",
+          "effects": ["增加(40—60)%對滿血敵人所造成的擊中和異常狀態傷害"]
+        }
+      }
+    ],
+    "2_7_9": [
+      {
+        "id": "Blackened_Lungs",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Blackened Lungs",
+          "boss": "绝望之母 格鲁丝克",
+          "effects": ["战吼施法速度加快 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "焦黑肺臟",
+          "boss": "絕望之母葛魯斯寇",
+          "effects": ["增加 (10—15)% 戰吼施放速度"]
+        }
+      }
+    ],
+    "2_7_10": [
+      {
+        "id": "Constructs_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Construct's Head",
+          "boss": "Vaal Sentry",
+          "effects": ["投射物速度加快 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "構裝體之首",
+          "boss": "Vaal Sentry",
+          "effects": ["增加 (8—12)% 投射物速度"]
+        }
+      }
+    ],
+    "2_7_12_2": [
+      {
+        "id": "Spider_Queens_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Spider Queen's Head",
+          "boss": "暗影织网者阿拉卡力",
+          "effects": ["每有一个召唤生物，伤害提高 2%，上限为 40%"]
+        },
+        "zh-TW": {
+          "name": "蛛后之首",
+          "boss": "暗影鬼蛛艾爾卡莉",
+          "effects": ["你每有一名召喚物，即增加2%傷害，至多40%"]
+        }
+      }
+    ],
+    "2_8_2_1": [
+      {
+        "id": "Dessicated_Head",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Dessicated Head",
+          "boss": "巨塔尸王",
+          "effects": ["魔卫复苏伤害提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "乾癟頭顱",
+          "boss": "巨大腐屍",
+          "effects": ["增加 (20—30)% 殭屍造成的傷害"]
+        }
+      }
+    ],
+    "2_8_2_2": [
+      {
+        "id": "Hags_Stomach",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Hag's Stomach",
+          "boss": "恶毒者德瑞",
+          "effects": ["你所施放诅咒的效果提高 (5—7)%"]
+        },
+        "zh-TW": {
+          "name": "鬼婆之胃",
+          "boss": "卑鄙的德瑞",
+          "effects": ["增加 (5—7)% 你所施放詛咒的效果"]
+        }
+      }
+    ],
+    "2_8_3": [
+      {
+        "id": "Ghostly_Claw",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Ghostly Claw",
+          "boss": "叛徒恩德",
+          "effects": ["击败敌人有 (5—7)% 的几率获得灵巧"]
+        },
+        "zh-TW": {
+          "name": "幽靈鬼爪",
+          "boss": "叛徒恩達",
+          "effects": ["擊殺時有 (5—7)% 機率獲得靈巧"]
+        }
+      }
+    ],
+    "2_8_4": [
+      {
+        "id": "Terrifying_Maw",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Terrifying Maw",
+          "boss": "恐惧之源尤格尔",
+          "effects": ["你受到的诅咒效果降低 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "駭人巨口",
+          "boss": "恐懼的血兆伊果",
+          "effects": ["減少在你身上的詛咒效果 (20—30)%"]
+        }
+      }
+    ],
+    "2_8_5": [
+      {
+        "id": "Armoured_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Armoured Leg",
+          "boss": "永恒仆从赫克特·提图瑟",
+          "effects": ["+(8—12)% 对投射物伤害格挡几率"]
+        },
+        "zh-TW": {
+          "name": "重甲腿骨",
+          "boss": "永恆之僕赫克特．提圖瑟",
+          "effects": ["+(8—12)% 投射物攻擊傷害格擋率"]
+        }
+      }
+    ],
+    "2_8_6": [
+      {
+        "id": "Blackguards_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Blackguard's Leg",
+          "boss": "暗夜先驱卢修斯",
+          "effects": ["你受到的冰缓效果降低 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "烏旗守衛腿骨",
+          "boss": "夜襲天魔",
+          "effects": ["減少 (20—30)% 你所承受的冰緩效果"]
+        }
+      }
+    ],
+    "2_8_7_1_": [
+      {
+        "id": "Champions_Banner",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Champion's Banner",
+          "boss": "Banner of Lunaris",
+          "effects": ["旗帜周围的敌人承受的冰霜伤害提高 (4—5)%"]
+        },
+        "zh-TW": {
+          "name": "勇士戰旗",
+          "boss": "Banner of Lunaris",
+          "effects": ["位於你鬥旗周遭的敵人會增加(4—5)%承受冰冷傷害"]
+        }
+      }
+    ],
+    "2_8_7_2": [
+      {
+        "id": "Lunar_Bow",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Lunar Bow",
+          "boss": "月影守卫者-暮色",
+          "effects": ["(10—15)% 的物理伤害转换为冰霜伤害"]
+        },
+        "zh-TW": {
+          "name": "月光長弓",
+          "boss": "月影神諭諸神黃昏",
+          "effects": ["(10—15)% 物理傷害轉換為冰冷傷害"]
+        }
+      }
+    ],
+    "2_8_8": [
+      {
+        "id": "Golden_Ankh",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Golden Ankh",
+          "boss": "托尔曼",
+          "effects": ["魔卫复苏最大生命提高 (18—24)%"]
+        },
+        "zh-TW": {
+          "name": "黃金聖環",
+          "boss": "托爾曼",
+          "effects": ["殭屍增加 (18—24)% 最大生命"]
+        }
+      }
+    ],
+    "2_8_9": [
+      {
+        "id": "Gemling_Torso",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Gemling Torso",
+          "boss": "古灵斗士长",
+          "effects": ["装备和技能石的属性需求降低 (4—6)%"]
+        },
+        "zh-TW": {
+          "name": "古靈軀幹",
+          "boss": "古靈隊長",
+          "effects": ["裝備和寶石減少 (4—6)% 能力值需求"]
+        }
+      }
+    ],
+    "2_8_10": [
+      {
+        "id": "Scarecrows_Pitchfork",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scarecrow's Pitchfork",
+          "boss": "恐惧塑像",
+          "effects": ["(10—15)% 的几率使敌人逃跑"]
+        },
+        "zh-TW": {
+          "name": "稻草人草叉",
+          "boss": "恐懼雕像",
+          "effects": ["(10—15)% 機率使敵人逃跑"]
+        }
+      }
+    ],
+    "2_8_11": [
+      {
+        "id": "Charred_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Charred Leg",
+          "boss": "太阳先知雷古勒斯",
+          "effects": ["你被点燃的持续时间缩短 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "焦黑腿骨",
+          "boss": "赤陽先鋒軒轅",
+          "effects": ["減少 (20—30)% 你被點燃的持續時間"]
+        }
+      }
+    ],
+    "2_8_12_1": [
+      {
+        "id": "Sun-bleached_Breastplate",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Sun-bleached Breastplate",
+          "boss": "The Sword of Lunaris",
+          "effects": ["旗帜周围的敌人承受的火焰伤害提高 (4—5)%"]
+        },
+        "zh-TW": {
+          "name": "日浸胸甲",
+          "boss": "The Sword of Lunaris",
+          "effects": ["位於你鬥旗周遭的敵人會增加(4—5)%承受火焰傷害"]
+        }
+      }
+    ],
+    "2_8_12_2": [
+      {
+        "id": "Resplendent_Sceptre",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Resplendent Sceptre",
+          "boss": "日耀守卫者-黎明",
+          "effects": ["攻击技能的持续火焰伤害加成 +(7—10)%"]
+        },
+        "zh-TW": {
+          "name": "璀璨權杖",
+          "boss": "日耀神諭諸神晨曦",
+          "effects": ["攻擊技能 +(7—10)% 火焰持續傷害加成"]
+        }
+      }
+    ],
+    "2_8_13": [
+      {
+        "id": "Solar_Shield",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Solar Shield",
+          "boss": "日耀女神",
+          "effects": ["受到击中物理伤害的 (3—4)% 视作火焰伤害"]
+        },
+        "zh-TW": {
+          "name": "日光之盾",
+          "boss": "永恆白駒日耀神",
+          "effects": ["承受 (3—4)% 的擊中物理傷害視為火焰傷害"]
+        }
+      },
+      {
+        "id": "Crescent_Blade",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Crescent Blade",
+          "boss": "月影女神",
+          "effects": ["受到击中物理伤害的 (3—4)% 视作冰霜伤害"]
+        },
+        "zh-TW": {
+          "name": "新月刀刃",
+          "boss": "永恆嬋娟月影神",
+          "effects": ["承受 (3—4)% 的擊中物理傷害視為冰冷傷害"]
+        }
+      }
+    ],
+    "2_8_14": [
+      {
+        "id": "Smugglers_Hand",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Smuggler's Hand",
+          "boss": "Weapons Smuggler",
+          "effects": ["被击败的敌人掉落的金币数量提高 (5—7)%"]
+        },
+        "zh-TW": {
+          "name": "走私者之手",
+          "boss": "Weapons Smuggler",
+          "effects": ["增加 (5—7)% 殺死敵人時掉落的金幣數量"]
+        }
+      }
+    ],
+    "2_9_1": [
+      {
+        "id": "Coagulated_Essence",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Coagulated Essence",
+          "boss": "Coagulation of Gore",
+          "effects": ["流血时，伤害提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "凝結精華",
+          "boss": "Coagulation of Gore",
+          "effects": ["流血時增加(20—30)%傷害"]
+        }
+      }
+    ],
+    "2_9_2": [
+      {
+        "id": "Gelid_Fangs",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Gelid Fangs",
+          "boss": "Chill of the Mountain",
+          "effects": ["伤害穿透 (3—4)% 冰霜抗性"]
+        },
+        "zh-TW": {
+          "name": "極寒銳牙",
+          "boss": "Chill of the Mountain",
+          "effects": ["傷害穿透 (3—4)% 冰冷抗性"]
+        }
+      }
+    ],
+    "2_9_3": [
+      {
+        "id": "Desert_Sword",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Desert Sword",
+          "boss": "Messenger of the Desert",
+          "effects": ["击中时有 15% 的几率使敌人致盲"]
+        },
+        "zh-TW": {
+          "name": "沙漠之劍",
+          "boss": "Messenger of the Desert",
+          "effects": ["擊中時有 15% 機率導致敵人致盲"]
+        }
+      }
+    ],
+    "2_9_4": [
+      {
+        "id": "Scorpion_Stinger",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Scorpion Stinger",
+          "boss": "沙之女神 沙卡丽",
+          "effects": ["你对非中毒敌人施加的中毒伤害提高 (40—60)%"]
+        },
+        "zh-TW": {
+          "name": "蠍尾釘刺",
+          "boss": "沙瀑女王夏卡莉",
+          "effects": ["你對非中毒的敵人造成中毒，增加 (40—60)% 傷害"]
+        }
+      }
+    ],
+    "2_9_5": [
+      {
+        "id": "Lithic_Haunches",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Lithic Haunches",
+          "boss": "巨石牛魔像",
+          "effects": ["护甲值有 (7—10)% 的几率以 200% 进行防御"]
+        },
+        "zh-TW": {
+          "name": "石化大腿",
+          "boss": "礫石巨獸",
+          "effects": ["(7—10)% 機率使用 200% 護甲防禦"]
+        }
+      }
+    ],
+    "2_9_6": [
+      {
+        "id": "Chimeral_Eye",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Chimeral Eye",
+          "boss": "蛇怪",
+          "effects": ["你身上的石化效果消减速度加快 (80—120)%"]
+        },
+        "zh-TW": {
+          "name": "奇美拉之眼",
+          "boss": "草莽巨蜥",
+          "effects": ["作用於你身上的石化消逝的速度加快(80—120)%"]
+        }
+      }
+    ],
+    "2_9_7": [
+      {
+        "id": "Chaos_Golems_Core",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Chaos Golem's Core",
+          "boss": "觉醒者穆鲁克",
+          "effects": ["受到的持续性混沌伤害降低 (4—5)%"]
+        },
+        "zh-TW": {
+          "name": "混沌魔像核心",
+          "boss": "大覺醒莫魯克",
+          "effects": ["受到的持續性混沌傷害減少 (4—5)%"]
+        }
+      }
+    ],
+    "2_9_8": [
+      {
+        "id": "Desert_Queens_Crown",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Desert Queen's Crown",
+          "boss": "风暴女神 格鲁坎",
+          "effects": ["被致盲时，伤害提高 (20—30)%"]
+        },
+        "zh-TW": {
+          "name": "沙漠女王之冠",
+          "boss": "颶風女王卡洛翰",
+          "effects": ["致盲時增加(20—30)%傷害"]
+        }
+      }
+    ],
+    "2_9_9": [
+      {
+        "id": "Voltaic_Skull",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Voltaic Skull",
+          "boss": "阿杜斯将军",
+          "effects": ["物理伤害的 (10—15)% 转换为闪电伤害"]
+        },
+        "zh-TW": {
+          "name": "電能頭骨",
+          "boss": "艾杜斯將軍",
+          "effects": ["(10—15)% 物理傷害轉換為閃電傷害"]
+        }
+      }
+    ],
+    "2_9_10_1": [
+      {
+        "id": "Flayed_Arm",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flayed Arm",
+          "boss": "垂涎裂齿兽",
+          "effects": ["将所受伤害的(5—7)%吸纳为生命"]
+        },
+        "zh-TW": {
+          "name": "剝皮手臂",
+          "boss": "垂涎裂齒獸",
+          "effects": ["承受 (5—7)% 傷害補償為生命"]
+        }
+      }
+    ],
+    "2_9_10_2": [
+      {
+        "id": "Inquisitors_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Inquisitor's Head",
+          "boss": "不洁三巨头",
+          "effects": ["1: 近战暴击会造成流血", "2: 近战暴击会使敌人中毒"]
+        },
+        "zh-TW": {
+          "name": "審判官頭顱",
+          "boss": "墮道三巨頭",
+          "effects": ["1: 近戰暴擊造成流血效果", "2: 近戰暴擊使敵人中毒"]
+        }
+      },
+      {
+        "id": "Witchs_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Witch's Head",
+          "boss": "不洁三巨头",
+          "effects": [
+            "魔力回复速度的提高和降低也按 (10—15)% 的数值\n作用于能量护盾充能速度"
+          ]
+        },
+        "zh-TW": {
+          "name": "女巫頭顱",
+          "boss": "墮道三巨頭",
+          "effects": [
+            "對魔力回復率的增減同時會以(10—15)%的數值\n套用至能量護盾充能率"
+          ]
+        }
+      },
+      {
+        "id": "Hags_Head",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Hag's Head",
+          "boss": "不洁三巨头",
+          "effects": ["被你诅咒的敌人无法造成暴击"]
+        },
+        "zh-TW": {
+          "name": "鬼婆頭顱",
+          "boss": "墮道三巨頭",
+          "effects": ["被你祖咒的敵人無法造成暴擊"]
+        }
+      }
+    ],
+    "2_10_1": [
+      {
+        "id": "Diseased_Wing",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Diseased Wing",
+          "boss": "瘟疫之源",
+          "effects": ["+(6—8)% 混沌持续伤害加成"]
+        },
+        "zh-TW": {
+          "name": "染病之翼",
+          "boss": "病疫死翼",
+          "effects": ["+(6—8)% 混沌持續傷害加成"]
+        }
+      }
+    ],
+    "2_10_4": [
+      {
+        "id": "Prosthetic_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Prosthetic Leg",
+          "boss": "重塑之阿瓦留斯",
+          "effects": ["敌人被点燃的持续时间延长 (8—12)%"]
+        },
+        "zh-TW": {
+          "name": "義肢腿骨",
+          "boss": "復仇者伊爾莉斯",
+          "effects": ["增加 (8—12)% 敵人點燃持續時間"]
+        }
+      }
+    ],
+    "2_10_5": [
+      {
+        "id": "Distended_Stomach",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Distended Stomach",
+          "boss": "The Unending Feast",
+          "effects": ["若你近期内有消耗灵柩，则伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "腫脹腹部",
+          "boss": "無盡盛宴",
+          "effects": ["若你近期有消耗屍體，增加 (10—15)% 傷害"]
+        }
+      }
+    ],
+    "2_10_7": [
+      {
+        "id": "Smouldering_Leg",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Smouldering Leg",
+          "boss": "薇伦塔",
+          "effects": ["已装备的鞋子上，插入的技能魔力消耗效能提高 (6—8)%"]
+        },
+        "zh-TW": {
+          "name": "餘燼腿骨",
+          "boss": "范尼達",
+          "effects": ["鑲嵌於裝備中鞋子的技能增加(6—8)%魔力消耗效用"]
+        }
+      }
+    ],
+    "2_10_8": [
+      {
+        "id": "Broken_Bust",
+        "tier": "Untiered",
+        "zh-CN": {
+          "name": "Broken Bust",
+          "boss": "Living Knowledge",
+          "effects": ["消灭怪物有 (2—3)% 的几率额外掉落一个智慧卷轴"]
+        },
+        "zh-TW": {
+          "name": "破碎胸像",
+          "boss": "Living Knowledge",
+          "effects": ["擊殺敵人有 (2—3)% 機率掉落 1 個額外知識卷軸"]
+        }
+      }
+    ],
+    "2_10_9": [
+      {
+        "id": "Osseous_Scythe",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Osseous Scythe",
+          "boss": "Bone Amalgam",
+          "effects": ["攻击击中时有 (8—12)% 的几率穿刺敌人"]
+        },
+        "zh-TW": {
+          "name": "骨質鐮刀",
+          "boss": "Bone Amalgam",
+          "effects": ["攻擊擊中時有 (8—12)% 機率穿刺敵人"]
+        }
+      }
+    ],
+    "2_6_8": [
+      {
+        "id": "Flaming_Goat_Hoof",
+        "tier": "Low",
+        "zh-CN": {
+          "name": "Flaming Goat Hoof",
+          "boss": "割裂者艾贝拉斯",
+          "effects": ["火焰伤害提高 (10—15)%"]
+        },
+        "zh-TW": {
+          "name": "烈焰羊蹄",
+          "boss": "堅蹄亡羊艾貝拉斯",
+          "effects": ["增加 (10—15)% 火焰傷害"]
+        }
+      }
+    ]
+  }
+}

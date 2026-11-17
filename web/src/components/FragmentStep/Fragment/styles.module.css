@@ -17,6 +17,27 @@
   color: rgb(128, 128, 128);
 }
 
+.visceraDrops {
+  color: #a8cbb5;
+  font-size: 0.875em;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.visceraDrop:link,
+.visceraDrop:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visceraDrop:hover {
+  text-decoration: underline;
+}
+
+.visceraBoss {
+  color: #a5ada8;
+}
+
 .quest {
   color: gold;
   font-weight: var(--font-heavy);

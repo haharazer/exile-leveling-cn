@@ -1,6 +1,7 @@
 import { CopyToClipboard } from "../../CopyToClipboard";
 import { InlineFakeBlock } from "../../InlineFakeBlock";
 import { ItemReward } from "../../ItemReward";
+import { VisceraDrops } from "./VisceraDrops";
 import styles from "./styles.module.css";
 import classNames from "classnames";
 import { Data, type Fragments, type GameData } from "common";
@@ -70,8 +71,8 @@ function QuestComponent(fragment: Fragments.QuestFragment, locale: Locale) {
     new Set(
       fragment.rewardOffers
         .map((x) => quest.reward_offers[x]?.quest_npc)
-        .filter((x) => x !== undefined)
-    )
+        .filter((x) => x !== undefined),
+    ),
   );
 
   return (
@@ -274,17 +275,14 @@ export function Fragment(
       return [EnemyComponent(fragment.value, locale), null];
     case "arena":
       return [AreaComponent(fragment.value, false, undefined, locale), null];
-    case "area": {
-      const area = Data.Areas[fragment.areaId];
-      return [
-        AreaComponent(area.name, area.is_town_area, area.level, locale),
-        null,
-      ];
-    }
+    case "area":
     case "enter": {
       const area = Data.Areas[fragment.areaId];
       return [
-        AreaComponent(area.name, area.is_town_area, area.level, locale),
+        <>
+          {AreaComponent(area.name, area.is_town_area, area.level, locale)}
+          <VisceraDrops areaId={area.id} locale={locale} />
+        </>,
         null,
       ];
     }
@@ -305,11 +303,13 @@ export function Fragment(
             dstArea.level,
             locale,
           )}
+          <VisceraDrops areaId={dstArea.id} locale={locale} />
           {dstArea.act !== srcArea.act &&
             dstArea.id !== "Labyrinth_Airlock" && (
               <>
                 {" "}
-                - {GenericComponent(message(locale, "act")(dstArea.act), locale)}
+                -{" "}
+                {GenericComponent(message(locale, "act")(dstArea.act), locale)}
               </>
             )}
         </>,
@@ -319,7 +319,13 @@ export function Fragment(
     case "waypoint_get":
       return [WaypointComponent(locale), null];
     case "portal_use":
-      return [PortalComponent(locale, Data.Areas[fragment.dstAreaId]), null];
+      return [
+        <>
+          {PortalComponent(locale, Data.Areas[fragment.dstAreaId])}
+          <VisceraDrops areaId={fragment.dstAreaId} locale={locale} />
+        </>,
+        null,
+      ];
     case "portal_set":
       return [PortalComponent(locale), null];
     case "quest":

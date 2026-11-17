@@ -37,6 +37,7 @@ const simplifiedMessages = {
     library: "图书馆支线",
     gemsOnly: "仅显示宝石任务",
     showSubsteps: "显示所有提示",
+    showViscera: "显示肢体掉落提示",
     copied: "已复制到剪贴板",
     cancel: "取消",
     confirm: "确认",
