@@ -8,7 +8,7 @@ import { SearchStrings } from "../SearchStrings";
 import { SkillTreeViewer } from "../SkillTreeViewer";
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type Ref } from "react";
 import React from "react";
 import { FaLink, FaListUl } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight, FiSearch } from "react-icons/fi";
@@ -17,7 +17,11 @@ import flattenChildren from "react-keyed-flatten-children";
 import { localeSelector } from "../../state/locale";
 import { message } from "../../i18n";
 
-export function Sidebar() {
+interface SidebarProps {
+  sidebarRef?: Ref<HTMLDivElement>;
+}
+
+export function Sidebar({ sidebarRef }: SidebarProps) {
   const [expand, setExpand] = useState(true);
   const [activeTab, setActiveTab] = useState<number>(0);
 
@@ -25,7 +29,7 @@ export function Sidebar() {
   if (sections.length === 0) return <></>;
 
   return (
-    <div className={classNames(styles.sidebar)}>
+    <div ref={sidebarRef} className={classNames(styles.sidebar)}>
       <Header
         expand={expand}
         sections={sections}

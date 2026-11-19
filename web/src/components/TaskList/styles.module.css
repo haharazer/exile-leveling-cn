@@ -6,6 +6,7 @@
 .listItem {
   display: flex;
   width: 100%;
+  padding-inline-end: var(--sidebar-inset, 0px);
   scroll-margin: calc(var(--navbar-height) * 2);
 }
 
@@ -16,11 +17,11 @@
   cursor: pointer;
 }
 
-.edgeTag:first-child{
+.edgeTag:first-child {
   margin-right: var(--size-3);
 }
 
-.edgeTag:last-child{
+.edgeTag:last-child {
   margin-left: var(--size-3);
 }
 
@@ -42,6 +43,7 @@
 
 .task {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: var(--size-2);
   flex: 1;

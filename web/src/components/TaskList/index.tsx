@@ -25,6 +25,7 @@ function TaskListItem({
 
   return (
     <li
+      data-sidebar-avoid
       id={edgeIndex !== null ? edgeId(edgeIndex) : undefined}
       tabIndex={0}
       className={classNames(

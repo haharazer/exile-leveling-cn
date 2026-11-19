@@ -7,11 +7,16 @@ import type { TaskListProps } from "../../components/TaskList";
 import { gemProgressFamily } from "../../state/gem-progress";
 import { routeSelector, scrollToActiveEdgeEffect } from "../../state/route";
 import { routeProgressFamily } from "../../state/route-progress";
-import { useMemo, type ReactNode } from "react";
+import { useSidebarAvoidance } from "./useSidebarAvoidance";
+import styles from "./styles.module.css";
+import { useMemo, useRef, useState, type ReactNode } from "react";
 
 export default function RoutesContainer() {
   useAtom(scrollToActiveEdgeEffect);
   const route = useAtomValue(routeSelector);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [sidebar, setSidebar] = useState<HTMLDivElement | null>(null);
+  useSidebarAvoidance(contentRef, sidebar);
 
   const items = useMemo(() => {
     const items: ReactNode[] = [];
@@ -63,9 +68,11 @@ export default function RoutesContainer() {
   }, [route]);
 
   return (
-    <>
-      <Sidebar />
-      {items}
-    </>
+    <div className={styles.layout}>
+      <Sidebar sidebarRef={setSidebar} />
+      <div ref={contentRef} className={styles.content}>
+        {items}
+      </div>
+    </div>
   );
 }
