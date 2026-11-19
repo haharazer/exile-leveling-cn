@@ -1,0 +1,63 @@
+var e=`#section 第九幕
+{waypoint|2_9_town} #统治者之殿
+➞ {enter|2_9_2} #斜坡
+➞ {enter|2_9_3} #贫瘠之地
+获取 {waypoint_get}
+    #sub 向{dir|90}方向前进
+获取 {crafting}
+找到并拾取 {quest_text|风暴之刃}
+➞ {enter|2_9_5} #巨石丘陵
+    #sub 向{dir|315}方向前进
+获取 {waypoint_get}
+    #sub 朝{dir|45}方向前进直到悬崖
+    #sub 向{dir|315}方向前进
+➞ {enter|2_9_6} #沸水湖泊
+找到并击杀 {kill|蛇怪}，取得 {quest_text|蛇怪酸液}
+    #sub 朝{dir|45}方向前进，寻找石化士兵
+获取 {crafting}
+{logout}
+与 {generic|罪}对话
+提交 {quest|a9q3}
+提交 {quest|a9q5|a9q5_offer}，取得 {quest_text|风暴之瓶}
+{waypoint|2_9_3} #贫瘠之地
+➞ {enter|2_9_4} #绿洲
+    #sub 向{dir|45}方向前进
+➞ {arena|流沙坑}，击杀 {kill|沙之女神 沙卡丽}
+{logout}
+提交 {quest|a9q5|a9q5} #沙之女神
+{waypoint|2_9_5} #巨石丘陵
+➞ {enter|2_9_7} #隧道
+    #sub 向{dir|315}方向前进
+#ifdef LEAGUE_START
+    在 {waypoint}之前，完成 {trial}
+        #sub 在通往{generic|升华试炼石碑}的途中，于入口对角寻找隐藏机关，取得{generic|隐藏宝石：变异}
+    获取 {crafting}
+#endif
+➞ {enter|2_9_8} #采石场
+获取 {waypoint_get}
+    #sub 向{dir|315}方向前进
+获取 {crafting}
+➞ {arena|风暴祭坛}，击杀 {kill|风暴女神格鲁坎}，取得 {quest_text|领袖之羽}
+    #sub {dir|45}或{dir|225}
+{logout}
+提交 {quest|a9q2} #海加特山脉的统治者
+{waypoint|2_9_8} #采石场
+➞ {enter|2_9_9} #精炼厂
+    #sub {dir|315}或{dir|45}
+获取 {crafting}
+    #sub 寻找通往{arena|炼油厂隧道}的下水道井盖，它连接着车辙
+找到并击杀 {kill|阿杜斯将军}，取得 {quest_text|特拉珊粉}
+    #sub 朝{dir|45}方向前进，沿着车辙走
+{logout}
+{waypoint|2_9_8} #采石场
+与 {generic|罪}对话
+➞ {enter|2_9_10_1} #巨兽沼泽
+➞ {enter|2_9_10_2} #育灵之室
+➞ {arena|黑核}
+与 {generic|罪}对话
+➞ {arena|多瑞的绝望}，击杀 {kill|德瑞, 暗灵者}
+➞ {arena|马雷加罗悲悯}，击杀 {kill|马雷格罗, 破败者}
+➞ {arena|纱弗隆哀伤}，击杀 {kill|薛朗, 无束者}
+与 {generic|罪}对话 ➞ {arena|漆黑之心}，击杀 {kill|不洁三巨头}
+{portal|use}
+`;export{e as default};

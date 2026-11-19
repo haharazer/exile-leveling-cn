@@ -1,0 +1,67 @@
+var e=`#section 第六幕
+➞ {enter|2_6_town} #狮眼守望
+➞ {enter|2_6_1} #绝望岩滩
+击杀 {kill|清除所有敌人}
+{logout}
+提交 {quest|a6q4} #优雅不再
+➞ {enter|2_6_2} #暮光海滩
+➞ {enter|2_6_4} #炙热盐沼
+找到并击杀 {kill|卡鲁长者}，取得 {quest_text|征服之眼}
+    #sub 区域的{dir|45}角落，通常在房屋旁
+➞ {enter|2_6_5} #卡鲁要塞
+➞ {arena|图克哈玛要塞}，击杀 {kill|战争之父图克哈玛}
+    #sub 向{dir|45}方向前进
+#ifdef LEAGUE_START
+        #sub 前往{dir|225}方向的小岛击杀怪物群，取得一个{generic|纹身}
+#endif
+获取 {crafting}
+➞ {enter|2_6_6} #寂默山岭
+    #sub 向{dir|0}方向前进
+➞ {enter|2_6_7_1} #禁灵之狱下层
+#ifdef LEAGUE_START
+    完成 {trial}
+#endif
+获取 {crafting}
+➞ {enter|2_6_7_2} #薛朗之塔
+➞ {arena|监狱屋顶}，击杀 {kill|复生者薛朗} 以及 {kill|重塑之布鲁特斯}
+➞ {arena|典狱长寝室}
+获取 {crafting}
+➞ {enter|2_6_8} #监狱大门
+➞ {arena|饮火者山谷}，击杀 {kill|裂蹄之神艾贝拉斯}
+    #sub 沿着道路旁的斜坡向下走
+{portal|use}
+提交 {quest|a6q7} #撕裂之神
+{waypoint|2_6_8} #监狱大门
+➞ {enter|2_6_9} #西部密林
+    #sub 沿着道路前进
+获取 {crafting}
+    #sub 寻找贴近道路的火炬
+    #sub 沿着火炬指向的路线前进
+➞ {enter|2_6_10} #河道
+    #sub 沿着道路前进
+获取 {waypoint_get}
+    #sub 沿着道路前进
+➞ {enter|2_6_11} #湿地
+    #sub 在{waypoint}附近寻找两根石柱并沿着足迹前进
+➞ {arena|孵化之地}，击杀 {kill|食腐虫后}
+    #sub 向{dir|315}方向前进
+{logout}
+提交 {quest|a6q3} #战争之父
+提交 {quest|a6q2} #黑影精华
+提交 {quest|a6q6} #傀儡女王
+{waypoint|2_6_10} #河道
+➞ {enter|2_6_12} #南部森林
+    #sub 沿着道路前进直到尽头
+    #sub 向{dir|135}方向前进
+➞ {enter|2_6_13} #怨忿之窟深处
+使用 {quest_text|黑旗}
+➞ {enter|2_6_14} #孤岛灯塔
+获取 {crafting}
+    #sub 沿着岸边前进
+完成 {quest_text|推石柱}
+点燃 {quest_text|信标}，投入 {quest_text|黑旗}
+与 {generic|威勒姆·罗斯}对话，启航前往 {enter|2_6_15} #惊海之王的海礁
+➞ {arena|怒涛之王王座}，击杀 {kill|惊海之王索亚格斯}
+{logout}
+选择 {generic|众神殿}
+`;export{e as default};

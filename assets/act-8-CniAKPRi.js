@@ -1,0 +1,68 @@
+var e=`#section 第八幕
+➞ {enter|2_8_1} #薩恩城牆
+➞ {enter|2_8_town} #薩恩營地
+➞ {enter|2_8_2_1} #腐化渠道
+    #sub 向{dir|270}方向前进
+➞ {enter|2_8_2_2} #德瑞的腐化池
+    #sub 地面上的黑色油漆斑指向正确的前进方向
+➞ {arena|熔湯之地}，击杀 {kill|惡毒者德瑞}
+➞ {arena|下水道出口}
+获取 {crafting}
+➞ {enter|2_8_8} #啟程碼頭
+    #sub 向{dir|45}方向前进
+找到并拾取 {quest_text|永恆的十字架}
+    #sub 贴着{dir|270}方向的墙前进
+➞ {arena|復活之地}
+    #sub 向{dir|135}方向前进
+与 {generic|卡爾麗莎}对话，击杀 {kill|托爾曼}
+➞ {enter|2_8_9} #糧儲關口
+找到并击杀 {kill|寶石軍團士兵}
+    #sub 沿着门口倒下的守卫前进
+    #sub 寻找书本图标
+➞ {enter|2_8_10} #皇家疆界
+    #sub 沿着门口倒下的守卫前进
+➞ {enter|2_8_12_1} #日耀神殿：第 1 層
+    #sub 沿着道路前进直到{waypoint}
+    #sub 向{dir|315}方向前进
+获取 {waypoint_get}
+➞ {enter|2_8_12_2} #日耀神殿：第 2 層
+找到并击杀 {kill|日耀守衛者-黎明}，取得 {quest_text|日耀法珠}
+获取 {crafting}
+{logout}
+提交 {quest|a8q1} #女巫的精髓
+提交 {quest|a8q7} #古靈軍閥
+提交 {quest|a8q6} #愛已墜落
+{waypoint|2_8_12_1} #日耀神殿：第 1 層
+➞ {enter|2_8_11} #日耀神廣場
+➞ {enter|2_8_13} #海港大橋
+    #sub 向{dir|225}方向前进
+➞ {enter|2_8_6} #月影神廣場
+获取 {waypoint_get}
+    #sub 向{dir|315}方向前进
+➞ {enter|2_8_7_1_} #月影神殿：第 1 層
+➞ {enter|2_8_7_2} #月影神殿：第 2 層
+找到并击杀 {kill|月影守衛者-暮色}，取得 {quest_text|月影法珠}
+获取 {crafting}
+{logout}
+{waypoint|2_8_6} #月影神廣場
+➞ {enter|2_8_13} #海港大橋
+    #sub 向{dir|135}方向前进
+➞ {arena|天空神殿}，激活 {generic|姊妹塑像}
+击杀 {kill|永恆嬋娟月影神} 以及 {kill|永恆白駒日耀神}
+➞ {enter|2_9_1} #滲血水道
+    #sub 刷怪等级：58-62
+➞ {enter|2_9_town} #統治者之殿
+{waypoint|2_8_6} #月影神廣場
+➞ {enter|2_8_5} #大浴堂
+    #sub 向{dir|180}方向前进
+#ifdef LEAGUE_START
+    完成 {trial}
+        #sub 在{dir|270}方向搜索
+    获取 {crafting}
+#endif
+➞ {enter|2_8_4} #空中花園
+    #sub 在{dir|270}方向搜索
+➞ {arena|恐懼之池}，击杀 {kill|恐懼的血兆伊果}
+{portal|use}
+提交 {quest|a8q4} #恐懼的血照
+`;export{e as default};
